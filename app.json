@@ -19,6 +19,9 @@
       "description": "A Prefix To Run Your Bot Commands.",
       "value": ""
     }
+     "BOT_NAME": {
+      "description": "Your Ticket Bots New Name",
+      "value": ""
   },
   "buildpacks": [
     {
