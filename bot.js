@@ -112,7 +112,7 @@ if (message.content.toLowerCase().startsWith(prefix + `close`)) {
     });
 }
 	
-     if (command == "prune") {
+     if (message.content.toLowerCase().startsWith(prefix + `prune`)) {
         if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply("**🔒 Sorry, you can't do that.**");
         var messagesToDelete = args[1];
         if (!args[1]) return message.channel.send("❌ Please include the amount of Message that you want to **Prune**!");
@@ -122,7 +122,7 @@ if (message.content.toLowerCase().startsWith(prefix + `close`)) {
         .catch(error => message.channel.send(`❌ Sorry ${message.author}, Failed while **Prunning** because: *${error}*.`));
     };
 
-    if(command == "kick") {
+    if (message.content.toLowerCase().startsWith(prefix + `kick`)) {
         message.delete()
         let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
         if(!kUser) return message.channel.send("❌ Please **@mention** your target!");
