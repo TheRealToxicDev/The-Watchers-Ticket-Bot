@@ -3,11 +3,18 @@ Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stu
 Here are my commands:
 
 **Tickets**
+
 tw/new > Opens up a new ticket and tags the Support Team
+
 tw/close > Closes a ticket that has been resolved or been opened by accident
+
+
 **Other**
+
 tw/help > Shows you this help menu your reading
+
 tw/ping > Pings the bot to see how long it takes to react
+
 tw/about > Tells you all about ツ The Watchers ツ
 
 You can host your inw version of this on Heroku, just click this **Deploy** button below **CUSTOM NAME COMING SOON** :
