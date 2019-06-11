@@ -1,0 +1,16 @@
+{
+  "name": "ツ Ticket Bot ツ",
+  "description": "the Discord bot for super cool support ticket stuff and more!",
+  "keywords": [
+    "node",
+    "heroku",
+    "discord"
+	"tickets"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
