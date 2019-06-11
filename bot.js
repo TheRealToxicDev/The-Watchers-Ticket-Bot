@@ -14,17 +14,17 @@ var token = process.env.BOT_TOKEN;
 
 client.on("ready", () => {
   console.log("ツ The Watchers ツ | Logged in! Server count: ${client.guilds.size}");
-  client.user.setGame(`tw/help In ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
+  client.user.setGame(`${prefix}help In ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
 });
 
 client.on("guildCreate", (guild) => {
-client.user.setGame(`tw/help In ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
+client.user.setGame(`${prefix}help In ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
 const embed = new Discord.RichEmbed()
     .setTitle(`ツ Ticket Bot ツ`)
     .setColor(0xCF40FA)
     .setDescription(`Hello! I'm ツ Ticket Bot ツ!\nThanks for adding me to your guild!`)
-    .addField(`Commands`, `[tw/help]() > Shows my help message and command usage`)
-    .addField(`Ping`, `[tw/ping]() > Pings the bot and checks latency and response time`)
+    .addField(`Commands`, `[${prefix}help]() > Shows my help message and command usage`)
+    .addField(`Ping`, `[${prefix}ping]() > Pings the bot and checks latency and response time`)
 	 .addField(`Support Server`, `Join Our Discord: https://discord.gg/Hg8jyzQ`)
     guild.owner.user.send({ embed: embed });
 });
@@ -37,8 +37,8 @@ client.on("message", (message) => {
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Help`)
     .setColor(0xCF40FA)
     .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stuff and more! Here are my commands:`)
-    .addField(`Tickets`, `[tw/new]() > Opens up a new ticket and tags the Support Team\n[tw/close]() > Closes a ticket that has been resolved or been opened by accident`)
-    .addField(`Other`, `[tw/help]() > Shows you this help menu your reading\n[tw/ping]() > Pings the bot to see how long it takes to react\n[tw/about]() > Tells you all about ツ The Watchers ツ`)
+    .addField(`Tickets`, `[${prefix}new]() > Opens up a new ticket and tags the Support Team\n[${prefix}close]() > Closes a ticket that has been resolved or been opened by accident`)
+    .addField(`Other`, `[${prefix}help]() > Shows you this help menu your reading\n[${prefix}ping]() > Pings the bot to see how long it takes to react\n[${prefix}about]() > Tells you all about ツ The Watchers ツ`)
     message.channel.send({ embed: embed });
   }
   
