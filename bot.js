@@ -9,6 +9,8 @@ function clean(text) {
         return text;
 }
 
+var prefix = process.env.PREFIX;
+var token = process.env.BOT_TOKEN;
 
 client.on("ready", () => {
   console.log("ツ The Watchers ツ | Logged in! Server count: ${client.guilds.size}");
