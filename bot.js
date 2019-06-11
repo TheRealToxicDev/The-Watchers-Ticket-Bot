@@ -8,8 +8,8 @@ function clean(text) {
         return text;
 }
 
-var prefix = "tw/";
-var token = "NTg1OTY2OTgxNTc2OTE3MDE0.XP9tkA.lWTXd7Cdbxelo0em1ocITblCHpQ";
+var prefix = "";
+var token = "";
 
 client.on("ready", () => {
   console.log("ツ The Watchers ツ | Logged in! Server count: ${client.guilds.size}");
