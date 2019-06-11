@@ -14,11 +14,11 @@ var token = process.env.BOT_TOKEN;
 
 client.on("ready", () => {
   console.log("ツ The Watchers ツ | Logged in! Server count: ${client.guilds.size}");
-  client.user.setGame(`${prefix}help In ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
+  client.user.setGame(`${prefix}help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
 });
 
 client.on("guildCreate", (guild) => {
-client.user.setGame(`${prefix}help In ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
+client.user.setGame(`${prefix}help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
 const embed = new Discord.RichEmbed()
     .setTitle(`ツ Ticket Bot ツ`)
     .setColor(0xCF40FA)
@@ -114,9 +114,9 @@ if (message.content.toLowerCase().startsWith(prefix + `close`)) {
 	
      if (message.content.toLowerCase().startsWith(prefix + `prune`)) {
         if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply("**🔒 Sorry, you can't do that.**");
-        var messagesToDelete = args[1];
-        if (!args[1]) return message.channel.send("❌ Please include the amount of Message that you want to **Prune**!");
-        if (args[1] > 99) return message.channel.send("❌ I can't **Prune** more than `99` Messages.");
+        var messagesToDelete = args;
+        if (!args) return message.channel.send("❌ Please include the amount of Message that you want to **Prune**!");
+        if (args > 99) return message.channel.send("❌ I can't **Prune** more than `99` Messages.");
         message.channel.fetchMessages({limit: messagesToDelete})
         .then(messages => message.channel.bulkDelete(messages.size + 1))
         .catch(error => message.channel.send(`❌ Sorry ${message.author}, Failed while **Prunning** because: *${error}*.`));
