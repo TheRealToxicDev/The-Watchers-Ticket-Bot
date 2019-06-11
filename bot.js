@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const PREFIX = process.env.PREFIX;
 const client = new Discord.Client();
 
 function clean(text) {
@@ -8,8 +9,6 @@ function clean(text) {
         return text;
 }
 
-var prefix = "";
-var token = "";
 
 client.on("ready", () => {
   console.log("ツ The Watchers ツ | Logged in! Server count: ${client.guilds.size}");
@@ -113,4 +112,5 @@ if (message.content.toLowerCase().startsWith(prefix + `close`)) {
 
 });
 
-client.login(token);
+client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
