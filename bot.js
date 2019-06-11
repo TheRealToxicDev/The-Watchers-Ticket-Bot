@@ -112,7 +112,7 @@ if (message.content.toLowerCase().startsWith(prefix + `close`)) {
     });
 }
 	
-    if(command === "prune") {
+     if (command == "prune") {
         if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply("**🔒 Sorry, you can't do that.**");
         var messagesToDelete = args[1];
         if (!args[1]) return message.channel.send("❌ Please include the amount of Message that you want to **Prune**!");
@@ -142,6 +142,7 @@ if (message.content.toLowerCase().startsWith(prefix + `close`)) {
         message.guild.member(kUser).kick(kReason);
         adminlog.send(kickEmbed);
     };
+	
 });
 
 client.login(process.env.BOT_TOKEN);
