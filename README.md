@@ -7,7 +7,7 @@ This Repo is served with little kind of Basic Command that you can learn it.
 You can host this on Heroku, just click this **Deploy** button below :
 
 
-<a href="https://heroku.com/deploy?template=https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot/tree/master">
+<a href="https://heroku.com/deploy?template=https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
