@@ -17,6 +17,7 @@ tw/ping > Pings the bot to see how long it takes to react
 
 tw/about > Tells you all about ツ The Watchers ツ
 
+**Self Hosting (Auto Deploy)**
 You can host your inw version of this on Heroku, just click this **Deploy** button below **CUSTOM NAME COMING SOON** :
 
 
