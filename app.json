@@ -19,7 +19,7 @@
       "description": "A Prefix To Run Your Bot Commands.",
       "value": ""
     },
-     "NAME": {
+     "BOT_NAME": {
       "description": "Your Ticket Bots New Name",
       "value": ""
   }
