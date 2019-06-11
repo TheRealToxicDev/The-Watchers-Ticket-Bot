@@ -8,7 +8,7 @@
   ],
   "website": "https://the-watchers.webnode.com/",
   "repository": "https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot",
-  "logo": "https://discord.js.org/static/logo-square.png",
+  "logo": "https://cdn.discordapp.com/attachments/586095704057970708/587949134632321034/imageedit_1_8018298797.png",
   "success_url": "/welcome",
   "env": {
     "BOT_TOKEN": {
