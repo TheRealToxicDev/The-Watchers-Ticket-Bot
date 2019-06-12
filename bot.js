@@ -102,7 +102,7 @@ client.on("message", (message) => {
     .addField(`Uh-Oh Somethings Not Right`, `There wasn't a tickets category so i created one! Please execute the command again to open your ticket`)
     message.channel.send({ embed: embed });
     return
-    }
+	    
     message.guild.createChannel(`ticket-${message.author.username}`, "text").then(c => {
         let role = message.guild.roles.find("name", "Support Team");
         let role2 = message.guild.roles.find("name", "@everyone");
