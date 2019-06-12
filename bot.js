@@ -191,7 +191,7 @@ client.on("message", (message) => {
           }, 3000);
         });
     });
-   }
+}
 	
 };
 
