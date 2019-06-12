@@ -69,4 +69,4 @@ and you're ready to Go!**
 
 | Info & About | Links & Redirects |
 | ------- |:----------------- |
-| Creator's Discord Tag | Tyler. H#9393 |
+| Creator's Personal Discord | [[Tyler. H#9393]](https://discord.gg/N86xbMR) |
