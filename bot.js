@@ -94,34 +94,34 @@ client.on("message", (message) => {
 }
 	  if (message.content.toLowerCase().startsWith(prefix + `add`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
-    const embed4 = new Discord.RichEmbed()
-    .setColor(embedColor)
-    .addField(`Ticket Bot`, `You can't use the this outside of a ticket channel.`)
+    const embed = new Discord.RichEmbed()
+    .setColor(0xCF40FA)
+    .addField(`ツ Ticket Bot ツ`, `You can't use the this outside of a ticket channel.`)
     message.channel.send({ embed: embed4 });
     return
     }
     addedmember = message.mentions.members.first();
     message.channel.overwritePermissions(addedmember, { SEND_MESSAGES : true, VIEW_CHANNEL : true});
-    const embed5 = new Discord.RichEmbed()
-    .setColor(embedColor)
-    .addField(`Ticket Bot`, '**' + addedmember + `** has been added to the ticket. Remove with [${prefix}remove]().`)
+    const embed = new Discord.RichEmbed()
+    .setColor(0xCF40FA)
+    .addField(`ツ Ticket Bot ツ`, '**' + addedmember + `** has been added to the ticket. Remove with [${prefix}remove]().`)
     message.channel.send({ embed: embed5 });
 
   }
 
   if (message.content.toLowerCase().startsWith(prefix + `remove`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
-    const embed6 = new Discord.RichEmbed()
-    .setColor(embedColor)
-    .addField(`Ticket Bot`, `You can't use the this outside of a ticket channel.`)
+    const embed = new Discord.RichEmbed()
+    .setColor(0xCF40FA)
+    .addField(`ツ Ticket Bot ツ`, `You can't use the this outside of a ticket channel.`)
     message.channel.send({ embed: embed6 });
     return
     }
     removedmember = message.mentions.members.first();
     message.channel.overwritePermissions(removedmember, { SEND_MESSAGES : false, VIEW_CHANNEL : false});
-    const embed7 = new Discord.RichEmbed()
-    .setColor(embedColor)
-    .addField(`Ticket Bot`, '**' + removedmember + '** has been removed from the ticket.')
+    const embed = new Discord.RichEmbed()
+    .setColor(0xCF40FA)
+    .addField(`ツ Ticket Bot ツ`, '**' + removedmember + '** has been removed from the ticket.')
     message.channel.send({ embed: embed7 });
   }
 
