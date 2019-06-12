@@ -36,9 +36,9 @@ and you Ready to Go!
 
 Below you'll find a list of all **{{ statistics.commands }}** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command, or use the help command for the given command in a Discord server.
 
-> `{Required}` ツ Ticket Bot ツ Requires a `Support Team` Role before it can `Open` and `Close` tickets `IF` No `Support Team` Role is found he will display a `Error/Warning` telling you to create one and assign it to `Users OR Staff` who you want to have access to the ticket.
+> {{REQUIRED}} ツ Ticket Bot ツ Requires a `Support Team` Role before it can `Open` and `Close` tickets `IF` No `Support Team` Role is found he will display a `Error/Warning` telling you to create one and assign it to `Users OR Staff` who you want to have access to the ticket.
 
-> `{Tip}` ツ Ticket Bot ツ Will Set-Up a `Tickets` Category for you when a member opens a ticket
+> {TIP} ツ Ticket Bot ツ Will Set-Up a `Tickets` Category for you when a member opens a ticket
 
 ## Table of Contents
 
@@ -78,9 +78,7 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 <a name="hostyourown"></a>
 ## Host Your Own ツ Ticket Bot ツ
 
-| Command | Short Description |
+| Host Name | Host Method |
 | ------- |:----------------- |
-| [<a href="https://heroku.com/deploy?template=https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>] | Automatic Deploy |
-{{/commands.interaction.short}}
+| Heroku Apps | Automatic Deploy |
+>{TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Deploy` button below
