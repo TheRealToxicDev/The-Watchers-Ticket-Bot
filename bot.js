@@ -125,10 +125,21 @@ client.on("message", (message) => {
     message.channel.send({ embed: embed });
   }
 
-if (message.content.toLowerCase().startsWith(prefix + `close`)) {
-    if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(`You can't use the close command outside of a ticket channel.`);
+  if (message.content.toLowerCase().startsWith(prefix + `close`)) {
+    if (!message.channel.name.startsWith(`ticket-`)) {
+    const embed8 = new Discord.RichEmbed()
+    .setColor(embedColor)
+    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
+    .addField(`You can't use the this command outside of a ticket channel.`)
+    message.channel.send({ embed: embed });
+    return
+    }   
 
-    message.channel.send(`Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`-confirm\`. This will time out in 10 seconds and be cancelled.`)
+    const embed9 = new Discord.RichEmbed()
+    .setColor(embedColor)
+    .setTtitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
+    .addField(`Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`-confirm\`. This will time out in 10 seconds and be cancelled.')
+    message.channel.send({ embed: embed })
     .then((m) => {
       message.channel.awaitMessages(response => response.content === '-confirm', {
         max: 1,
