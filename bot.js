@@ -49,7 +49,7 @@ client.on("message", (message) => {
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ, About`)
     .setColor(0xCF40FA)
     .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support tickets`)
-        .addField(`My Creator/Developer`, `${@ownerid}`)
+        .addField(`My Creator/Developer`, `@444609097233465347`)
         .addField(`My Creator/Developers Website`, `https://the-watchers.webnode.com`)
 	.addField(`My Support Server`, `https://discord.gg/Hg8jyzQ `)
 	.addField(`Invite Me To Your Server`, `https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot`)
@@ -65,7 +65,7 @@ client.on("message", (message) => {
 
    if (message.content.toLowerCase().startsWith(prefix + `new`)) {
     const reason = message.content.split(" ").slice(1).join(" ");
-    if (!message.guild.roles.exists("name", "Support")) {
+    if (!message.guild.roles.exists("name", "Support Team")) {
     const embed = new Discord.RichEmbed()
     .setColor(0xCF40FA)
     .addField(`Uh-Oh Somethings Not Right`, `This server doesn't have a \`Support Team\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets.`)
