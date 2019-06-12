@@ -62,7 +62,7 @@ client.on("message", (message) => {
     .setColor(0xCF40FA)
     .addField(`Hold On!!!`)
     message.channel.send({ embed: embed }); 
-    .then(m => {
+    then(m => {
     m.edit(`:ping_pong: Wew, we made it over the ~waves~ ! **Pong!**\nMessage edit time is ` + (m.createdTimestamp - message.createdTimestamp) + `ms, Discord API heartbeat is ` + Math.round(client.ping) + `ms.`);
     });
 }
@@ -78,12 +78,12 @@ client.on("message", (message) => {
     return
     }
    if (!message.guild.channels.exists("name", "★★★★★★tickets★★★★★★", "category"))
-	 const embed = new Discord.RichEmbed()
+    const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
     .addField(`There wasn't a tickets category so i created one! Please execute the command again to open your ticket`)
     message.channel.send({ embed: embed });
-    .then(message.guild.createChannel("★★★★★★tickets★★★★★★", "category"))
+    then(message.guild.createChannel("★★★★★★tickets★★★★★★", "category"))
     return
     }
     if (message.guild.channels.exists("name", "ticket-" + message.author.username)) {
@@ -126,7 +126,7 @@ client.on("message", (message) => {
         c.send({ embed: embed });
     }).catch(console.error);
 }
-	  if (message.content.toLowerCase().startsWith(prefix + `add`)) {
+    if (message.content.toLowerCase().startsWith(prefix + `add`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
     const embed = new Discord.RichEmbed()
     .setColor(0xCF40FA)
