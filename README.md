@@ -71,4 +71,4 @@ and you're ready to Go!**
 | Info & About | Links & Redirects |
 | ------- |:----------------- |
 | Creator's Personal Discord | [Tyler. H#9393](https://discord.gg/N86xbMR) |
-| Creators/Developers Website | [ツThe Watchers | Bot Devsツ](https://discord.gg/N86xbMR) 
+| Creators/Developers Website | [ツThe Watchers Bot Devsツ](https://discord.gg/N86xbMR) |
