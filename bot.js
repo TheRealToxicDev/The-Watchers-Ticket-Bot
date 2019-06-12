@@ -110,7 +110,6 @@ client.on("message", (message) => {
         c.send({ embed: embed });
     }).catch(console.error);
 }
-  }
 	
   if (message.content.toLowerCase().startsWith(prefix + `add`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
