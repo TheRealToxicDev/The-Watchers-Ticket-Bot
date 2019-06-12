@@ -120,7 +120,7 @@ client.on("message", (message) => {
             READ_MESSAGES: true
         });
         const embed = new Discord.RichEmbed()
-        .setColor(embedColor)
+        .setColor(0xCF40FA)
         .addField(`WooHoo, Success`, `Your ticket has been created in ` + c.toString())
         .setTimestamp();
         message.channel.send({ embed: embed });
