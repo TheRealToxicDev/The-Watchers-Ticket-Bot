@@ -43,7 +43,7 @@ client.on("message", (message) => {
     .setColor(0xCF40FA)
     .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stuff and more! Here are my commands:`)
         .addField(`Tickets`, `${prefix}new > Opens up a new ticket and tags the Support Team\n${prefix}close > Closes a ticket that has been resolved or been opened by accident\n${prefix}add > Adds the mentioned user to a ticket.\n${prefix}remove > Removes the mentioned user from a ticket.`)
-        .addField(`Other`, `${prefix}help > Shows you this help menu your reading\n${prefix}ping > ```Pings the bot to see how long it takes to react```\n${prefix}about > Tells you all about ツ Ticket Bot ツ`)
+        .addField(`Other`, `${prefix}help > Shows you this help menu your reading\n${prefix}ping > Pings the bot to see how long it takes to react\n${prefix}about > Tells you all about ツ Ticket Bot ツ`)
     .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
     .SetImage(`http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
