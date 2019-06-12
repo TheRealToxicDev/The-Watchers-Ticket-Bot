@@ -95,7 +95,7 @@ client.on("message", (message) => {
 	
   if (message.content.toLowerCase().startsWith(prefix + `add`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
-    const embed4 = new Discord.RichEmbed()
+    const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
     .addField(`sorry`, `You can't use this command outside of a ticket channel.`)
