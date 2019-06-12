@@ -83,7 +83,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setTitle(`About ツ Ticket Bot ツ`)
     .setColor(0x00AE86)
-    .setDescription(`Hello! I'm ツ Ticket Bot ツ. the Discord bot for super cool support tickets, i was originally created as a custom suppoort ticket bot for ツThe Watchers Bot Devsツ coded in the \`discord.js library\` If you are interested in inviting me to your server use the command \`${prefix}help`\`)
+    .setDescription(`Hello! I'm ツ Ticket Bot ツ. the Discord bot for super cool support tickets, i was originally created as a custom suppoort ticket bot for ツThe Watchers Bot Devsツ coded in the \`discord.js library\` If you are interested in inviting me to your server use the command [${prefix}help]`\`)
         .addField(`Command List`, `[${prefix}commands]`)
    .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
    .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
