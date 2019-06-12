@@ -65,8 +65,8 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setTitle(`Invite ツ Ticket Bot ツ To Your Server`)
     .setColor(0x00AE86)
-    .setDescription(`Interested in inviting me to your server? Use the link below~`)
-       .addField(`CMy Invite Link`, `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`) 
+    .setDescription(`Interested in inviting me to your server? Use the link below`)
+       .addField(`My Invite Link`, `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`) 
     .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
