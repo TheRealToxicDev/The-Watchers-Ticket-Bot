@@ -21,7 +21,7 @@ client.on("ready", () => {
 client.on("guildCreate", (guild) => {
 client.user.setGame(`${prefix}help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
 const embed = new Discord.RichEmbed()
-    .setTitle [${name}]
+    .setTitle `${name}`
     .setColor(0xCF40FA)
     .setDescription(`Hello! I'm!`, `${name}`, `Thanks for adding me to your guild!`)
     .addField(`Commands`, `[${prefix}help]() > Shows my help message and command usage`)
@@ -45,7 +45,7 @@ client.on("message", (message) => {
   
   if (message.content.toLowerCase().startsWith(prefix + `about`)) {
     const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: [${name}] About`)
+    .setTitle(`:mailbox_with_mail:`, `${name}`, `About`)
     .setColor(0xCF40FA)
     .setDescription(`Hello! I'm`, `${name}`, `the Discord bot for super cool support tickets`)
         .addField(`Bot Creator`, `Tyler. H#9393`)
