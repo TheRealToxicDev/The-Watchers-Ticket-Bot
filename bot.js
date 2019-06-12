@@ -107,11 +107,11 @@ client.on("message", (message) => {
         .setTimestamp();
         message.channel.send({ embed: embed });
 
-        const embed = new Discord.RichEmbed()
+        const embed1 = new Discord.RichEmbed()
         .setColor(0xCF40FA)
         .addField(`Hey ${message.author.username}!`, `Our **Support Team** will be with you shortly. Please explain your reason for opening the ticket in as much detail as possible.`)
         .setTimestamp();
-        c.send({ embed: embed });
+        c.send({ embed: embed1 });
     }).catch(console.error);
   }
 	
