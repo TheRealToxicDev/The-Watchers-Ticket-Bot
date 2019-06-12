@@ -69,6 +69,8 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 <a href="https://heroku.com/deploy?template=https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
+
 ## Hosting Steps
-> 1. Click the `Auto Deploy` button above.
-> 2. Input your **Bot Token**, and Input your Bot **Prefixes**. Get your Bot's Token in your App Settings.
+**1. Click the `Deploy To Heroku` button above.**
+**2. Input your `Bot Token`, and Input your Bot `Prefix`. Get your Bot's Token in your App Settings.**
+> {BOT TOKEN} https://discordapp.com/developers/applications/544049582959755264/information
