@@ -97,7 +97,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setColor(0xCF40FA)
     .addField(`ツ Ticket Bot ツ`, `You can't use the this outside of a ticket channel.`)
-    message.channel.send({ embed: embed4 });
+    message.channel.send({ embed: embed });
     return
     }
     addedmember = message.mentions.members.first();
@@ -105,7 +105,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setColor(0xCF40FA)
     .addField(`ツ Ticket Bot ツ`, '**' + addedmember + `** has been added to the ticket. Remove with [${prefix}remove]().`)
-    message.channel.send({ embed: embed5 });
+    message.channel.send({ embed: embed });
 
   }
 
@@ -114,7 +114,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setColor(0xCF40FA)
     .addField(`ツ Ticket Bot ツ`, `You can't use the this outside of a ticket channel.`)
-    message.channel.send({ embed: embed6 });
+    message.channel.send({ embed: embed });
     return
     }
     removedmember = message.mentions.members.first();
@@ -122,7 +122,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setColor(0xCF40FA)
     .addField(`ツ Ticket Bot ツ`, '**' + removedmember + '** has been removed from the ticket.')
-    message.channel.send({ embed: embed7 });
+    message.channel.send({ embed: embed });
   }
 
 if (message.content.toLowerCase().startsWith(prefix + `close`)) {
