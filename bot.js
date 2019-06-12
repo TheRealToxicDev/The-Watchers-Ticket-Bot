@@ -53,7 +53,7 @@ client.on("message", (message) => {
 	.addField(`ツ Ticket Bot ツ Support Server`, `https://discord.gg/Hg8jyzQ `)
 	.addField(`Invite ツ Ticket Bot ツ To Your Server`, `https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot`)
 	.addField(`Server Count`, `${client.guilds.size} Servers`)
-        .addField(`User Count`, `${guild.members.filter(member => ${!member.user.bot).size;
+        .addField(`Server Count`, `${!member.user.bot Users`)
     message.channel.send({ embed: embed });
   }
   
