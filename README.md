@@ -63,8 +63,9 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 
 | Command | Short Description |
 | ------- |:----------------- |
-| [{{{command.trigger}}}](/docs/{{version}}/commands#{{commandName}}) | {{{command.shortDescription}}} |
-{{/commands.administration.short}}
+| [tw/new] | {{{command.shortDescription}}} |
+| [tw/close] | Closes current ticket
+> {tip} The close command `MUST` be used inside the ticket channel
 
 <a name="othercommands"></a>
 ## Other Commands
