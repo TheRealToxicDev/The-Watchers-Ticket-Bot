@@ -1,7 +1,9 @@
+// EVERYTHING BELOW THIS LINE IS REQUIRED DO NOT CHANGE ANY OF THIS UNLESS YOU KNOW WHAT YOU ARE DOING
 const Discord = require("discord.js");
 const PREFIX = process.env.PREFIX;
 const client = new Discord.Client();
 
+// BELOW THIS LINE IS THE CLEAN FUNCTION DO NOT TOUCH THIS UNLESS YOU KNOW WHAT YOU ARE DOING!!!
 function clean(text) {
     if (typeof(text) === "string")
       return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
@@ -9,11 +11,13 @@ function clean(text) {
         return text;
 }
 
+// BELOW THIS LINE ARE THE BOTS "VARS/VARIABLES" THEY ARE REQUIRED TO HELP IT RUN CORRECTLY ONLY REPLACE THESE WITH YOUR INFORMATION DO NOT DELETE THEM AS IT MAY CAUSE ISSUES OR BREAK THE BOT 
 var prefix = process.env.PREFIX; // Replace "process.env.PREFIX" with prefix of your choice if self hosting (Not Auto Deployed) Currrnt Prefix: (`tb/`) make sure you include the "(``)"
 var token = process.env.BOT_TOKEN; // Replace "process.env.BOT_TOKE" with your bot token if self hosting (Not Auto Deployed) Example: (`Nakdndyak13816akd.odb`) make sure you include the "(``)"
 var name = process.env.BOT_NAME; // NOT REQUIRED if self hosting (Not Auto Deployed)
 var ownerid = process.env.BOT_OWNER; // Replace with your Discord ID if self hosting (Not Auto Deployed) Example: (`12345678901573`) make sure you include the "(``)"
 
+// BELOW THIS LINE IS THE BOTS CONSOLE LOG READY MESSAGE, PLAY STATUS (NOW STREAMING) AND THE MESSAGE THAT IS SENT WHEN INVITED TO A NEW SERVER!!!
 client.on("ready", () => {
   console.log("ツ The Watchers ツ | Logged in! Server count: ${client.guilds.size}");
   client.user.setGame(`${prefix}help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
@@ -36,6 +40,7 @@ const embed = new Discord.RichEmbed()
 client.on("message", (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
+// BELOW THIS LINE IS THE BOTS COMMANDS EDIT, REPLACE AND ADD TO THESE AS NEEDED IF YOU ARE WANTING TO EMBED THE COMMAND YOU CAN USE ONE OF THE BOTS PRE EXISTING COMMANDS AS A TEMPLATE
   if (message.content.toLowerCase().startsWith(prefix + `help`)) {
     const embed = new Discord.RichEmbed()
     .setTitle(`ツ Ticket Bot ツ Help`)
@@ -189,6 +194,7 @@ client.on("message", (message) => {
 
 });
 
+// JUST SOME MORE FUNCTIONS DO NOT TOUCH THIS UNLESS YOU KNOW WHAT YOU ARE DOING.... SERIOUSLY!!
 function response(c) {
   while (true) {
     client.on("message", (message) => {
