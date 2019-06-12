@@ -68,7 +68,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setColor(0xCF40FA)
     .addField(`Uh-Oh Somethings Not Right`, `This server doesn't have a \`Support\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets.`)
-    message.channel.send({ embed: embed0 });
+    message.channel.send({ embed: embed });
     return
     }
     if (message.guild.channels.exists("name", "ticket-" + message.author.username)) {
