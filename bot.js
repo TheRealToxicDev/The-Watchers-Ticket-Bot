@@ -61,6 +61,16 @@ client.on("message", (message) => {
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
   }
+   if (message.content.toLowerCase().startsWith(prefix + `invite`)) {
+    const embed = new Discord.RichEmbed()
+    .setTitle(`Invite ツ Ticket Bot ツ To Your Server`)
+    .setColor(0x00AE86)
+    .setDescription(`Interested in inviting me to your server? Use the link below~`)
+       .addField(`CMy Invite Link`, `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`) 
+    .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
+    .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
+    message.channel.send({ embed: embed });
+  }
    if (message.content.toLowerCase().startsWith(prefix + `commands`)) {
     const embed = new Discord.RichEmbed()
     .setTitle(`ツ Ticket Bot ツ Commands`)
@@ -74,7 +84,8 @@ client.on("message", (message) => {
 	    .addField(`Close A Ticket`, `[${prefix}close] > Closes the current Support Ticket`)
 		.addField(`Add A Member`, `[${prefix}add @User] > Adds the mentioned user to the current Support Ticket \`Example: ${prefix}add @Tyler. H\``)
 		.addField(`Remove A Member`, `[${prefix}add @User] > Adds the mentioned user to the current Support Ticket \`Example: ${prefix}remopve @Tyler. H\``)
-		.addField(`Command List Link`, `Link Coming Soon`) 
+		.addField(`Invite Me`, `[${prefix}invite] > Generates an invite link`) 
+                .addField(`Command List Link`, `Link Coming Soon`) 
     .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
