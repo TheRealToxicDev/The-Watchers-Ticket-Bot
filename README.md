@@ -23,15 +23,15 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 | [tw/help]  | Lists All Available Commands And Their Usage |
 | [tw/about] | Displays ツ Ticket Bot ツ's About Info (Creator/Developer, Website ect)  |
 
-> You can display all the commands in a category by just typing the first letters of the category, so displaying all the commands in the `administration` category can be done by just typing `!help ad`
 
 <a name="generalcommands"></a>
 ## General Commands
 
 | Command | Short Description |
 | ------- |:----------------- |
-| [tw/new] | Opens A New Ticket |
-| [tw/close] | Closes Currently Open Ticket |
+| [tw/new] | Opens up a new ticket and tags the `Support Team` |
+| [tw/close] | Closes a ticket that has been resolved or been opened by accident |
+
 > `{tip}` The close command `MUST` be used inside the ticket channel
 
 <a name="othercommands"></a>
@@ -67,6 +67,6 @@ and you're ready to Go!**
 <a name="usefullinks"></a>
 ## Useful Links & Info
 
-| Host Name | Host Method |
+| Info & About | Links & Redirects |
 | ------- |:----------------- |
 | Creator's Discord Tag | Tyler. H#9393 |
