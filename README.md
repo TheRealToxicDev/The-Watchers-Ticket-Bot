@@ -1,24 +1,6 @@
-### ツ Ticket Bot ツ
-Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stuff and more! 
+### ツ Ticket Bot ツ Command List & Info
 
-**Self Hosting (Auto Deploy)**
-
-You can host your inw version of this on Heroku, just click this **Deploy** button below **(CUSTOM NAME COMING SOON)** :
-
-
-<a href="https://heroku.com/deploy?template=https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
-
-
-1. Input your **Bot Token**, and Input your Bot **Prefixes**. Get your Bot's Token in your App Settings.
-2. After *Deployed*, Go to **Overview** Tabs >  **Configure Dynos** > Enable **worker** Dynos > Click **Confirm**
-and you Ready to Go!
-
-
-# Command List
-
-Below you'll find a list of all **{{ statistics.commands }}** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command, or use the help command for the given command in a Discord server.
+Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with a short description of what each command does.
 
 > {{REQUIRED}} ツ Ticket Bot ツ Requires a `Support Team` Role before it can `Open` and `Close` tickets `IF` No `Support Team` Role is found he will display a `Error/Warning` telling you to create one and assign it to `Users OR Staff` who you want to have access to the ticket.
 
@@ -30,6 +12,7 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 - [General Commands](#generalcommands)
 - [Other Commands](#othercommands)
 - [Host Your Own Ticket Bot](#hostyourown)
+- [Useful Links](#usefullinks)
 
 
 <a name="help"></a>
@@ -80,3 +63,10 @@ and you're ready to Go!**
 > {BOT TOKEN} https://discordapp.com/developers/applications/544049582959755264/information
 
 > {COMING SOON} Assign a custom bot name `For help and about commands` Currently these commands will show the bot name as `ツ Ticket Bot ツ` Regardless of your Apps name
+
+<a name="usefullinks"></a>
+## Useful Links & Info
+
+| Host Name | Host Method |
+| ------- |:----------------- |
+| Creator's Discord Tag | Tyler. H#9393 |
