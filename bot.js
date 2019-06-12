@@ -58,7 +58,7 @@ client.on("message", (message) => {
 	.addField(`My Support Server`, `[My Support Server](https://discord.gg/Hg8jyzQ)`)
 	.addField(`Invite Me To Your Server`, `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`)
 	.addField(`My Server Count`, `${client.guilds.size} Servers`)
-        .addField(`My Member Count`, `${client.members.size} Users`)
+        .addField(`My Current Uptime`, `${client.uptime}`)
    .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
    .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
@@ -194,6 +194,14 @@ function response(c) {
     client.on("message", (message) => {
       if(message.channel == c) {
         return message.content;
+      }
+     let totalSeconds = (client.uptime / 1000);
+     let days = Math.floor(totalSeconds / 86400);
+     let hours = Math.floor(totalSeconds / 3600);
+     totalSeconds %= 3600;
+     let minutes = Math.floor(totalSeconds / 60);
+     let seconds = totalSeconds % 60;
+     let uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
       }
     });
   }
