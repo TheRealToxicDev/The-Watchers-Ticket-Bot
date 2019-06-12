@@ -45,12 +45,11 @@ client.on("message", (message) => {
   }
   
   if (message.content.toLowerCase().startsWith(prefix + `about`)) {
-    botowner = message.mentions.members.ownerid
     const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ, About`)
     .setColor(0xCF40FA)
     .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support tickets`)
-        .addField(`My Creator/Developer`, '**' + botowner + '**')
+        .addField(`My Creator/Developer`, `Tyler. H#9393`)
         .addField(`My Creator/Developers Website`, `https://the-watchers.webnode.com`)
 	.addField(`My Support Server`, `https://discord.gg/Hg8jyzQ `)
 	.addField(`Invite Me To Your Server`, `https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot`)
