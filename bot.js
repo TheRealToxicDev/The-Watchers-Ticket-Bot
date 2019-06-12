@@ -107,7 +107,7 @@ client.on("message", (message) => {
     });
 }
 
- if (message.content.toLowerCase().startsWith(prefix + `new`)) {
+ if (message.content.toLowerCase().startsWith(prefix + `open`)) {
     const reason = message.content.split(" ").slice(1).join(" ");
      if (!message.guild.channels.exists("name", "★★★★★★tickets★★★★★★", "category")) return message.channel.send("There wasn't a tickets category so i created one! Please execute the command again to open your ticket") .then(message.guild.createChannel("★★★★★★tickets★★★★★★", "category"))
     if (!message.guild.roles.exists("name", "Support Team")) return message.channel.send(`This server doesn't have a \`Support Team\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets.`);
