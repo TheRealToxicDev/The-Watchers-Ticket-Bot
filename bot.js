@@ -21,9 +21,9 @@ client.on("ready", () => {
 client.on("guildCreate", (guild) => {
 client.user.setGame(`${prefix}help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
 const embed = new Discord.RichEmbed()
-    .setTitle(`${name}`)
+    .setTitle (process.env.BOT_NAME);
     .setColor(0xCF40FA)
-    .setDescription(`Hello! I'm! (`${name}`) Thanks for adding me to your guild!`)
+    .setDescription(`Hello! I'm! process.env.BOT_NAMEname} Thanks for adding me to your guild!`)
     .addField(`Commands`, `[${prefix}help]() > Shows my help message and command usage`)
     .addField(`Ping`, `[${prefix}ping]() > Pings the bot and checks latency and response time`)
 	 .addField(`Support Server`, `Join Our Discord: https://discord.gg/Hg8jyzQ`)
@@ -35,9 +35,9 @@ client.on("message", (message) => {
 
   if (message.content.toLowerCase().startsWith(prefix + `help`)) {
     const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: (`${name}`) Help`)
+    .setTitle(`:mailbox_with_mail: (process.env.BOT_NAME); Help`)
     .setColor(0xCF40FA)
-    .setDescription(`Hello! I'm (`${name}`), the Discord bot for super cool support ticket stuff and more! Here are my commands:`)
+    .setDescription(`Hello! I'm (process.env.BOT_NAME);, the Discord bot for super cool support ticket stuff and more! Here are my commands:`)
     .addField(`Tickets`, `[${prefix}new]() > Opens up a new ticket and tags the Support Team\n[${prefix}close]() > Closes a ticket that has been resolved or been opened by accident`)
     .addField(`Other`, `[${prefix}help]() > Shows you this help menu your reading\n[${prefix}ping]() > Pings the bot to see how long it takes to react\n[${prefix}about]() > Tells you all about ツ The Watchers ツ`)
     message.channel.send({ embed: embed });
@@ -45,9 +45,9 @@ client.on("message", (message) => {
   
   if (message.content.toLowerCase().startsWith(prefix + `about`)) {
     const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ About`)
+    .setTitle(`:mailbox_with_mail: (process.env.BOT_NAME); About`)
     .setColor(0xCF40FA)
-    .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support tickets`)
+    .setDescription(`Hello! I'm (process.env.BOT_NAME);, the Discord bot for super cool support tickets`)
     .addField(`Bot Owner/Developer`, `Tyler. H#9393`)
 	.addField(`Support Server`, `https://discord.gg/Hg8jyzQ `)
 	.addField(`Invite Me`, `https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot`)
