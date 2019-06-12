@@ -74,7 +74,7 @@ client.on("message", (message) => {
     if (message.guild.channels.exists("name", "ticket-" + message.author.username)) {
     const embed = new Discord.RichEmbed()
     .setColor(0xCF40FA)
-    .addField(`Ticket Bot`, `You already have a ticket open.`)
+    .addField(`Umm, One At A Time`, `You already have a ticket open.`)
     message.channel.send({ embed: embed });
     return
     }
@@ -118,7 +118,6 @@ client.on("message", (message) => {
   if (message.content.toLowerCase().startsWith(prefix + `add`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
     const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
     .addField(`Whoops That's Not Right`, `You can't use this command outside of a ticket channel.`)
     message.channel.send({ embed: embed });
@@ -127,7 +126,6 @@ client.on("message", (message) => {
     addedmember = message.mentions.members.first();
     message.channel.overwritePermissions(addedmember, { SEND_MESSAGES : true, VIEW_CHANNEL : true});
     const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
     .addField('**' + addedmember + `** has been added to the ticket. Remove with [${prefix}remove]().`)
     message.channel.send({ embed: embed });
@@ -137,7 +135,6 @@ client.on("message", (message) => {
   if (message.content.toLowerCase().startsWith(prefix + `remove`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
     const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
     .addField(`Whoops That's Not Right`, `You can't use this command outside of a ticket channel.`)
     message.channel.send({ embed: embed });
@@ -146,7 +143,6 @@ client.on("message", (message) => {
     removedmember = message.mentions.members.first();
     message.channel.overwritePermissions(removedmember, { SEND_MESSAGES : false, VIEW_CHANNEL : false});
     const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
     .addField('**' + removedmember + '** has been removed from the ticket.')
     message.channel.send({ embed: embed });
@@ -163,9 +159,8 @@ client.on("message", (message) => {
     }   
 
     const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
-    .addField('Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`-confirm\`. This will time out in 10 seconds and be cancelled.')
+    .addField(`Leaving So Soon?`, `Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`-confirm\`. This will time out in 10 seconds and be cancelled.`)
     message.channel.send({ embed: embed })
     .then((m) => {
       message.channel.awaitMessages(response => response.content === '-confirm', {
