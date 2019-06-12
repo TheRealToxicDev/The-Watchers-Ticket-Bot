@@ -29,7 +29,6 @@ const embed = new Discord.RichEmbed()
         .addField(`Ping`, `[${prefix}ping]() > Pings the bot and checks latency and response time`)
         .addField(`Support Server`, `[Join Our Discord](https://discord.gg/Hg8jyzQ)`)
     .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
-    .SetImage(`http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     guild.owner.user.send({ embed: embed });
 });
@@ -45,7 +44,6 @@ client.on("message", (message) => {
         .addField(`Tickets`, `${prefix}new > Opens up a new ticket and tags the Support Team\n${prefix}close > Closes a ticket that has been resolved or been opened by accident\n${prefix}add > Adds the mentioned user to a ticket.\n${prefix}remove > Removes the mentioned user from a ticket.`)
         .addField(`Other`, `${prefix}help > Shows you this help menu your reading\n${prefix}ping > Pings the bot to see how long it takes to react\n${prefix}about > Tells you all about ツ Ticket Bot ツ`)
     .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
-    .SetImage(`http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
   }
@@ -61,7 +59,6 @@ client.on("message", (message) => {
 	.addField(`Invite Me To Your Server`, `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`)
 	.addField(`My Server Count`, `${client.guilds.size} Servers`)
    .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
-   .SetImage(`http://i.imgur.com/bt9OsRs.jpg`)
    .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
   }
