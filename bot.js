@@ -120,12 +120,12 @@ client.on("message", (message) => {
         .setTimestamp();
         message.channel.send({ embed: embed });
 
-        const embed = new Discord.RichEmbed()
+        const embed2 = new Discord.RichEmbed()
 	.setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
         .setColor(0xCF40FA)
         .addField(`Hey ${message.author.username}!`, `Our **Support Team** will be with you shortly. Please explain your reason for opening the ticket in as much detail as possible.`)
         .setTimestamp();
-        c.send({ embed: embed });
+        c.send({ embed: embed2 });
     }).catch(console.error);
 }
    if (message.content.toLowerCase().startsWith(prefix + `add`)) {
