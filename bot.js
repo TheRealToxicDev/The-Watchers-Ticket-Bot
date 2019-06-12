@@ -123,7 +123,7 @@ client.on("message", (message) => {
     message.channel.overwritePermissions(addedmember, { SEND_MESSAGES : true, VIEW_CHANNEL : true});
     const embed = new Discord.RichEmbed()
     .setColor(0xCF40FA)
-    .addField('**' + addedmember + `** has been added to the ticket. Remove with [${prefix}remove]().`)
+    .addField('**' + addedmember + `** has been added to the ticket. Remove with [${prefix}remove]`)
     message.channel.send({ embed: embed });
 
   }
