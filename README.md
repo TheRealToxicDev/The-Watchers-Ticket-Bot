@@ -71,6 +71,6 @@ and you're ready to Go!**
 | Info & About | Links & Redirects |
 | ------- |:----------------- |
 | Creator's Personal Discord | [Tyler. H#9393](https://discord.gg/N86xbMR) |
-| Creators/Developers Website | [The Watchers Bot Devs](https://the-watchers.webnode.com) |
-| Join My Support Server | [ツThe Watchers|Bot Devsツ Discord](https://discord.gg/djpPhcU) |
-| Support The ツ Ticket Bot ツ Project | [Donate Now](http://www.paypal.me/day2daygam3r)
+| Creators/Developers Website | [ツThe Watchers Bot Devsツ Website](https://the-watchers.webnode.com) |
+| Join My Support Server | [ツThe Watchers Bot Devsツ Discord](https://discord.gg/djpPhcU) |
+| Support The `ツ Ticket Bot ツ` Project | [Donate Now](http://www.paypal.me/day2daygam3r)
