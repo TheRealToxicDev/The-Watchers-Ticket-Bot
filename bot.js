@@ -116,18 +116,18 @@ client.on("message", (message) => {
             READ_MESSAGES: true
         });
         const embed = new Discord.RichEmbed()
-		.setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
+	.setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
         .setColor(0xCF40FA)
         .addField(`Your ticket has been created in ` + c.toString())
         .setTimestamp();
         message.channel.send({ embed: embed });
 
-        const embed = new Discord.RichEmbed()
+        const embed1 = new Discord.RichEmbed()
 	.setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
         .setColor(0xCF40FA)
         .addField(`Hey ${message.author.username}!`, `Our **Support Team** will be with you shortly. Please explain your reason for opening the ticket in as much detail as possible.`)
         .setTimestamp();
-        c.send({ embed: embed });
+        c.send({ embed: embed1 });
     }).catch(console.error);
   }
 	
