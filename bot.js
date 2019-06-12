@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const PREFIX = process.env.PREFIX;
-const ownerid = process.env.BOT_OWNER;
 const client = new Discord.Client();
 
 function clean(text) {
