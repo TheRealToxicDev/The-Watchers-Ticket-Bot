@@ -193,7 +193,7 @@ client.on("message", (message) => {
     });
   }
 
-});
+};
 
 function response(c) {
   while (true) {
