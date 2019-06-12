@@ -77,8 +77,10 @@ client.on("message", (message) => {
     message.channel.send({ embed: embed });
     return
     }
-   if (!message.guild.channels.exists("name", "★★★★★★tickets★★★★★★", "category"))
-    const embed = new Discord.RichEmbed()
+  if (message.content.toLowerCase().startsWith(prefix + `new`)) {	  
+    const reason = message.content.split(" ").slice(1).join(" ");
+    if (!message.guild.channels.exists("name", "★★★★★★tickets★★★★★★", "category"))
+    const embed = new Discord.RichEmbed() 
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
     .addField(`There wasn't a tickets category so i created one! Please execute the command again to open your ticket`)
@@ -86,8 +88,10 @@ client.on("message", (message) => {
     then(message.guild.createChannel("★★★★★★tickets★★★★★★", "category"))
     return
     }
+  if (message.content.toLowerCase().startsWith(prefix + `new`)) {
+    const reason = message.content.split(" ").slice(1).join(" ");
     if (message.guild.channels.exists("name", "ticket-" + message.author.username)) {
-    const embed1 = new Discord.RichEmbed()
+    const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
     .addField(`You already have a ticket open.`)
@@ -118,7 +122,7 @@ client.on("message", (message) => {
         .setTimestamp();
         message.channel.send({ embed: embed });
 
-        const embed3 = new Discord.RichEmbed()
+        const embed = new Discord.RichEmbed()
 		.setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
         .setColor(0xCF40FA)
         .addField(`Hey ${message.author.username}!`, `Our **Support Team** will be with you shortly. Please explain your reason for opening the ticket in as much detail as possible.`)
@@ -126,7 +130,7 @@ client.on("message", (message) => {
         c.send({ embed: embed });
     }).catch(console.error);
 }
-    if (message.content.toLowerCase().startsWith(prefix + `add`)) {
+   if (message.content.toLowerCase().startsWith(prefix + `add`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
     const embed = new Discord.RichEmbed()
     .setColor(0xCF40FA)
