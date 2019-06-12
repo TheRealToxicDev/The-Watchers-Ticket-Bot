@@ -26,7 +26,7 @@ const embed = new Discord.RichEmbed()
     .setDescription(`Hello! I'm!ツ Ticket Bot ツ, Thanks for adding me to your guild!`)
     .addField(`Commands`, `[${prefix}help]() > Shows my help message and command usage`)
     .addField(`Ping`, `[${prefix}ping]() > Pings the bot and checks latency and response time`)
-	 .addField(`Support Server`, `Join Our Discord: https://discord.gg/Hg8jyzQ`)
+    .addField(`Support Server`, `Join Our Discord: https://discord.gg/Hg8jyzQ`)
     guild.owner.user.send({ embed: embed });
 });
 
@@ -78,8 +78,7 @@ client.on("message", (message) => {
     return
     }
   if (message.content.toLowerCase().startsWith(prefix + `new`)) {	  
-    const reason = message.content.split(" ").slice(1).join(" ");
-    if (!message.guild.channels.exists("name", "★★★★★★tickets★★★★★★", "category"))
+  if (!message.guild.channels.exists("name", "★★★★★★tickets★★★★★★", "category")) {
     const embed = new Discord.RichEmbed() 
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
@@ -89,8 +88,7 @@ client.on("message", (message) => {
     return
     }
   if (message.content.toLowerCase().startsWith(prefix + `new`)) {
-    const reason = message.content.split(" ").slice(1).join(" ");
-    if (message.guild.channels.exists("name", "ticket-" + message.author.username)) {
+  if (message.guild.channels.exists("name", "ticket-" + message.author.username)) {
     const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
@@ -101,8 +99,8 @@ client.on("message", (message) => {
     message.guild.createChannel(`ticket-${message.author.username}`, "text").then(c => {
         let role = message.guild.roles.find("name", "Support");
         let role2 = message.guild.roles.find("name", "@everyone");
-		let category = message.guild.channels.find(c => c.name == "★★★★★★tickets★★★★★★" && c.type == "category");
-		c.setParent(category);
+	let category = message.guild.channels.find(c => c.name == "★★★★★★tickets★★★★★★" && c.type == "category");
+	c.setParent(category);
         c.overwritePermissions(role, {
             SEND_MESSAGES: true,
             READ_MESSAGES: true
@@ -115,7 +113,7 @@ client.on("message", (message) => {
             SEND_MESSAGES: true,
             READ_MESSAGES: true
         });
-        const embed2 = new Discord.RichEmbed()
+        const embed = new Discord.RichEmbed()
 		.setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
         .setColor(0xCF40FA)
         .addField(`Your ticket has been created in ` + c.toString())
@@ -123,7 +121,7 @@ client.on("message", (message) => {
         message.channel.send({ embed: embed });
 
         const embed = new Discord.RichEmbed()
-		.setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
+	.setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
         .setColor(0xCF40FA)
         .addField(`Hey ${message.author.username}!`, `Our **Support Team** will be with you shortly. Please explain your reason for opening the ticket in as much detail as possible.`)
         .setTimestamp();
@@ -166,7 +164,7 @@ client.on("message", (message) => {
   if (message.content.toLowerCase().startsWith(prefix + `close`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
     const embed8 = new Discord.RichEmbed()
-    .setColor(embedColor)
+    .setColor(0xCF40FA)
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .addField(`You can't use the this command outside of a ticket channel.`)
     message.channel.send({ embed: embed });
@@ -174,7 +172,7 @@ client.on("message", (message) => {
     }   
 
     const embed9 = new Discord.RichEmbed()
-    .setColor(embedColor)
+    .setColor(0xCF40FA)
     .setTtitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .addField(`Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`-confirm\`. This will time out in 10 seconds and be cancelled.')
     message.channel.send({ embed: embed })
