@@ -40,9 +40,9 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 
 ## Table of Contents
 
-- [Help Command](#help)
-- [Administration](#administration)
-- [Fun](#fun)
+- [Help Commands](#help)
+- [General Commands](#administration)
+- [Other Commands](#fun)
 - [Interaction](#interaction)
 - [Music](#music)
 - [Search](#search)
@@ -53,8 +53,8 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
-| [!help](/docs/{{version}}/commands#HelpCommand)  | Lists all the command modules  |
-| [!help [category]](/docs/{{version}}/commands#HelpCommand)  | Lists all the commands in the given category  |
+| [tw/help](/docs/{{version}}/commands#HelpCommand)  | Lists All Available Commands  |
+| [!help [category]](/docs/{{version}}/commands#HelpCommand)  | Displays ツ Ticket Bot ツ's About Info (Developer ect)  |
 | [!help [command]](/docs/{{version}}/commands#HelpCommand)  | Displays information about the provided command  |
 
 > You can display all the commands in a category by just typing the first letters of the category, so displaying all the commands in the `administration` category can be done by just typing `!help ad`
