@@ -9,7 +9,7 @@ function clean(text) {
         return text;
 }
 
-var prefix = process.env.PREFIX;
+var prefix = process.env.PREFIX; // Replace with prefix of your choice if self hosting (Not Auto Deployed) Currrnt Prefix: (`tb/`)
 var token = process.env.BOT_TOKEN;
 var name = process.env.BOT_NAME;
 var ownerid = process.env.BOT_OWNER;
