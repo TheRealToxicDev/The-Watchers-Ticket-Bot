@@ -90,13 +90,12 @@ client.on("message", (message) => {
     message.channel.send({ embed: embed });
     return
     }
-	if (!message.guild.channels.exists("name", "★★★★★★tickets★★★★★★", "category"))
-	 const embed = new Discord.RichEmbed()
-	 .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
+   if (!message.guild.channels.exists("name", "★★★★★★tickets★★★★★★", "category"))
+    const embed = new Discord.RichEmbed()
+    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
     .addField(`There wasn't a tickets category so i created one! Please execute the command again to open your ticket`)
     message.channel.send({ embed: embed });
-	.then(message.guild.createChannel("★★★★★★tickets★★★★★★", "category"))
     return
     }
     if (message.guild.channels.exists("name", "ticket-" + message.author.username)) {
