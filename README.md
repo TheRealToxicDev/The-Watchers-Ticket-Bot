@@ -48,6 +48,7 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 | Host Name | Host Method |
 | ------- |:----------------- |
 | Heroku Application | Automatic Deploy Method |
+
 **SELF HOSTING OPTIONS ARE CURRENTLY UNAVAILABLE, PLEASE CHECK BACK AT A LATER DATE**
 > {TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Deploy` button below **COMING SOON**
 
