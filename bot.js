@@ -80,29 +80,16 @@ client.on("message", (message) => {
     });
 }
 
-   if (message.content.toLowerCase().startsWith(prefix + `new`)) {
+ if (message.content.toLowerCase().startsWith(prefix + `new`)) {
     const reason = message.content.split(" ").slice(1).join(" ");
-    if (!message.guild.roles.exists("name", "Support")) {
-    const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
-    .setColor(0xCF40FA)
-    .addField(`This server doesn't have a \`Support\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets.`)
-    message.channel.send({ embed: embed });
-    return
-    }
-   if (!message.guild.channels.exists("name", "★★★★★★tickets★★★★★★", "category"))
-    message.channel.send(`There wasn't a tickets category so i created one! Please execute the command again to open your ticket`)
-    return
-    }
-    if (message.guild.channels.exists("name", "ticket-" + message.author.username)) {
-    message.channel.send(`You already have a ticket open :shrug:`)
-    return
-    }    	
-    message.guild.createChannel(`ticket-${message.author.username}`, "text").then(c => {
-        let role = message.guild.roles.find("name", "Support");
+     if (!message.guild.channels.exists("name", "★★★★★★tickets★★★★★★", "category")) return message.channel.send("There wasn't a tickets category so i created one! Please execute the command again to open your ticket") .then(message.guild.createChannel("★★★★★★tickets★★★★★★", "category"))
+    if (!message.guild.roles.exists("name", "Support Team")) return message.channel.send(`This server doesn't have a \`Support Team\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets.`);
+    if (message.guild.channels.exists("name", "ticket-" + message.author.id)) return message.channel.send(`You already have a ticket open.`);
+    message.guild.createChannel(`ticket-${message.author.id}`, "text",).then(c => {
+        let role = message.guild.roles.find("name", "Support Team");
         let role2 = message.guild.roles.find("name", "@everyone");
         let category = message.guild.channels.find(c => c.name == "★★★★★★tickets★★★★★★" && c.type == "category");
-	c.setParent(category);
+        c.setParent(category);
         c.overwritePermissions(role, {
             SEND_MESSAGES: true,
             READ_MESSAGES: true
@@ -115,20 +102,14 @@ client.on("message", (message) => {
             SEND_MESSAGES: true,
             READ_MESSAGES: true
         });
+        message.channel.send(`:white_check_mark: Your ticket has been created, #${c.name}.`);
         const embed = new Discord.RichEmbed()
-	.setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
         .setColor(0xCF40FA)
-        .addField(`Your ticket has been created in ` + c.toString())
+        .addField(`Hey ${message.author.username}!`, `Please try explain why you opened this ticket with as much detail as possible. Our **Support Team** will be here soon to help.`)
         .setTimestamp();
-        message.channel.send({ embed: embed });
-
-        const embed1 = new Discord.RichEmbed()
-	.setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
-        .setColor(0xCF40FA)
-        .addField(`Hey ${message.author.username}!`, `Our **Support Team** will be with you shortly. Please explain your reason for opening the ticket in as much detail as possible.`)
-        .setTimestamp();
-        c.send({ embed: embed1 });
+        c.send({ embed: embed });
     }).catch(console.error);
+}
   }
 	
   if (message.content.toLowerCase().startsWith(prefix + `add`)) {
