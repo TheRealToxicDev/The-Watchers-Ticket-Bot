@@ -78,4 +78,5 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 **3. After Deployed, Go to `Overview Tab >  Configure Dynos > Enable worker Dynos`  Click ``Confirm``
 and you're ready to Go!**
 > {BOT TOKEN} https://discordapp.com/developers/applications/544049582959755264/information
-> {COMING SOON} Assign a custom bot name `For Commands` 
+
+> {COMING SOON} Assign a custom bot name `For help and about commands` Currently these commands will show the bot name as `ツ Ticket Bot ツ` Regardless of your Apps name
