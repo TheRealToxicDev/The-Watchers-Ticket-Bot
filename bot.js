@@ -49,11 +49,11 @@ client.on("message", (message) => {
     .setColor(0xCF40FA)
     .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support tickets`)
         .addField(`My Creator/Developer`, `@Tyler. H#9393`)
-        .addField(`ツ Ticket Bot ツ Creators Website`, `https://the-watchers.webnode.com`)
-	.addField(`ツ Ticket Bot ツ Support Server`, `https://discord.gg/Hg8jyzQ `)
-	.addField(`Invite ツ Ticket Bot ツ To Your Server`, `https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot`)
-	.addField(`Server Count`, `${client.guilds.size} Servers`)
-        .addField(`Server Count`, `${!member.user.bot Users`)
+        .addField(`My Creator/Developers Website`, `https://the-watchers.webnode.com`)
+	.addField(`My Support Server`, `https://discord.gg/Hg8jyzQ `)
+	.addField(`Invite Me To Your Server`, `https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot`)
+	.addField(`My Server Count`, `${client.guilds.size} Servers`)
+        .addField(`My User Count`, `${client.user.bot} Users`)
     message.channel.send({ embed: embed });
   }
   
