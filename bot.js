@@ -98,7 +98,7 @@ client.on("message", (message) => {
     const embed4 = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
-    .addField(`You can't use the this command outside of a ticket channel.`)
+    .addField(`sorry`, `You can't use this command outside of a ticket channel.`)
     message.channel.send({ embed: embed });
     return
     }
@@ -117,7 +117,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
-    .addField(`You can't use the this command outside of a ticket channel.`)
+    .addField(`sorry`, `You can't use this command outside of a ticket channel.`)
     message.channel.send({ embed: embed });
     return
     }
@@ -135,7 +135,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
-    .addField(`You can't use the this outside of a ticket channel.`)
+    .addField(`sorry`, `You can't use this command outside of a ticket channel.`)
     message.channel.send({ embed: embed });
     return
     }   
