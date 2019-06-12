@@ -49,7 +49,7 @@ client.on("message", (message) => {
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ, About`)
     .setColor(0xCF40FA)
     .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support tickets`)
-        .addField(`My Creator/Developer`, `${ownerid}`)
+        .addField(`My Creator/Developer`, `${@ownerid}`)
         .addField(`My Creator/Developers Website`, `https://the-watchers.webnode.com`)
 	.addField(`My Support Server`, `https://discord.gg/Hg8jyzQ `)
 	.addField(`Invite Me To Your Server`, `https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot`)
@@ -68,7 +68,7 @@ client.on("message", (message) => {
     if (!message.guild.roles.exists("name", "Support")) {
     const embed = new Discord.RichEmbed()
     .setColor(0xCF40FA)
-    .addField(`Uh-Oh Somethings Not Right`, `This server doesn't have a \`Support\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets.`)
+    .addField(`Uh-Oh Somethings Not Right`, `This server doesn't have a \`Support Team\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets.`)
     message.channel.send({ embed: embed });
     return
     }
@@ -87,7 +87,7 @@ client.on("message", (message) => {
     return
     }
     message.guild.createChannel(`ticket-${message.author.username}`, "text").then(c => {
-        let role = message.guild.roles.find("name", "Support");
+        let role = message.guild.roles.find("name", "Support Team");
         let role2 = message.guild.roles.find("name", "@everyone");
         let category = message.guild.channels.find(c => c.name == "★★★★★★tickets★★★★★★" && c.type == "category");
         c.overwritePermissions(role, {
