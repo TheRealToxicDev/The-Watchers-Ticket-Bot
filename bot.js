@@ -24,13 +24,11 @@ var ownerid = process.env.BOT_OWNER; // Replace with your Discord ID if self hos
 // YOU CAN CHANGE, DELETE OR EDIT THIS AS YOU WOULD LIKE BUT IT DOES GIVE THE BOT A NICE CLEAN LOOK 
 client.on("ready", () => {
   console.log("ツ The Watchers ツ | Logged in! Server count: ${client.guilds.size}");
-  client.user.setGame(`${prefix}help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
-  client.user.setGame(`Supporting ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
+  client.user.setGame(`${prefix}help`, `https://www.twitch.tv/monstercat`);
 });
 
 client.on("guildCreate", (guild) => {
- client.user.setGame(`${prefix}help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
- client.user.setGame(`Supporting ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
+ client.user.setGame(`${prefix}help`);
 const embed = new Discord.RichEmbed()
     .setTitle(`ツ Ticket Bot ツ`)
     .setColor(0xCF40FA)
@@ -53,9 +51,12 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setTitle(`ツ Ticket Bot ツ Help`)
     .setColor(0x00AE86)
-    .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stuff and more! Here are my commands:`)
-        .addField(`Tickets`, `${prefix}new > Opens up a new ticket and tags the Support Team\n${prefix}close > Closes a ticket that has been resolved or been opened by accident\n${prefix}add > Adds the mentioned user to a ticket.\n${prefix}remove > Removes the mentioned user from a ticket.`)
-        .addField(`Other`, `${prefix}help > Shows you this help menu your reading\n${prefix}ping > Pings the bot to see how long it takes to react\n${prefix}about > Tells you all about ツ Ticket Bot ツ`)
+    .setDescription(`Everything you need to know about me, Useful Links & Support can be found below`)
+        .addField(`My Creator/Developer`, `Tyler. H#9393`)
+        .addField(`My Creator/Developers Website`, `[The Watchers Bot Devs](https://the-watchers.webnode.com)`)
+	.addField(`My Support Server`, `[My Support Server](https://discord.gg/Hg8jyzQ)`)
+	.addField(`Invite Me To Your Server`, `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`)
+	.addField(`My Server Count`, `${client.guilds.size} Servers`)
     .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
@@ -64,7 +65,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setTitle(`ツ Ticket Bot ツ Commands`)
     .setColor(0x00AE86)
-    .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stuff and more! Here are my commands:`)
+    .setDescription(`Here is a list of all available commands`)
         .addField(`Help & Support`, `[${prefix}help] > Shows you my Help/Support message`)
 		.addField(`Commands List`, `[${prefix}commands] > Displays this command list`)
 		.addField(`Ping Check`, `[${prefix}ping] > Pings the bot to see how long it takes to react`)
@@ -82,13 +83,8 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setTitle(`About ツ Ticket Bot ツ`)
     .setColor(0x00AE86)
-    .setDescription(`Hello! I'm ツ Ticket Bot ツ. the Discord bot for super cool support tickets`)
-        .addField(`My Creator/Developer`, `Tyler. H#9393`)
-        .addField(`My Creator/Developers Website`, `[The Watchers Bot Devs](https://the-watchers.webnode.com)`)
-	.addField(`My Support Server`, `[My Support Server](https://discord.gg/Hg8jyzQ)`)
-	.addField(`Invite Me To Your Server`, `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`)
-	.addField(`My Server Count`, `${client.guilds.size} Servers`)
-        .addField(`My Current Uptime`, `${client.uptime}`)
+    .setDescription(`Hello! I'm ツ Ticket Bot ツ. the Discord bot for super cool support tickets, i was originally created as a custom suppoort ticket bot for ツThe Watchers | Bot Devsツ coded in the \`discord.js library\` If you are interested in inviting me to your server use the command \`*{prefix}help`\`)
+        .addField(`Command List`, `[${prefix}commands]`)
    .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
    .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
