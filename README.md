@@ -21,8 +21,8 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
-| [tw/help]  | Lists All Available Commands And Their Usage |
-| [tw/about] | Displays ツ Ticket Bot ツ's About Info (Creator/Developer, Website ect)  |
+| [tw/help]  | Shows my help message and command usage |
+| [tw/about] | Tells you all about `ツ Ticket Bot ツ`  |
 
 
 <a name="generalcommands"></a>
@@ -40,8 +40,7 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 
 | Command | Short Description |
 | ------- |:----------------- |
-| [{{{command.trigger}}}](/docs/{{version}}/commands#{{commandName}}) | {{{command.shortDescription}}} |
-{{/commands.fun.short}}
+|[tw/ping] | Pings the bot and checks latency and response time |
 
 <a name="hostyourown"></a>
 ## Host Your Own ツ Ticket Bot ツ
@@ -61,7 +60,7 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 
 **3. After Deployed, Go to `Overview Tab >  Configure Dynos > Enable worker Dynos`  Click ``Confirm``
 and you're ready to Go!**
-> {BOT TOKEN} https://discordapp.com/developers/applications/544049582959755264/information
+> {BOT TOKEN} https://discordapp.com/developers/applications
 
 > {COMING SOON} Assign a custom bot name `For help and about commands` Currently these commands will show the bot name as `ツ Ticket Bot ツ` Regardless of your Apps name
 
