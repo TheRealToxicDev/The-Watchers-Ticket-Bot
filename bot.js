@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const PREFIX = process.env.PREFIX;
-const token = process.env.BOT_TOKEN;
 const client = new Discord.Client();
 
 function clean(text) {
@@ -206,5 +205,5 @@ function response(c) {
   }
 };
 
-client.login(token)
+client.login(process.env.BOT_TOKEN);
 
