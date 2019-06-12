@@ -195,7 +195,7 @@ function response(c) {
       if(message.channel == c) {
         return message.content;
       }
-function client.uptime(seconds) {
+function uptime(seconds) {
          let totalSeconds = (client.uptime / 1000);
          let days = Math.floor(totalSeconds / 86400);
          let hours = Math.floor(totalSeconds / 3600);
