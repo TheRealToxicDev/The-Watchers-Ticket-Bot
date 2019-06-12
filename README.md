@@ -36,9 +36,9 @@ and you Ready to Go!
 
 Below you'll find a list of all **{{ statistics.commands }}** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command, or use the help command for the given command in a Discord server.
 
-> {Required} ツ Ticket Bot ツ Requires a **Support Team** role before it can **Open** and **Close** tickets **IF** No **Support Team** Role is found he will display a **Error/Warning** telling you to create one.
+> `{Required}` ツ Ticket Bot ツ Requires a `Support Team` Role before it can `Open` and `Close` tickets `IF` No `Support Team` Role is found he will display a `Error/Warning` telling you to create one and assign it to `Users OR Staff` who you want to have access to the ticket.
 
-> {Tip} ツ Ticket Bot ツ Will Set-Up a **Tickets** Category for you when a user opens a ticket.
+> `{Tip}` ツ Ticket Bot ツ Will Set-Up a `Tickets` Category for you when a member opens a ticket
 
 ## Table of Contents
 
@@ -53,8 +53,8 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
-| [tw/help]  | **Lists All Available Commands**  |
-| [tw/about] | **Displays ツ Ticket Bot ツ's About Info (Creator/Developer, Website ect)**  |
+| [tw/help]  | Lists All Available Commands And Their Usage |
+| [tw/about] | Displays ツ Ticket Bot ツ's About Info (Creator/Developer, Website ect)  |
 
 > You can display all the commands in a category by just typing the first letters of the category, so displaying all the commands in the `administration` category can be done by just typing `!help ad`
 
@@ -63,9 +63,9 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 
 | Command | Short Description |
 | ------- |:----------------- |
-| [tw/new] | {{{command.shortDescription}}} |
-| [tw/close] | Closes current ticket
-> {tip} The close command `MUST` be used inside the ticket channel
+| [tw/new] | Opens A New Ticket |
+| [tw/close] | Closes Currently Open Ticket |
+> `{tip}` The close command `MUST` be used inside the ticket channel
 
 <a name="othercommands"></a>
 ## Other Commands
