@@ -62,7 +62,7 @@ client.on("message", (message) => {
     .setColor(0xCF40FA)
     .addField(`Hold On!!!`)
     message.channel.send({ embed: embed }); 
-    then(m => {
+    .then(m => {
     m.edit(`:ping_pong: Wew, we made it over the ~waves~ ! **Pong!**\nMessage edit time is ` + (m.createdTimestamp - message.createdTimestamp) + `ms, Discord API heartbeat is ` + Math.round(client.ping) + `ms.`);
     });
 }
