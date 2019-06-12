@@ -9,10 +9,10 @@ function clean(text) {
         return text;
 }
 
-var prefix = process.env.PREFIX; // Replace with prefix of your choice if self hosting (Not Auto Deployed) Currrnt Prefix: (`tb/`)
-var token = process.env.BOT_TOKEN;
-var name = process.env.BOT_NAME;
-var ownerid = process.env.BOT_OWNER;
+var prefix = process.env.PREFIX; // Replace "process.env.PREFIX" with prefix of your choice if self hosting (Not Auto Deployed) Currrnt Prefix: (`tb/`) make sure you include the "(``)"
+var token = process.env.BOT_TOKEN; // Replace "process.env.BOT_TOKE" with your bot token if self hosting (Not Auto Deployed) Example: (`Nakdndyak13816akd.odb`) make sure you include the "(``)"
+var name = process.env.BOT_NAME; // NOT REQUIRED if self hosting (Not Auto Deployed)
+var ownerid = process.env.BOT_OWNER; // Replace with your Discord ID if self hosting (Not Auto Deployed) Example: (`12345678901573`) make sure you include the "(``)"
 
 client.on("ready", () => {
   console.log("ツ The Watchers ツ | Logged in! Server count: ${client.guilds.size}");
