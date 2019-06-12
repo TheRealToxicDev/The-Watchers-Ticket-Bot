@@ -45,7 +45,7 @@ client.on("message", (message) => {
   }
   
   if (message.content.toLowerCase().startsWith(prefix + `about`)) {
-    botowner = message.mentions.ownerid.first
+    botowner = message.mentions.members.ownerid
     const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ, About`)
     .setColor(0xCF40FA)
