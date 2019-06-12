@@ -172,9 +172,9 @@ client.on("message", (message) => {
     }   
 
     const embed9 = new Discord.RichEmbed()
-    .setColor(0xCF40FA)
     .setTtitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
-    .addField(`Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`-confirm\`. This will time out in 10 seconds and be cancelled.')
+    .setColor(0xCF40FA)
+    .addField(`Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`-confirm\`. This will time out in 10 seconds and be cancelled.`)
     message.channel.send({ embed: embed })
     .then((m) => {
       message.channel.awaitMessages(response => response.content === '-confirm', {
