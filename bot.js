@@ -57,11 +57,9 @@ client.on("message", (message) => {
   }
   
   if (message.content.toLowerCase().startsWith(prefix + `ping`)) {
-    const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ping Command`)
-    .setColor(0xCF40FA)
-    .addField(`:ping_pong: Wew, made it over the ~waves~ ! **Pong!**\nMessage edit time is ` + (m.createdTimestamp - message.createdTimestamp) + `ms, Discord API heartbeat is ` + Math.round(client.ping) + `ms.`);
-    message.channel.send({ embed: embed });
+    message.channel.send(`Hoold on!`).then(m => {
+    m.edit(`:ping_pong: Wew, made it over the ~waves~ ! **Pong!**\nMessage edit time is ` + (m.createdTimestamp - message.createdTimestamp) + `ms, Discord API heartbeat is ` + Math.round(client.ping) + `ms.`);
+    });
 }
 
    if (message.content.toLowerCase().startsWith(prefix + `new`)) {
@@ -94,11 +92,59 @@ client.on("message", (message) => {
         c.send({ embed: embed });
     }).catch(console.error);
 }
+	
+  if (message.content.toLowerCase().startsWith(prefix + `add`)) {
+    if (!message.channel.name.startsWith(`ticket-`)) {
+    const embed4 = new Discord.RichEmbed()
+    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
+    .setColor(0xCF40FA)
+    .addField(`ツ Ticket Bot ツ`, `You can't use the this outside of a ticket channel.`)
+    message.channel.send({ embed: embed });
+    return
+    }
+    addedmember = message.mentions.members.first();
+    message.channel.overwritePermissions(addedmember, { SEND_MESSAGES : true, VIEW_CHANNEL : true});
+    const embed = new Discord.RichEmbed()
+    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
+    .setColor(0xCF40FA)
+    .addField(`ツ Ticket Bot ツ`, '**' + addedmember + `** has been added to the ticket. Remove with [${prefix}remove]().`)
+    message.channel.send({ embed: embed });
 
-if (message.content.toLowerCase().startsWith(prefix + `close`)) {
-    if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(`You can't use the close command outside of a ticket channel.`);
+  }
 
-    message.channel.send(`Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`-confirm\`. This will time out in 10 seconds and be cancelled.`)
+  if (message.content.toLowerCase().startsWith(prefix + `remove`)) {
+    if (!message.channel.name.startsWith(`ticket-`)) {
+    const embed = new Discord.RichEmbed()
+    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
+    .setColor(0xCF40FA)
+    .addField(`ツ Ticket Bot ツ`, `You can't use the this outside of a ticket channel.`)
+    message.channel.send({ embed: embed });
+    return
+    }
+    removedmember = message.mentions.members.first();
+    message.channel.overwritePermissions(removedmember, { SEND_MESSAGES : false, VIEW_CHANNEL : false});
+    const embed = new Discord.RichEmbed()
+    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
+    .setColor(0xCF40FA)
+    .addField(`ツ Ticket Bot ツ`, '**' + removedmember + '** has been removed from the ticket.')
+    message.channel.send({ embed: embed });
+  }
+
+  if (message.content.toLowerCase().startsWith(prefix + `close`)) {
+    if (!message.channel.name.startsWith(`ticket-`)) {
+    const embed8 = new Discord.RichEmbed()
+    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
+    .setColor(0xCF40FA)
+    .addField(`ツ Ticket Bot ツ`, `You can't use the this outside of a ticket channel.`)
+    message.channel.send({ embed: embed });
+    return
+    }   
+
+    const embed = new Discord.RichEmbed()
+    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
+    .setColor(0xCF40FA)
+    .addField(`ツ Ticket Bot ツ`, 'Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`-confirm\`. This will time out in 10 seconds and be cancelled.')
+    message.channel.send({ embed: embed })
     .then((m) => {
       message.channel.awaitMessages(response => response.content === '-confirm', {
         max: 1,
@@ -114,7 +160,19 @@ if (message.content.toLowerCase().startsWith(prefix + `close`)) {
           }, 3000);
         });
     });
-}
+  }
+
+});
+
+function response(c) {
+  while (true) {
+    client.on("message", (message) => {
+      if(message.channel == c) {
+        return message.content;
+      }
+    });
+  }
+};
 	
 });
 
