@@ -72,5 +72,9 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 
 ## Hosting Steps
 **1. Click the `Deploy To Heroku` button above.**
+
 **2. Input your `Bot Token`, and Input your Bot `Prefix`. Get your Bot's Token in your App Settings.**
+
+**3. After Deployed, Go to `Overview Tab >  Configure Dynos > Enable worker Dynos`  Click ``Confirm``
+and you're ready to Go!**
 > {BOT TOKEN} https://discordapp.com/developers/applications/544049582959755264/information
