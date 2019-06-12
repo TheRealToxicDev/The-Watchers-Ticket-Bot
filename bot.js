@@ -98,7 +98,7 @@ client.on("message", (message) => {
     const embed4 = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
-    .addField(`ツ Ticket Bot ツ`, `You can't use the this outside of a ticket channel.`)
+    .addField(`You can't use the this command outside of a ticket channel.`)
     message.channel.send({ embed: embed });
     return
     }
@@ -107,7 +107,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
-    .addField(`ツ Ticket Bot ツ`, '**' + addedmember + `** has been added to the ticket. Remove with [${prefix}remove]().`)
+    .addField('**' + addedmember + `** has been added to the ticket. Remove with [${prefix}remove]().`)
     message.channel.send({ embed: embed });
 
   }
@@ -117,7 +117,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
-    .addField(`ツ Ticket Bot ツ`, `You can't use the this outside of a ticket channel.`)
+    .addField(`You can't use the this command outside of a ticket channel.`)
     message.channel.send({ embed: embed });
     return
     }
@@ -126,7 +126,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
-    .addField(`ツ Ticket Bot ツ`, '**' + removedmember + '** has been removed from the ticket.')
+    .addField('**' + removedmember + '** has been removed from the ticket.')
     message.channel.send({ embed: embed });
   }
 
@@ -135,7 +135,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
-    .addField(`ツ Ticket Bot ツ`, `You can't use the this outside of a ticket channel.`)
+    .addField(`You can't use the this outside of a ticket channel.`)
     message.channel.send({ embed: embed });
     return
     }   
@@ -143,7 +143,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
-    .addField(`ツ Ticket Bot ツ`, 'Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`-confirm\`. This will time out in 10 seconds and be cancelled.')
+    .addField('Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`-confirm\`. This will time out in 10 seconds and be cancelled.')
     message.channel.send({ embed: embed })
     .then((m) => {
       message.channel.awaitMessages(response => response.content === '-confirm', {
