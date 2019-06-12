@@ -1,12 +1,12 @@
 {
-  "name": "discord.js-example-bot",
+  "name": "ツ Ticket Bot ツ",
   "version": "1.0.0",
-  "description": "Example Bot by zarrttt_",
+  "description": "The Discord bot for super cool support ticket stuff and more!",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
   },
-  "author": "zarrttt_",
+  "author": "Tyler. H",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^11.5.1",
