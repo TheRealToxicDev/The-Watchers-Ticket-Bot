@@ -63,7 +63,6 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 
 | Command | Short Description |
 | ------- |:----------------- |
-{{#commands.administration.short}}
 | [{{{command.trigger}}}](/docs/{{version}}/commands#{{commandName}}) | {{{command.shortDescription}}} |
 {{/commands.administration.short}}
 
@@ -72,7 +71,6 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 
 | Command | Short Description |
 | ------- |:----------------- |
-{{#commands.fun.short}}
 | [{{{command.trigger}}}](/docs/{{version}}/commands#{{commandName}}) | {{{command.shortDescription}}} |
 {{/commands.fun.short}}
 
@@ -81,6 +79,7 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 
 | Command | Short Description |
 | ------- |:----------------- |
-{{#commands.interaction.short}}
-| [{{{command.trigger}}}](/docs/{{version}}/commands#{{commandName}}) | {{{command.shortDescription}}} |
+| [<a href="https://heroku.com/deploy?template=https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>] | Automatic Deploy |
 {{/commands.interaction.short}}
