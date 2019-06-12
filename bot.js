@@ -62,7 +62,6 @@ client.on("message", (message) => {
     .setColor(0xCF40FA)
     .addField(`:ping_pong: Wew, made it over the ~waves~ ! **Pong!**\nMessage edit time is ` + (m.createdTimestamp - message.createdTimestamp) + `ms, Discord API heartbeat is ` + Math.round(client.ping) + `ms.`);
     message.channel.send({ embed: embed });
-    });
 }
 
    if (message.content.toLowerCase().startsWith(prefix + `new`)) {
