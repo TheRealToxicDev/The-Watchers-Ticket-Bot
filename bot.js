@@ -27,7 +27,7 @@ const embed = new Discord.RichEmbed()
     .setDescription(`Hello! I'm!ツ Ticket Bot ツ, Thanks for adding me to your guild!`)
     .addField(`Commands`, `[${prefix}help]() > Shows my help message and command usage`)
     .addField(`Ping`, `[${prefix}ping]() > Pings the bot and checks latency and response time`)
-    .addField(`Support Server`, `Join Our Discord: https://discord.gg/Hg8jyzQ`)
+    .addField(`Support Server`, `[Join Our Discord](https://discord.gg/Hg8jyzQ)`)
     guild.owner.user.send({ embed: embed });
 });
 
@@ -51,8 +51,8 @@ client.on("message", (message) => {
     .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support tickets`)
         .addField(`My Creator/Developer`, `Tyler. H#9393`)
         .addField(`My Creator/Developers Website`, `https://the-watchers.webnode.com`)
-	.addField(`My Support Server`, `https://discord.gg/Hg8jyzQ `)
-	.addField(`Invite Me To Your Server`, `https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot`)
+	.addField(`My Support Server`, `(Server Invite Link](https://discord.gg/Hg8jyzQ)`)
+	.addField(`Invite Me To Your Server`, `[Invite Link](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`)
 	.addField(`My Server Count`, `${client.guilds.size} Servers`)
     message.channel.send({ embed: embed });
   }
