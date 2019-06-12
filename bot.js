@@ -173,8 +173,6 @@ function response(c) {
     });
   }
 };
-	
-});
 
 client.login(process.env.BOT_TOKEN);
 
