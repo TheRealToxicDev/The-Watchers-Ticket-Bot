@@ -54,7 +54,7 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 
 
 ## Hosting Steps
-**1. Click the `Deploy To Heroku` button above.** `COMING SOON`
+> {COMING SOON} **1. Click the `Deploy To Heroku` button above.**
 
 **2. Input your `Bot Token`, and Input your Bot `Prefix`. Get your Bot's Token in your App Settings.**
 
