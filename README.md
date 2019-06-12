@@ -36,9 +36,9 @@ and you Ready to Go!
 
 Below you'll find a list of all **{{ statistics.commands }}** commands that Ava has, along with a short description of what each command does. If you'd like to know more about the command, like what permissions or roles are required to run the command, different aliases or anything similar you can click on the command links and you'll be taken to a more descriptive version of the command, or use the help command for the given command in a Discord server.
 
-> {tip} ツ Ticket Bot ツ Requires a **Support Team** role before it can **Open** and **Close** tickets **IF** No **Support Team** Role is found he will display a **Error/Warning** telling you to create one.
+> {Required} ツ Ticket Bot ツ Requires a **Support Team** role before it can **Open** and **Close** tickets **IF** No **Support Team** Role is found he will display a **Error/Warning** telling you to create one.
 
-> {tip} ツ Ticket Bot ツ Will Set-Up a **Tickets** Category for you when a user opens a ticket.
+> {Tip} ツ Ticket Bot ツ Will Set-Up a **Tickets** Category for you when a user opens a ticket.
 
 ## Table of Contents
 
