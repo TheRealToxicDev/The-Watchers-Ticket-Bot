@@ -132,7 +132,7 @@ client.on("message", (message) => {
 
   if (message.content.toLowerCase().startsWith(prefix + `close`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
-    const embed8 = new Discord.RichEmbed()
+    const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0xCF40FA)
     .addField(`ツ Ticket Bot ツ`, `You can't use the this outside of a ticket channel.`)
