@@ -76,8 +76,7 @@ client.on("message", (message) => {
     .addField(`This server doesn't have a \`Support\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets.`)
     message.channel.send({ embed: embed });
     return
-    }
-  if (message.content.toLowerCase().startsWith(prefix + `new`)) {	  
+    }	  
   if (!message.guild.channels.exists("name", "★★★★★★tickets★★★★★★", "category")) {
     const embed = new Discord.RichEmbed() 
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
@@ -87,7 +86,6 @@ client.on("message", (message) => {
     then(message.guild.createChannel("★★★★★★tickets★★★★★★", "category"))
     return
     }
-  if (message.content.toLowerCase().startsWith(prefix + `new`)) {
   if (message.guild.channels.exists("name", "ticket-" + message.author.username)) {
     const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
