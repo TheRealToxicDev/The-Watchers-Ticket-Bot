@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const PREFIX = process.env.PREFIX;
+const token = process.env.BOT_TOKEN;
 const client = new Discord.Client();
 
 function clean(text) {
@@ -191,8 +192,18 @@ client.on("message", (message) => {
           }, 3000);
         });
     });
-}
-	
+  }
+
+});
+
+function response(c) {
+  while (true) {
+    client.on("message", (message) => {
+      if(message.channel == c) {
+        return message.content;
+      }
+    });
+  }
 };
 
 client.login(token)
