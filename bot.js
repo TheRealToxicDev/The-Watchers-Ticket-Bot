@@ -25,16 +25,19 @@ var ownerid = process.env.BOT_OWNER; // Replace with your Discord ID if self hos
 client.on("ready", () => {
   console.log("ツ The Watchers ツ | Logged in! Server count: ${client.guilds.size}");
   client.user.setGame(`${prefix}help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
+  client.user.setGame(`Supporting ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
 });
 
 client.on("guildCreate", (guild) => {
-client.user.setGame(`${prefix}help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
+ client.user.setGame(`${prefix}help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
+ client.user.setGame(`Supporting ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
 const embed = new Discord.RichEmbed()
     .setTitle(`ツ Ticket Bot ツ`)
     .setColor(0xCF40FA)
-    .setDescription(`Hello! I'm!ツ Ticket Bot ツ, Thanks for adding me to your guild!`)
-        .addField(`Commands`, `[${prefix}help]() > Shows my help message and command usage`)
-        .addField(`Ping`, `[${prefix}ping]() > Pings the bot and checks latency and response time`)
+    .setDescription(`Hello!, Thanks for adding me to your guild!`)
+	.addField(`About ツ Ticket Bot ツ`, `[${prefix}about] > Tells you everything you need to know about me`)
+        .addField(`Help & Support`, `[${prefix}help] > Shows you my Help/Support message`)
+        .addField(`Commands`, `[${prefix}commands] > Shows my commands list and usage`)
         .addField(`Support Server`, `[Join Our Discord](https://discord.gg/Hg8jyzQ)`)
     .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
@@ -49,7 +52,7 @@ client.on("message", (message) => {
   if (message.content.toLowerCase().startsWith(prefix + `help`)) {
     const embed = new Discord.RichEmbed()
     .setTitle(`ツ Ticket Bot ツ Help`)
-    .setColor(0xCF40FA)
+    .setColor(0x00AE86)
     .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stuff and more! Here are my commands:`)
         .addField(`Tickets`, `${prefix}new > Opens up a new ticket and tags the Support Team\n${prefix}close > Closes a ticket that has been resolved or been opened by accident\n${prefix}add > Adds the mentioned user to a ticket.\n${prefix}remove > Removes the mentioned user from a ticket.`)
         .addField(`Other`, `${prefix}help > Shows you this help menu your reading\n${prefix}ping > Pings the bot to see how long it takes to react\n${prefix}about > Tells you all about ツ Ticket Bot ツ`)
@@ -62,14 +65,14 @@ client.on("message", (message) => {
     .setTitle(`ツ Ticket Bot ツ Commands`)
     .setColor(0x00AE86)
     .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stuff and more! Here are my commands:`)
-        .addField(`Help & Support`, `\`${prefix}help\` > Shows you my Help/Support message`)
-		.addField(`Commands List`, `\`${prefix}commands\` > Displays this command list`)
-		.addField(`Ping Check`, `\`${prefix}ping\` > Pings the bot to see how long it takes to react`)
-		.addField(`About ツ Ticket Bot ツ`, `\`${prefix}about\` > Tells you everything you need to know about me`)
-		.addField(`Open A Ticket`, `\`${prefix}open\` > Opens a new Support Ticket and tags the Support Team`)
-	    .addField(`Close A Ticket`, `\`${prefix}close\` > Closes the current Support Ticket`)
-		.addField(`Add A Member`, `\`${prefix}add @User\` > Adds the mentioned user to the current Support Ticket \`Example: ${prefix}add @Tyler. H\``)
-		.addField(`Remove A Member`, `\`${prefix}add @User\` > Adds the mentioned user to the current Support Ticket \`Example: ${prefix}remopve @Tyler. H\``)
+        .addField(`Help & Support`, `[${prefix}help] > Shows you my Help/Support message`)
+		.addField(`Commands List`, `[${prefix}commands] > Displays this command list`)
+		.addField(`Ping Check`, `[${prefix}ping] > Pings the bot to see how long it takes to react`)
+		.addField(`About ツ Ticket Bot ツ`, `[${prefix}about] > Tells you everything you need to know about me`)
+		.addField(`Open A Ticket`, `[${prefix}open] > Opens a new Support Ticket and tags the Support Team`)
+	    .addField(`Close A Ticket`, `[${prefix}close] > Closes the current Support Ticket`)
+		.addField(`Add A Member`, `[${prefix}add @User] > Adds the mentioned user to the current Support Ticket \`Example: ${prefix}add @Tyler. H\``)
+		.addField(`Remove A Member`, `[${prefix}add @User] > Adds the mentioned user to the current Support Ticket \`Example: ${prefix}remopve @Tyler. H\``)
 		.addField(`Command List Link`, `Link Coming Soon`) 
     .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
@@ -78,7 +81,7 @@ client.on("message", (message) => {
   if (message.content.toLowerCase().startsWith(prefix + `about`)) {
     const embed = new Discord.RichEmbed()
     .setTitle(`About ツ Ticket Bot ツ`)
-    .setColor(0xCF40FA)
+    .setColor(0x00AE86)
     .setDescription(`Hello! I'm ツ Ticket Bot ツ. the Discord bot for super cool support tickets`)
         .addField(`My Creator/Developer`, `Tyler. H#9393`)
         .addField(`My Creator/Developers Website`, `[The Watchers Bot Devs](https://the-watchers.webnode.com)`)
@@ -121,7 +124,7 @@ client.on("message", (message) => {
         });
         message.channel.send(`:white_check_mark: Your ticket has been created, #${c.name}.`);
         const embed = new Discord.RichEmbed()
-        .setColor(0xCF40FA)
+        .setColor(0x00AE86)
         .addField(`Hey ${message.author.username}!`, `Please try explain why you opened this ticket with as much detail as possible. Our **Support Team** will be here soon to help.`)
         .setTimestamp();
         c.send({ embed: embed });
@@ -131,7 +134,7 @@ client.on("message", (message) => {
   if (message.content.toLowerCase().startsWith(prefix + `add`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
     const embed = new Discord.RichEmbed()
-    .setColor(0xCF40FA)
+    .setColor(0x00AE86)
     .addField(`Whoops That's Not Right`, `You can't use this command outside of a ticket channel.`)
     message.channel.send({ embed: embed });
     return
@@ -139,7 +142,7 @@ client.on("message", (message) => {
     addedmember = message.mentions.members.first();
     message.channel.overwritePermissions(addedmember, { SEND_MESSAGES : true, VIEW_CHANNEL : true});
     const embed = new Discord.RichEmbed()
-    .setColor(0xCF40FA)
+    .setColor(0x00AE86)
     .addField('**' + addedmember + `** has been added to the ticket. Remove with [${prefix}remove]`)
     message.channel.send({ embed: embed });
 
@@ -148,7 +151,7 @@ client.on("message", (message) => {
   if (message.content.toLowerCase().startsWith(prefix + `remove`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
     const embed = new Discord.RichEmbed()
-    .setColor(0xCF40FA)
+    .setColor(0x00AE86)
     .addField(`Whoops That's Not Right`, `You can't use this command outside of a ticket channel.`)
     message.channel.send({ embed: embed });
     return
@@ -156,7 +159,7 @@ client.on("message", (message) => {
     removedmember = message.mentions.members.first();
     message.channel.overwritePermissions(removedmember, { SEND_MESSAGES : false, VIEW_CHANNEL : false});
     const embed = new Discord.RichEmbed()
-    .setColor(0xCF40FA)
+    .setColor(0x00AE86)
     .addField('**' + removedmember + '** has been removed from the ticket.')
     message.channel.send({ embed: embed });
   }
@@ -165,14 +168,14 @@ client.on("message", (message) => {
     if (!message.channel.name.startsWith(`ticket-`)) {
     const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
-    .setColor(0xCF40FA)
+    .setColor(0x00AE86)
     .addField(`Whoops That's Not Right`, `You can't use this command outside of a ticket channel.`)
     message.channel.send({ embed: embed });
     return
     }   
 
     const embed = new Discord.RichEmbed()
-    .setColor(0xCF40FA)
+    .setColor(0x00AE86)
     .addField(`Leaving So Soon?`, `Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`-confirm\`. This will time out in 10 seconds and be cancelled.`)
     message.channel.send({ embed: embed })
     .then((m) => {
