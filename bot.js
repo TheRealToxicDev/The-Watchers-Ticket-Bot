@@ -57,11 +57,8 @@ client.on("message", (message) => {
   }
   
   if (message.content.toLowerCase().startsWith(prefix + `ping`)) {
-    const embed = new Discord.RichEmbed()
-    .setColor(0xCF40FA)
-    .addField(`:ping_pong:`, `Hold On!!`)
-    message.channel.send({embed: embed}).then(m => {
-    m.edit({embed: embed}).then(newMsg => console.log(`:ping_pong: Wew, made it over the ~waves~ ! **Pong!**\nMessage edit time is ` + (m.createdTimestamp - message.createdTimestamp) + `ms, Discord API heartbeat is ` + Math.round(client.ping) + `ms.`);
+    message.channel.send(`Hold On!!`).then(m => {
+    m.edit(`:ping_pong: Wew, made it over the ~waves~ ! **Pong!**\nMessage edit time is ` + (m.createdTimestamp - message.createdTimestamp) + `ms, Discord API heartbeat is ` + Math.round(client.ping) + `ms.`)
     });
 }
 
