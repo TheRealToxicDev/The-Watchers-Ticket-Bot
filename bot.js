@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const PREFIX = process.env.PREFIX;
+const ownerid = process.env.BOT_OWNER;
 const client = new Discord.Client();
 
 function clean(text) {
@@ -12,6 +13,7 @@ function clean(text) {
 var prefix = process.env.PREFIX;
 var token = process.env.BOT_TOKEN;
 var name = process.env.BOT_NAME;
+var ownerid = process.env.BOT_OWNER;
 
 client.on("ready", () => {
   console.log("ツ The Watchers ツ | Logged in! Server count: ${client.guilds.size}");
@@ -48,7 +50,7 @@ client.on("message", (message) => {
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ, About`)
     .setColor(0xCF40FA)
     .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support tickets`)
-        .addField(`My Creator/Developer`, `${bot.owner}`)
+        .addField(`My Creator/Developer`, `${ownerid}`)
         .addField(`My Creator/Developers Website`, `https://the-watchers.webnode.com`)
 	.addField(`My Support Server`, `https://discord.gg/Hg8jyzQ `)
 	.addField(`Invite Me To Your Server`, `https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot`)
