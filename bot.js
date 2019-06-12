@@ -36,23 +36,23 @@ client.on("message", (message) => {
 
   if (message.content.toLowerCase().startsWith(prefix + `help`)) {
     const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Help`)
+    .setTitle(`ツ Ticket Bot ツ Help`)
     .setColor(0xCF40FA)
     .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stuff and more! Here are my commands:`)
-    .addField(`Tickets`, `[${prefix}new]() > Opens up a new ticket and tags the Support Team\n[${prefix}close]() > Closes a ticket that has been resolved or been opened by accident`)
-    .addField(`Other`, `[${prefix}help]() > Shows you this help menu your reading\n[${prefix}ping]() > Pings the bot to see how long it takes to react\n[${prefix}about]() > Tells you all about ツ The Watchers ツ`)
+    .addField(`Tickets`, `${prefix}new() > Opens up a new ticket and tags the Support Team\n ${prefix}close() > Closes a ticket that has been resolved or been opened by accident\n ${prefix}add() > Adds the mentioned user to a ticket.\n ${prefix}remove() > Removes the mentioned user from a ticket.`)
+    .addField(`Other`, `${prefix}help() > Shows you this help menu your reading\n ${prefix}ping() > Pings the bot to see how long it takes to react\n ${prefix}about() > Tells you all about ツ Ticket Bot ツ`)
     message.channel.send({ embed: embed });
   }
   
   if (message.content.toLowerCase().startsWith(prefix + `about`)) {
     const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ, About`)
+    .setTitle(`About ツ Ticket Bot ツ`)
     .setColor(0xCF40FA)
-    .setDescription(`Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support tickets`)
+    .setDescription(`Hello! I'm ツ Ticket Bot ツ. the Discord bot for super cool support tickets`)
         .addField(`My Creator/Developer`, `Tyler. H#9393`)
-        .addField(`My Creator/Developers Website`, `https://the-watchers.webnode.com`)
-	.addField(`My Support Server`, `(Server Invite Link](https://discord.gg/Hg8jyzQ)`)
-	.addField(`Invite Me To Your Server`, `[Invite Link](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`)
+        .addField(`My Creator/Developers Website`, `[The Watchers Bot Devs](https://the-watchers.webnode.com)`)
+	.addField(`My Support Server`, `[My Support Server](https://discord.gg/Hg8jyzQ)`)
+	.addField(`Invite Me To Your Server`, `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`)
 	.addField(`My Server Count`, `${client.guilds.size} Servers`)
     message.channel.send({ embed: embed });
   }
