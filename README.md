@@ -64,8 +64,8 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 
 | Host Name | Host Method |
 | ------- |:----------------- |
-| Heroku Apps | Automatic Deploy |
->{TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Deploy` button below
+| Heroku Application | Automatic Deploy Method |
+> {TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Deploy` button below
 <a href="https://heroku.com/deploy?template=https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
@@ -78,3 +78,4 @@ Below you'll find a list of all **{{ statistics.commands }}** commands that Ava 
 **3. After Deployed, Go to `Overview Tab >  Configure Dynos > Enable worker Dynos`  Click ``Confirm``
 and you're ready to Go!**
 > {BOT TOKEN} https://discordapp.com/developers/applications/544049582959755264/information
+> {COMING SOON} Assign a custom bot name `For Commands` 
