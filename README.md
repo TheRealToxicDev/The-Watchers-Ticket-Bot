@@ -62,8 +62,6 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 and you're ready to Go!**
 > {BOT TOKEN} https://discordapp.com/developers/applications
 
-> {COMING SOON} Assign a custom bot name `For help and about commands` Currently these commands will show the bot name as `ツ Ticket Bot ツ` Regardless of your Apps name
-
 <a name="usefullinks"></a>
 ## Useful Links & Info
 
