@@ -31,7 +31,7 @@ client.on("guildCreate", (guild) => {
  client.user.setGame(`${prefix}help`);
 const embed = new Discord.RichEmbed()
     .setTitle(`ツ Ticket Bot ツ`)
-    .setColor(0xCF40FA)
+    .setColor(268bd2)
     .setDescription(`Hello!, Thanks for adding me to your guild!`)
 	.addField(`About ツ Ticket Bot ツ`, `[${prefix}about] > Tells you everything you need to know about me`)
         .addField(`Help & Support`, `[${prefix}help] > Shows you my Help/Support message`)
