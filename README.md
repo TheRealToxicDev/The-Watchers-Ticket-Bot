@@ -48,10 +48,10 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 
 | Host Name | Host Method |
 | ------- |:----------------- |
-| Heroku Application | Automatic Deploy Method |
+| Heroku Application | Automatic Deploy |
 **THE AUTO DEPLOY OPTION IS COMING SOON, PLEASE CHECK BACK LATER.**
 
-> {TIP} For information on how to self host please contact us on our [support server](https://discord.gg/djpPhcU)`
+> {TIP} For information on how to self host please contact us on our [support server](https://discord.gg/djpPhcU)
 
 > {TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Automatic Deploy`
 
@@ -63,8 +63,7 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 **3. After Deployed, Go to `Overview Tab >  Configure Dynos > Enable worker Dynos`  Click ``Confirm``
 and you're ready to Go!**
 
-**4 `THIS IS A HIGHLIGH`
-> {BOT TOKEN} https://discordapp.com/developers/applications
+> {Get Your Bot Token Here} [Discord Developer Portal](https://discordapp.com/developers/applications)
 
 <a name="usefullinks"></a>
 ## Useful Links & Info
