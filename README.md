@@ -50,9 +50,7 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 | ------- |:----------------- |
 | Heroku Application | Automatic Deploy Method |
 > {TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Automatic Deploy` button
-| [<a href="https://heroku.com/deploy?template=https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot">
-| [{{{command.trigger}}}](/docs/{{version}}/commands#{{commandName}}) | {{{command.shortDescription}}} |	  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>] | Automatic Deploy |
+[<a href="https://heroku.com/deploy?template=https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot"></a>]
 
 ## Hosting Steps
 > {COMING SOON} **1. Click the `Deploy To Heroku` button above.**
