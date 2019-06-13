@@ -1,4 +1,5 @@
-### ツ Ticket Bot ツ Command List & Info
+### ツ Ticket Bot ツ 
+### Command List & Info
 **Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stuff and more!** 
 
 Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with a short description of what each command does.
