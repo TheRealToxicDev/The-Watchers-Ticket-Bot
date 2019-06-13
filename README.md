@@ -49,8 +49,10 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 | Host Name | Host Method |
 | ------- |:----------------- |
 | Heroku Application | Automatic Deploy Method |
-> {TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Automatic Deploy` button 
-<a href="https://heroku.com/deploy?template=https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot"></a>
+**THE AUTO DEPLOY OPTION IS COMING SOON, PLEASE CHECK BACK LATER.**
+
+> {TIP} For information on how to self host please contact us on our [support server](https://discord.gg/djpPhcU) `
+> {TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Automatic Deploy`
 
 ## Hosting Steps
 > {COMING SOON} **1. Click the `Deploy To Heroku` button above.**
