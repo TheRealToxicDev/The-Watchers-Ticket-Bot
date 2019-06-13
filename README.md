@@ -62,6 +62,8 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 
 **3. After Deployed, Go to `Overview Tab >  Configure Dynos > Enable worker Dynos`  Click ``Confirm``
 and you're ready to Go!**
+
+**4 `THIS IS A HIGHLIGH`
 > {BOT TOKEN} https://discordapp.com/developers/applications
 
 <a name="usefullinks"></a>
