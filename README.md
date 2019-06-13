@@ -56,7 +56,8 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 > {TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Automatic Deploy`
 
 ## Hosting Steps
-> {COMING SOON} **1. Click the `Deploy To Heroku` button above.**
+**1. Click the `Deploy To Heroku` button above.** **{Coming Soon}**
+> In the meantime for information on how to self host the bot you can join our [support server](https://discord.gg/djpPhcU) and we will be happy to assist you
 
 **2. Input your `Bot Token`, and Input your Bot `Prefix`. Get your Bot's Token in your App Settings.**
 
