@@ -155,7 +155,7 @@ if (message.content.toLowerCase().startsWith(prefix + `add`)) {
     message.channel.send({ embed: embed });
 
   }
-if (message.content.toLowerCase().startsWith(prefix + `help` + `add`)) {
+if (message.content.toLowerCase().startsWith(prefix + `h add`)) {
     const embed = new Discord.RichEmbed()
      .setTitle(`How To Add A Member To A Ticket`)
     .setDescription(`To use this correctly please make sure you \`@\` the user you want to add  \`YOU DO NOT\` have to mention/tag them but you do need to add their discord \`#\` tag`)
