@@ -139,7 +139,10 @@ client.on("message", (message) => {
 }
 	
   if (message.content.toLowerCase().startsWith(prefix + `add`)) {
+    if (message.channel.name.startsWith(`ticket-`)) {
+    
     addedmember = message.mentions.members.first();
+	  
     message.channel.overwritePermissions(addedmember, { SEND_MESSAGES : true, VIEW_CHANNEL : true});
     const embed = new Discord.RichEmbed()
     .setColor(0x00AE86)
