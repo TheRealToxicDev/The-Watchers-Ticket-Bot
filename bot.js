@@ -139,13 +139,6 @@ client.on("message", (message) => {
 }
 	
   if (message.content.toLowerCase().startsWith(prefix + `add`)) {
-    if (!message.channel.name.startsWith(`ticket-`)) {
-    const embed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
-    .addField(`Whoops That's Not Right`, `You can't use this command outside of a ticket channel.`)
-    message.channel.send({ embed: embed });
-    return
-    }
     addedmember = message.mentions.members.first();
     message.channel.overwritePermissions(addedmember, { SEND_MESSAGES : true, VIEW_CHANNEL : true});
     const embed = new Discord.RichEmbed()
