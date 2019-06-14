@@ -152,9 +152,6 @@ client.on("message", (message) => {
     .setColor(0x00AE86)
     .addField('**' + addedmember + `** has been added to the ticket. Remove with [${prefix}remove]`)
     message.channel.send({ embed: embed });
-
-  }
-
   }
 
   if (message.content.toLowerCase().startsWith(prefix + `remove`)) {
