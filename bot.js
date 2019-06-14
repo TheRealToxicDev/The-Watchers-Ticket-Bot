@@ -142,7 +142,7 @@ if (message.content.toLowerCase().startsWith(prefix + `add`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
     const embed = new Discord.RichEmbed()
     .setColor(0x00AE86)
-    .addField(`Whoops That's Not Right`, `You can't use this command outside of a ticket channel.`)
+    .addField(`:shrug: Whoops That's Not Right :shrug:`, `You can't use this command outside of a ticket channel.`)
     message.channel.send({ embed: embed });
     return
     }
