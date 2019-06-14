@@ -158,7 +158,7 @@ if (message.content.toLowerCase().startsWith(prefix + `add`)) {
 if (message.content.toLowerCase().startsWith(prefix + `help` + `add`)) {
     const embed = new Discord.RichEmbed()
      .setTitle(`How To Add A Member To A Ticket`)
-    .setDescription(`To use this correctly please make sure you @ the user you wan to add  \`YOU DO NOT\` have to mention/tag them but you do need to add their discord \`#\` tag 
+    .setDescription(`To use this correctly please make sure you \`@\` the user you want to add  \`YOU DO NOT\` have to mention/tag them but you do need to add their discord \`#\` tag`)
     .setColor(0x00AE86)
     .addField(`Command Usage`, `\`${prefix}add @User#1234\``)
     .addField(`Example`, `\`${prefix}add @Tyler. H#9393\``)
