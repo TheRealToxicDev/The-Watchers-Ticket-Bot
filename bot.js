@@ -52,7 +52,7 @@ client.on("message", (message) => {
     .setTitle(`ツ Ticket Bot ツ Help`)
     .setColor(0x00AE86)
     .setDescription(`Everything you need to know about me, Useful Links & Support can be found below`)
-        .addField(`Commands List`, `${prefix}commands
+        .addField(`Commands List`, `${prefix}commands`)
         .addField(`My Creator/Developer`, `Tyler. H#9393`)
         .addField(`My Creator/Developers Website`, `[The Watchers Bot Devs](https://the-watchers.webnode.com)`)
 	.addField(`My Support Server`, `[My Support Server](https://discord.gg/Hg8jyzQ)`)
