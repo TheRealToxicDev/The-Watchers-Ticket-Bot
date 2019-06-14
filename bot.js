@@ -155,7 +155,7 @@ if (message.content.toLowerCase().startsWith(prefix + `add`)) {
     message.channel.send({ embed: embed });
 
   }
-if (message.content.toLowerCase().startsWith(prefix + `h add`)) {
+if (message.content.toLowerCase().startsWith(prefix + `h` + `add`)) {
     const embed = new Discord.RichEmbed()
      .setTitle(`How To Add A Member To A Ticket`)
     .setColor(0x00AE86)
@@ -174,7 +174,7 @@ if (message.content.toLowerCase().startsWith(prefix + `h add`)) {
     message.channel.send({ embed: embed });
     return
     }
- if (message.content.toLowerCase().startsWith(prefix + `h remove`)) {
+ if (message.content.toLowerCase().startsWith(prefix + `help` + `remove`)) {
     const embed = new Discord.RichEmbed()
      .setTitle(`How To Remove A Member From A Ticket`)
     .setColor(0x00AE86)
