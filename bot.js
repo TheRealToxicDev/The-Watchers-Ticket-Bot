@@ -71,7 +71,7 @@ client.on("message", (message) => {
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
   }
-   if(message.content.toLowerCase().startsWith(preefix + "kick") {
+   if(message.content.toLowerCase().startsWith(prefix + "kick")) {
     if(!message.member.roles.some(r=>["Administrator", "Moderator"].includes(r.name)) )
       return message.reply("Sorry, you don't have permissions to use this!");
     
