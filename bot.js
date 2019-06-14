@@ -83,8 +83,8 @@ client.on("message", (message) => {
 		.addField(`About ツ Ticket Bot ツ`, `[${prefix}about] > Tells you everything you need to know about me`)
 		.addField(`Open A Ticket`, `[${prefix}open] > Opens a new Support Ticket and tags the Support Team`)
 	    .addField(`Close A Ticket`, `[${prefix}close] > Closes the current Support Ticket`)
-		.addField(`Add A Member`, `[${prefix}add @User#1234] > Adds the mentioned user to the current Support Ticket \`Example: ${prefix}add @Tyler. H#9393``)
-		.addField(`Remove A Member`, `[${prefix}remove @User#1234] > Adds the mentioned user to the current Support Ticket \`Example: ${prefix}remove @Tyler. H#9393``)
+		.addField(`Add A Member`, `[${prefix}add @User#1234] > Adds the mentioned user to the current Support Ticket \`Example: ${prefix}add @Tyler. H#9393\``)
+		.addField(`Remove A Member`, `[${prefix}remove @User#1234] > Adds the mentioned user to the current Support Ticket \`Example: ${prefix}remove @Tyler. H#9393\``)
 		.addField(`Invite Me`, `[${prefix}invite] > Generates an invite link`) 
                 .addField(`Command List Link`, `Link Coming Soon`) 
     .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
@@ -155,6 +155,16 @@ if (message.content.toLowerCase().startsWith(prefix + `add`)) {
     message.channel.send({ embed: embed });
 
   }
+if (message.content.toLowerCase().startsWith(prefix + `help` + `add`)) {
+    const embed = new Discord.RichEmbed()
+     .setTitle(`How To Add A Member To A Ticket`)
+    .setDescription(`To use this correctly please make sure you @ the user you wan to add  \`YOU DO NOT\` have to mention/tag them but you do need to add their discord \`#\` tag 
+    .setColor(0x00AE86)
+    .addField(`Command Usage`, `\`${prefix}add @User#1234\``)
+    .addField(`Example`, `\`${prefix}add @Tyler. H#9393\``)
+    .addField(`Command Usage`, `You can't use this command outside of a ticket channel.`)
+    message.channel.send({ embed: embed });
+    }
 
   if (message.content.toLowerCase().startsWith(prefix + `remove`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
