@@ -160,8 +160,8 @@ if (message.content.toLowerCase().startsWith(prefix + `ticket help`)) {
      .setTitle(`How To Add A Member To A Ticket`)
     .setColor(0x00AE86)
     .addField(`Please Note`, `These commands have to be used inside a ticket channel`)
-    .addField(`Add A Member`, `\`${prefix}add @User#1234\`n\Example`, `\`${prefix}add @Tyler. H#9393\``)
-    .addField(`Remve A Member`, `\`${prefix}remove @User#9393\`n\Example`, `\`${prefix}remove @Tyler. H#9393\``)
+    .addField(`Add A Member`, `\`${prefix}add @User#1234\`\nExample`, `\`${prefix}add @Tyler. H#9393\``)
+    .addField(`Remve A Member`, `\`${prefix}remove @User#9393\`\nExample`, `\`${prefix}remove @Tyler. H#9393\``)
     .setDescription(`To use this correctly please make sure you \`@\` the user you want to add  \`YOU DO NOT\` have to mention/tag them but you do need to add their discord \`#\` tag`)
     message.channel.send({ embed: embed });
     }
