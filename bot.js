@@ -74,10 +74,10 @@ client.on("message", (message) => {
   }
    if (message.content.toLowerCase().startsWith(prefix + `commands`)) {
     const embed = new Discord.RichEmbed()
-    .setTitle(`:page_with_curl: ツ Ticket Bot ツ Commands List :page_with_curl:`)
+    .setTitle(`:page_with_curl: ツ Ticket Bot ツ Commands List`)
     .setColor(0x00AE86)
     .setDescription(`Here is a list of all available commands`)
-        .addField(`Help & Support`, `[${prefix}help] > Shows you my Help/Support message`)
+        .addField(`Help & Support`, `[${prefix}help] > Displays my help and support message\n[${prefix}ticket help] > Displays my how to add and remove a member from a ticket message`)
         .addField(`Commands List`, `[${prefix}commands] > Displays this command list`)
 	.addField(`Ping Check`, `[${prefix}ping] > Pings the bot to see how long it takes to react`)
         .addField(`About ツ Ticket Bot ツ`, `[${prefix}about] > Tells you everything you need to know about me`)
