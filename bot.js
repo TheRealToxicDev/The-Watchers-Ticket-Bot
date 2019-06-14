@@ -73,7 +73,7 @@ client.on("message", (message) => {
   }
    if (message.content.toLowerCase().startsWith(prefix + `commands`)) {
     const embed = new Discord.RichEmbed()
-    .setTitle(`ツ Ticket Bot ツ Commands List :page_with_curl:`)
+    .setTitle(`:page_with_curl: ツ Ticket Bot ツ Commands List :page_with_curl:`)
     .setColor(0x00AE86)
     .setDescription(`Here is a list of all available commands`)
         .addField(`Help & Support`, `[${prefix}help] > Shows you my Help/Support message`)
