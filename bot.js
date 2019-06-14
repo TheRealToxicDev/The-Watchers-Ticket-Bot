@@ -83,7 +83,7 @@ client.on("message", (message) => {
 		.addField(`Open A Ticket`, `[${prefix}open] > Opens a new Support Ticket and tags the Support Team`)
 	    .addField(`Close A Ticket`, `[${prefix}close] > Closes the current Support Ticket`)
 		.addField(`Add A Member`, `[${prefix}add @User] > Adds the mentioned user to the current Support Ticket \`Example: ${prefix}add @Tyler. H\``)
-		.addField(`Remove A Member`, `[${prefix}add @User] > Adds the mentioned user to the current Support Ticket \`Example: ${prefix}remopve @Tyler. H\``)
+		.addField(`Remove A Member`, `[${prefix}remove @User] > Adds the mentioned user to the current Support Ticket \`Example: ${prefix}remove @Tyler. H\``)
 		.addField(`Invite Me`, `[${prefix}invite] > Generates an invite link`) 
                 .addField(`Command List Link`, `Link Coming Soon`) 
     .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
