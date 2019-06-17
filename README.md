@@ -1,4 +1,3 @@
- [![start with why](https://img.shields.io/badge/build%20status-passing%-brightgreen.svg?style=flat)]
 ### ツ Ticket Bot ツ 
 ### Command List & Info
 **Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stuff and more!** 
