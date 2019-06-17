@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)](https://travis-ci.org/dwyl/esta)
 ### ツ Ticket Bot ツ 
 ### Command List & Info
 **Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stuff and more!** 
