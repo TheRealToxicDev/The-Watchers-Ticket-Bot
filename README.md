@@ -1,4 +1,3 @@
-[![Build Status](https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot)](https://travis-ci.org/dwyl/esta)
 ### ツ Ticket Bot ツ 
 ### Command List & Info
 **Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stuff and more!** 
