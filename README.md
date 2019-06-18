@@ -1,6 +1,10 @@
-### ツ Ticket Bot ツ 
-### Command List & Info
+[![Build Passing](https://img.shields.io/badge/Build-Passing%20-brightgreen.svg?style=flat)](https://ticket-bot.webnode.com/) [![Status Online](https://img.shields.io/badge/Status-Online%20-brightgreen.svg?style=flat)](https://thewatchersbots.statuskit.com/) [![Bot Code Library](https://img.shields.io/badge/Code%20Library%20-discord.js%20-brightgreen.svg?style=flat)](https://discord.js.org/#/) [![](https://img.shields.io/badge/Vulnerabilities-None%20Detected-brightgreen.svg?style=flat)](https://ticket-bot.webnode.com/)
+
+### ツ Ticket Bot ツ https://img.shields.io/github/release/GrimDesignsFiveM/The-Watchers-Ticket-Bot.svg
+
 **Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stuff and more!** 
+
+### Command List & Info
 
 Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with a short description of what each command does.
 
