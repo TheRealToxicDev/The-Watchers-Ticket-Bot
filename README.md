@@ -50,7 +50,7 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 <a name="hostyourown"></a>
 ## Host Your Own ツ Ticket Bot ツ
 
-| Host Name | Host Method |
+| Host | Method |
 | ------- |:----------------- |
 | Heroku | Auto Deploy |
 **THE AUTO DEPLOY OPTION IS COMING SOON, PLEASE CHECK BACK LATER.**
