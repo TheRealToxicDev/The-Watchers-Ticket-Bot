@@ -35,7 +35,7 @@ const embed = new Discord.RichEmbed()
         .addField(`Help & Support`, `[${prefix}help] > Shows you my Help/Support message`)
         .addField(`Commands List`, `[${prefix}commands] > Shows my commands list and usage`)
         .addField(`Support Server`, `[Join Our Discord](https://discord.gg/Hg8jyzQ)`)
-    .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
+    .setFooter(`ツ Ticket Bot ツ v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     guild.owner.user.send({ embed: embed });
 });
@@ -56,7 +56,7 @@ client.on("message", (message) => {
 	.addField(`My Support Server`, `[My Support Server](https://discord.gg/Hg8jyzQ)`)
 	.addField(`Invite Me To Your Server`, `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`)
 	.addField(`My Server Count`, `${client.guilds.size} Servers`)
-    .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
+    .setFooter(`ツ Ticket Bot ツ v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
   }
@@ -66,7 +66,7 @@ client.on("message", (message) => {
     .setColor(0x00AE86)
     .setDescription(`Interested in inviting me to your server? Use the link below`)
        .addField(`My Invite Link`, `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`) 
-    .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
+    .setFooter(`ツ Ticket Bot ツ v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
   }
@@ -85,7 +85,7 @@ client.on("message", (message) => {
 	.addField(`Remove A Member`, `[${prefix}remove @User#1234] > Removes the mentioned user from the current Support Ticket\nExample: [${prefix}remove @Tyler. H#9393]`)
 	.addField(`Invite Me`, `[${prefix}invite] > Generates an invite link`) 
         .addField(`Command List Link`, `Link Coming Soon`) 
-    .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
+    .setFooter(`ツ Ticket Bot ツ v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
   }
@@ -95,7 +95,7 @@ client.on("message", (message) => {
     .setColor(0x00AE86)
     .setDescription(`Hello! I'm ツ Ticket Bot ツ. the Discord bot for super cool support tickets, i was originally created as a custom suppoort ticket bot for ツThe Watchers Bot Devsツ coded in the \`discord.js library\` If you are interested in inviting me to your server use the command ${prefix}help`)
         .addField(`Command List`, `[${prefix}commands]`)
-   .setFooter(`ツ Ticket Bot ツ Beta v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
+   .setFooter(`ツ Ticket Bot ツ v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
    .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
   }
