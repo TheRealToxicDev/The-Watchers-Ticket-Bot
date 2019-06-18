@@ -52,7 +52,9 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 
 | Host | Method |
 | ------- |:----------------- |
-| Heroku | Automatic |
+
+| Heroku Application | Automatic Deploy |
+
 **THE AUTO DEPLOY OPTION IS COMING SOON, PLEASE CHECK BACK LATER.**
 
 > {TIP} For information on how to self host please contact us on our [support server](https://discord.gg/djpPhcU)
