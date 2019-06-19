@@ -189,6 +189,28 @@ if (message.content.toLowerCase().startsWith(prefix + `ticket help`)) {
     message.delete().catch();   
     message.channel.send({ embed: embed });
   }
+ if (message.content.toLowerCase().startsWith(prefix + `report`)) {
+  message.delete().catch();
+  if(!args[0] || args[0 == "help"]) return message.reply("Usage: phreport <What you want to report>");
+  let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+     if(!rUser) return message.channel.send("Couldn't find the mentioned user");
+     let reason = args.join(" ").slice(22);
+
+     let reportEmbed = new Discord.RichEmbed()
+     .setDescription("Reports")
+     .setColor("0xff80ff")
+     .addField("Reported User", `${rUser} with ID ${rUser.id }`)
+     .addField("Reported by", `${message.author} with ID ${message.author.id}`)
+     .addField("Channel", message.channel)
+     .addField("Time", message.createdAt)
+     .addField("Reason", reason)
+
+     let reportChannel = message.guild.channels.find("name", "reports");
+     if(!reportChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the reports channel`);
+
+     message.delete().catch(O_o=>{});
+     reportChannel.send(reportEmbed);
+  } 
 
   if (message.content.toLowerCase().startsWith(prefix + `close`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
