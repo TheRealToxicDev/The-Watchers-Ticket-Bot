@@ -45,10 +45,7 @@ client.on("message", (message) => {
 
 // BELOW THIS LINE IS THE BOTS COMMANDS EDIT, REPLACE AND ADD TO THESE AS NEEDED IF YOU ARE WANTING TO EMBED THE COMMAND YOU CAN USE ONE OF THE BOTS PRE EXISTING COMMANDS AS A TEMPLATE
 // MAKE SURE WHEN YOU ARE ADDING COMMANDS YOU FOLLOW THE PATH AND ROUTINE THAT I HAVE LISTED BELOW.
-  if (message.content.toLowerCase().startsWith(prefix + `help`)).then(msg => {
-    msg.delete(5)
-  })
-  .catch(); /*Used for error handling*/
+  if (message.content.toLowerCase().startsWith(prefix + `help`)){
     const embed = new Discord.RichEmbed()
     .setTitle(`ツ Ticket Bot ツ Help`)
     .setColor(0x00AE86)
@@ -61,6 +58,7 @@ client.on("message", (message) => {
 	.addField(`My Server Count`, `${client.guilds.size} Servers`)
     .setFooter(`ツ Ticket Bot ツ v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
+    message.delete().catch();
     message.channel.send({ embed: embed });
   }
    if (message.content.toLowerCase().startsWith(prefix + `invite`)) {
