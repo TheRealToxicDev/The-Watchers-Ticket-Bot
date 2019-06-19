@@ -1,4 +1,4 @@
-[![Build Passing](https://img.shields.io/badge/build-Developing%20-brightgreen.svg?style=flat)](https://ticket-bot.webnode.com/) [![Status Online](https://img.shields.io/badge/status-Online%20-brightgreen.svg?style=flat)](https://thewatchersbots.statuskit.com/) [![Bot Code Library](https://img.shields.io/badge/library-discord.js-orange.svg)](https://discord.js.org/#/) [![database](https://img.shields.io/badge/database-online-yellow.svg)](https://ticket-bot.webnode.com/) [![version](https://img.shields.io/badge/version-1.02-blue.svg)](https://ticket-bot.webnode.com/)
+[![Build Passing](https://img.shields.io/badge/build-Developing%20-brightgreen.svg?style=flat)](https://ticket-bot.webnode.com/) [![Status Online](https://img.shields.io/badge/status-Online%20-green.svg?style=flat)](https://thewatchersbots.statuskit.com/) [![Bot Code Library](https://img.shields.io/badge/library-discord.js-orange.svg)](https://discord.js.org/#/) [![database](https://img.shields.io/badge/database-online-yellow.svg)](https://ticket-bot.webnode.com/) [![NPM Version](https://img.shields.io/badge/npm%20version-6.4.1-lightgrey.svg)](https://ticket-bot.webnode.com/) [![NPM Version](https://img.shields.io/badge/license-MIT-yellowgreen.svg)](https://ticket-bot.webnode.com/) [![version](https://img.shields.io/badge/version-1.02-blue.svg)](https://ticket-bot.webnode.com/)
 
 ### ツ Ticket Bot ツ 
 
@@ -27,6 +27,7 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 | ----------------- |:---------------------- |
 | [tw/help]  | Shows my help message and command usage |
 | [tw/about] | Tells you all about `ツ Ticket Bot ツ`  |
+|[tw/ticket help] | Shows you how to add and remove members from a ticket |
 
 
 <a name="generalcommands"></a>
@@ -45,4 +46,6 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 | Command | Short Description |
 | ------- |:----------------- |
 |[tw/ping] | Pings the bot and checks latency and response time |
+|[tw/serverinfo] | Tells you about the current server |
+|[tw/version] | Tells you `ツ Ticket Bot ツ's` version info |
 
