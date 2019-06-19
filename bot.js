@@ -71,6 +71,7 @@ client.on("message", (message) => {
     // message.mentions.members is a collection of people that have been mentioned, as GuildMembers.
     // We can also support getting the member by ID, which would be args[0]
     let member = message.mentions.members.first() || message.guild.members.get(args[0]);
+     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     if(!member)
       return message.reply("Please mention a valid member of this server");
     if(!member.kickable) 
