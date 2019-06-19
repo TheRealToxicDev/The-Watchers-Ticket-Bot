@@ -69,6 +69,7 @@ client.on("message", (message) => {
        .addField(`My Invite Link`, `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`) 
     .setFooter(`ツ Ticket Bot ツ v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
+    message.delete().catch();
     message.channel.send({ embed: embed });
   }
    if (message.content.toLowerCase().startsWith(prefix + `commands`)) {
@@ -88,6 +89,7 @@ client.on("message", (message) => {
         .addField(`Command List Link`, `Link Coming Soon`) 
     .setFooter(`ツ Ticket Bot ツ v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
+    message.delete().catch();
     message.channel.send({ embed: embed });
   }
   if (message.content.toLowerCase().startsWith(prefix + `about`)) {
@@ -98,6 +100,7 @@ client.on("message", (message) => {
         .addField(`Command List`, `[${prefix}commands]`)
    .setFooter(`ツ Ticket Bot ツ v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
    .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
+    message.delete().catch();
     message.channel.send({ embed: embed });
   }
   
@@ -108,11 +111,12 @@ client.on("message", (message) => {
 }
 
  if (message.content.toLowerCase().startsWith(prefix + `open`)) {
+    message.delete().catch();	 
     const reason = message.content.split(" ").slice(1).join(" ");
      if (!message.guild.channels.exists("name", "★★★★★★tickets★★★★★★", "category")) return message.channel.send("There wasn't a tickets category so i created one! Please execute the command again to open your ticket") .then(message.guild.createChannel("★★★★★★tickets★★★★★★", "category"))
     if (!message.guild.roles.exists("name", "Support Team")) return message.channel.send(`This server doesn't have a \`Support Team\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets.`);
     if (message.guild.channels.exists("name", "ticket-" + message.author.id)) return message.channel.send(`You already have a ticket open.`);
-    message.guild.createChannel(`ticket-${message.author.id}`, "text",).then(c => {
+       message.guild.createChannel(`ticket-${message.author.id}`, "text",).then(c => {
         let role = message.guild.roles.find("name", "Support Team");
         let role2 = message.guild.roles.find("name", "@everyone");
         let category = message.guild.channels.find(c => c.name == "★★★★★★tickets★★★★★★" && c.type == "category");
@@ -143,6 +147,7 @@ if (message.content.toLowerCase().startsWith(prefix + `add`)) {
     const embed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .addField(`:shrug: Whoops That's Not Right :shrug:`, `You can't use this command outside of a ticket channel.`)
+    message.delete().catch();
     message.channel.send({ embed: embed });
     return
     }
@@ -151,6 +156,7 @@ if (message.content.toLowerCase().startsWith(prefix + `add`)) {
     const embed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .addField('**' + addedmember + `** has been added to the ticket. Remove with [${prefix}remove]`)
+    message.delete().catch();
     message.channel.send({ embed: embed });
 
   }
@@ -162,6 +168,7 @@ if (message.content.toLowerCase().startsWith(prefix + `ticket help`)) {
       .addField(`Please Note`, `These commands have to be used inside a ticket channel`)
       .addField(`Add A Member`, `${prefix}add @User#1234\nExample ${prefix}add @Tyler. H#9393`)
       .addField(`Remve A Member`, `${prefix}remove @User#1234\nExample ${prefix}remove @Tyler. H#9393`)
+    message.delete().catch(); 
     message.channel.send({ embed: embed });
     }
 
@@ -170,6 +177,7 @@ if (message.content.toLowerCase().startsWith(prefix + `ticket help`)) {
     const embed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .addField(`:shrug: Whoops That's Not Right :shrug:`, `You can't use this command outside of a ticket channel.`)
+    message.delete().catch();  
     message.channel.send({ embed: embed });
     return
     }
@@ -178,6 +186,7 @@ if (message.content.toLowerCase().startsWith(prefix + `ticket help`)) {
     const embed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .addField('**' + removedmember + '** has been removed from the ticket.')
+    message.delete().catch();   
     message.channel.send({ embed: embed });
   }
 
@@ -187,6 +196,7 @@ if (message.content.toLowerCase().startsWith(prefix + `ticket help`)) {
     .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
     .setColor(0x00AE86)
     .addField(`Whoops That's Not Right`, `You can't use this command outside of a ticket channel.`)
+    message.delete().catch();   
     message.channel.send({ embed: embed });
     return
     }   
@@ -194,6 +204,7 @@ if (message.content.toLowerCase().startsWith(prefix + `ticket help`)) {
     const embed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .addField(`Leaving So Soon?`, `Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`-confirm\`. This will time out in 10 seconds and be cancelled.`)
+    message.delete().catch();
     message.channel.send({ embed: embed })
     .then((m) => {
       message.channel.awaitMessages(response => response.content === '-confirm', {
