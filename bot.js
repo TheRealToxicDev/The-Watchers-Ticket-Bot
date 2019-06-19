@@ -45,8 +45,10 @@ client.on("message", (message) => {
 
 // BELOW THIS LINE IS THE BOTS COMMANDS EDIT, REPLACE AND ADD TO THESE AS NEEDED IF YOU ARE WANTING TO EMBED THE COMMAND YOU CAN USE ONE OF THE BOTS PRE EXISTING COMMANDS AS A TEMPLATE
 // MAKE SURE WHEN YOU ARE ADDING COMMANDS YOU FOLLOW THE PATH AND ROUTINE THAT I HAVE LISTED BELOW.
-  if (message.content.toLowerCase().startsWith(prefix + `help`)) {
-     message.catch().delete
+  if (message.content.toLowerCase().startsWith(prefix + `help`)).then(msg => {
+    msg.delete(5)
+  })
+  .catch(); /*Used for error handling*/
     const embed = new Discord.RichEmbed()
     .setTitle(`ツ Ticket Bot ツ Help`)
     .setColor(0x00AE86)
