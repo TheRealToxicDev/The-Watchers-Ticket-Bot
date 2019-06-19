@@ -190,42 +190,6 @@ if (message.content.toLowerCase().startsWith(prefix + `ticket help`)) {
     message.channel.send({ embed: embed });
   }
 	
-  if (message.content.toLowerCase().startsWith(prefix + `serverinfo`)) {
-      message.delete().catch();
-    let sicon = message.guild.iconURL;
-    let serverembed = new Discord.RichEmbed()
-    .setAuthor(`${message.guild.name} - Information`, message.guild.iconURL)
-    .setDescription("Server Information")
-    .setColor("#0xff80ff")
-    .setThumbnail(sicon)
-    .addField("Server Owner", message.guild.owner, true)
-    .addField("Server Name", message.guild.name, true)
-    .addField('Server region', message.guild.region, true)
-    .addField("Created On", message.guild.createdAt, true)
-    .addField("You Joined", message.member.joinedAt, true)
-    .addField('Channel count', message.guild.channels.size, true)
-    .addField('Total member count', message.guild.memberCount)
-    .addField('Verification level', message.guild.verificationLevel, true)
-    .setFooter('Guild created at:')
-    .setTimestamp(message.guild.createdAt);
-
-    message.channel.send(serverembed);
-    }
-
-if (message.content.toLowerCase().startsWith(prefix + `version`)) {
-    const embed = new Discord.RichEmbed()
-    .setTitle(`ツ Ticket Bot ツ Version`)
-    .setColor(0x00AE86)
-    .setDescription(`All of my version information can be found below`)
-        .addField(`Current Version`, `v1.01`)
-        .addField(`Previous Version`, `v1.00`)
-        .addField(`Version Check`, `[Ticket Bot Release](https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot/releases)`)
-   .setFooter(`ツ Ticket Bot ツ v1.01`, `http://i.imgur.com/bt9OsRs.jpg`)
-   .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
-    message.delete().catch();
-    message.channel.send({ embed: embed });
-  }
-	
   if (message.content.toLowerCase().startsWith(prefix + `close`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
     const embed = new Discord.RichEmbed()
