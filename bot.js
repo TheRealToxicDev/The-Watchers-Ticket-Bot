@@ -79,7 +79,6 @@ client.on("message", (message) => {
     
     // slice(1) removes the first part, which here should be the user mention or ID
     // join(' ') takes all the various parts to make it a single string.
-    let reason = args.slice(1).join(' ');
     if(!reason) reason = "No reason provided";
     
     // Now, time for a swift kick in the nuts!
