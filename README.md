@@ -58,9 +58,6 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 > {TIP} For information on how to self host please contact us on our [support server](https://discord.gg/djpPhcU)
 
 > {TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Automatic Deploy`
-<a href="https://heroku.com/deploy?template=https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot/tree/master">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
 
 ## Hosting Steps
 **1. Click the `Deploy To Heroku` button above.** **{Coming Soon}**
