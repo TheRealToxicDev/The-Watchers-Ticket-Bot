@@ -60,7 +60,7 @@ client.on("message", (message) => {
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
   }
-   if(command === "say") {
+  if (message.content.toLowerCase().startsWith(prefix + `say`)) {
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
     // To get the "message" itself we join the `args` back into a string with spaces: 
     const sayMessage = args.join(" ");
@@ -69,7 +69,7 @@ client.on("message", (message) => {
     // And we get the bot to say the thing: 
     message.channel.send(sayMessage);
   }
-   if(command === "kick") {
+  if (message.content.toLowerCase().startsWith(prefix + `kick`)) {
     // This command must be limited to mods and admins. In this example we just hardcode the role names.
     // Please read on Array.some() to understand this bit: 
     // https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/some?
