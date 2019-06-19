@@ -47,37 +47,3 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 | ------- |:----------------- |
 |[tw/ping] | Pings the bot and checks latency and response time |
 
-<a name="hostyourown"></a>
-## Host Your Own ツ Ticket Bot ツ
-
-| Host Name | Host Method |
-| ------- |:----------------- |
-| Heroku Application | Auto Deploy |
-
-
-**THE AUTO DEPLOY OPTION IS COMING SOON, PLEASE CHECK BACK LATER.**
-
-> {TIP} For information on how to self host please contact us on our [support server](https://discord.gg/djpPhcU)
-
-> {TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Automatic Deploy`
-
-## Hosting Steps
-**1. Click the `Deploy To Heroku` button above.** **{Coming Soon}**
-> In the meantime for information on how to self host the bot you can join our [support server](https://discord.gg/djpPhcU) and we will be happy to assist you
-
-**2. Input your `Bot Token`, and Input your Bot `Prefix`. Get your Bot's Token in your App Settings.**
-
-**3. After Deployed, Go to `Overview Tab >  Configure Dynos > Enable worker Dynos`  Click ``Confirm``
-and you're ready to Go!**
-
-> **Get Your Bot Token Here** [Discord Developer Portal](https://discordapp.com/developers/applications)
-
-<a name="usefullinks"></a>
-## Useful Links & Info
-
-| Info & About | Links & Redirects |
-| ------- |:----------------- |
-| Creator's Personal Discord | [Tyler. H#9393](https://discord.gg/N86xbMR) |
-| Creators/Developers Website | [ツThe Watchers Bot Devsツ Website](https://the-watchers.webnode.com) |
-| Join My Support Server | [ツThe Watchers Bot Devsツ Discord](https://discord.gg/djpPhcU) |
-| Support The `ツ Ticket Bot ツ` Project | [Donate Now](https://paypal.me/thewatchersbotdevs)
