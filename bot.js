@@ -189,28 +189,27 @@ if (message.content.toLowerCase().startsWith(prefix + `ticket help`)) {
     message.delete().catch();   
     message.channel.send({ embed: embed });
   }
- if (message.content.toLowerCase().startsWith(prefix + `report`)) {
-  message.delete().catch();
-  if(!args[0] || args[0 == "help"]) return message.reply("Usage: phreport <What you want to report>");
-  let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-     if(!rUser) return message.channel.send("Couldn't find the mentioned user");
-     let reason = args.join(" ").slice(22);
+  if (message.content.toLowerCase().startsWith(prefix + `serverinfo`)) {
+      message.delete().catch();
+    let sicon = message.guild.iconURL;
+    let serverembed = new Discord.RichEmbed()
+    .setAuthor(`${message.guild.name} - Informations`, message.guild.iconURL)
+    .setDescription("Server Information")
+    .setColor("#0xff80ff")
+    .setThumbnail(sicon)
+    .addField("Server Owner", message.guild.owner, true)
+    .addField("Server Name", message.guild.name, true)
+    .addField('Server region', message.guild.region, true)
+    .addField("Created On", message.guild.createdAt, true)
+    .addField("You Joined", message.member.joinedAt, true)
+    .addField('Channel count', message.guild.channels.size, true)
+    .addField('Total member count', message.guild.memberCount)
+    .addField('Verification level', message.guild.verificationLevel, true)
+    .setFooter('Guild created at:')
+    .setTimestamp(message.guild.createdAt);
 
-     let reportEmbed = new Discord.RichEmbed()
-     .setDescription("Reports")
-     .setColor("0xff80ff")
-     .addField("Reported User", `${rUser} with ID ${rUser.id }`)
-     .addField("Reported by", `${message.author} with ID ${message.author.id}`)
-     .addField("Channel", message.channel)
-     .addField("Time", message.createdAt)
-     .addField("Reason", reason)
-
-     let reportChannel = message.guild.channels.find("name", "reports");
-     if(!reportChannel) return message.channel.send(`<@${message.author.id}> Couldn't find the reports channel`);
-
-     message.delete().catch(O_o=>{});
-     reportChannel.send(reportEmbed);
-  } 
+    message.channel.send(serverembed);
+    }
 
   if (message.content.toLowerCase().startsWith(prefix + `close`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
