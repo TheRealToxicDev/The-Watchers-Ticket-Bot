@@ -199,7 +199,7 @@ if (message.content.toLowerCase().startsWith(prefix + `ticket help`)) {
     let serverembed = new Discord.RichEmbed()
     .setAuthor(`${message.guild.name} - Information`, message.guild.iconURL)
     .setDescription("Server Information")
-    .setColor("#0xff80ff")
+    .setColor("0x00AE86")
     .setThumbnail(sicon)
     .addField("Server Owner", message.guild.owner, true)
     .addField("Server Name", message.guild.name, true)
