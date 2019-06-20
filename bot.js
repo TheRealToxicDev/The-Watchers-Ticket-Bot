@@ -106,9 +106,8 @@ client.on("message", (message) => {
     }).catch(() => {
         // Failmessage
         message.channel.send("Access Denied");
-    });
-}
-});
+ }
+	     
 client.on("message", (message) => {
    if (message.content.toLowerCase().startsWith(prefix + `ban`)) {
 
