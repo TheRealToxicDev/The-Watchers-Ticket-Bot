@@ -142,7 +142,7 @@ client.on("message", (message) => {
     if(!reason) reason = "No reason provided";
     
     // Now, time for a swift kick in the nuts!
-    await member.kick(reason)
+    if member.kick(reason)
       .catch(error => message.reply(`Sorry ${message.author} I couldn't kick because of : ${error}`));
     message.reply(`${member.user.tag} has been kicked by ${message.author.tag} because: ${reason}`);
 
@@ -163,7 +163,7 @@ client.on("message", (message) => {
     let reason = args.slice(1).join(' ');
     if(!reason) reason = "No reason provided";
     
-    await member.ban(reason)
+    if member.ban(reason)
       .catch(error => message.reply(`Sorry ${message.author} I couldn't ban because of : ${error}`));
     message.reply(`${member.user.tag} has been banned by ${message.author.tag} because: ${reason}`);
   }
