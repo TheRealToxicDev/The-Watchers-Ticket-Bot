@@ -220,9 +220,9 @@ if (message.content.toLowerCase().startsWith(prefix + `version`)) {
     .setTitle(`ツ Ticket Bot ツ Version`)
     .setColor(0x00AE86)
     .setDescription(`All of my version information can be found below`)
-        .addField(`Current Version`, `v1.01`)
-        .addField(`Previous Version`, `v1.00`)
-        .addField(`Version Check`, `[Ticket Bot Release](https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot/releases)`)
+        .addField(`Current Version`, `v1.02`)
+        .addField(`Previous Version`, `v1.01`)
+        .addField(`Version Check`, `[Ticket Bot Releases](https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot/releases)`)
    .setFooter(`ツ Ticket Bot ツ v1.02`, `http://i.imgur.com/bt9OsRs.jpg`)
    .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.delete().catch();
