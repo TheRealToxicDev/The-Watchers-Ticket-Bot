@@ -50,4 +50,5 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 |[tw/ping] | Pings the bot and checks latency and response time |
 |[tw/serverinfo] | Tells you about the current server |
 |[tw/version] | Tells you `ツ Ticket Bot ツ's` version info |
+|[tw/changelog] | Tells you about changes made to `ツ Ticket Bot ツ` |
 
