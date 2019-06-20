@@ -225,6 +225,20 @@ if (message.content.toLowerCase().startsWith(prefix + `version`)) {
     message.delete().catch();
     message.channel.send({ embed: embed });
   }
+ if (message.content.toLowerCase().startsWith(prefix + `changelog`)) {
+    const embed = new Discord.RichEmbed()
+    .setTitle(`ツ Ticket Bot ツ ChangeLog`)
+    .setColor(0x00AE86)
+    .setDescription(`All of my update changes can be found below`)
+        .addField(`Added Server Info Command`, `Displays info about the current server [${prefix}serverinfo]`)
+        .addField(`Added Version Command`, `Displays ツ Ticket Bot ツs current version [${prefix}version]`)
+        .addField(`Self Host & Auto Deploy Options`, `Removed Self Host & Auto Deploy Support & Methods`)
+        .addField(`Discord Bot List Status`, `Added and approved on the Discord Bot List at [Discord Bot List](https://discordbots.org/bot/585966981576917014)`)
+   .setFooter(`ツ Ticket Bot ツ v1.01`, `http://i.imgur.com/bt9OsRs.jpg`)
+   .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
+    message.delete().catch();
+    message.channel.send({ embed: embed });
+  }
 	
   if (message.content.toLowerCase().startsWith(prefix + `close`)) {
     if (!message.channel.name.startsWith(`ticket-`)) {
