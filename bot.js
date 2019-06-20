@@ -35,7 +35,7 @@ const embed = new Discord.RichEmbed()
         .addField(`Help & Support`, `[${prefix}help] > Shows you my Help/Support message`)
         .addField(`Commands List`, `[${prefix}commands] > Shows my commands list and usage`)
         .addField(`Support Server`, `[Join Our Discord](https://discord.gg/Hg8jyzQ)`)
-    .setFooter(`ツ Ticket Bot ツ v1.01`, `http://i.imgur.com/bt9OsRs.jpg`)
+    .setFooter(`ツ Ticket Bot ツ v1.02`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     guild.owner.user.send({ embed: embed });
 });
@@ -56,7 +56,7 @@ client.on("message", (message) => {
 	.addField(`My Support Server`, `[My Support Server](https://discord.gg/Hg8jyzQ)`)
 	.addField(`Invite Me To Your Server`, `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`)
 	.addField(`My Server Count`, `${client.guilds.size} Servers`)
-    .setFooter(`ツ Ticket Bot ツ v1.01`, `http://i.imgur.com/bt9OsRs.jpg`)
+    .setFooter(`ツ Ticket Bot ツ v1.02`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.delete().catch();
     message.channel.send({ embed: embed });
@@ -67,7 +67,7 @@ client.on("message", (message) => {
     .setColor(0x00AE86)
     .setDescription(`Interested in inviting me to your server? Use the link below`)
        .addField(`My Invite Link`, `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=585966981576917014&permissions=8&scope=bot)`) 
-    .setFooter(`ツ Ticket Bot ツ v1.01`, `http://i.imgur.com/bt9OsRs.jpg`)
+    .setFooter(`ツ Ticket Bot ツ v1.02`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.delete().catch();
     message.channel.send({ embed: embed });
@@ -90,7 +90,7 @@ client.on("message", (message) => {
         .addField(`Version Command`, `[${prefix}version] > Displays information about the current ツ Ticket Bot ツ version`)
         .addField(`ChangeLog Command`, `[${prefix}] > Displays information about changes made to ツ Ticket Bot ツ`)
         .addField(`Command List Link`, `[Commands List](https://ticket-bot.webnode.com/commands-list/)`) 
-    .setFooter(`ツ Ticket Bot ツ v1.01`, `http://i.imgur.com/bt9OsRs.jpg`)
+    .setFooter(`ツ Ticket Bot ツ v1.02`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.delete().catch();
     message.channel.send({ embed: embed });
@@ -101,7 +101,7 @@ client.on("message", (message) => {
     .setColor(0x00AE86)
     .setDescription(`Hello! I'm ツ Ticket Bot ツ. the Discord bot for super cool support tickets, i was originally created as a custom suppoort ticket bot for ツThe Watchers Bot Devsツ coded in the \`discord.js library\` If you are interested in inviting me to your server use the command ${prefix}help`)
         .addField(`Command List`, `[${prefix}commands]`)
-   .setFooter(`ツ Ticket Bot ツ v1.01`, `http://i.imgur.com/bt9OsRs.jpg`)
+   .setFooter(`ツ Ticket Bot ツ v1.02`, `http://i.imgur.com/bt9OsRs.jpg`)
    .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.delete().catch();
     message.channel.send({ embed: embed });
@@ -223,7 +223,7 @@ if (message.content.toLowerCase().startsWith(prefix + `version`)) {
         .addField(`Current Version`, `v1.01`)
         .addField(`Previous Version`, `v1.00`)
         .addField(`Version Check`, `[Ticket Bot Release](https://github.com/GrimDesignsFiveM/The-Watchers-Ticket-Bot/releases)`)
-   .setFooter(`ツ Ticket Bot ツ v1.01`, `http://i.imgur.com/bt9OsRs.jpg`)
+   .setFooter(`ツ Ticket Bot ツ v1.02`, `http://i.imgur.com/bt9OsRs.jpg`)
    .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.delete().catch();
     message.channel.send({ embed: embed });
@@ -237,7 +237,7 @@ if (message.content.toLowerCase().startsWith(prefix + `version`)) {
         .addField(`Added Version Command`, `Displays ツ Ticket Bot ツs current version [${prefix}version]`)
         .addField(`Self Host & Auto Deploy Options`, `Removed Self Host & Auto Deploy Support & Methods`)
         .addField(`Discord Bot List Status`, `Added and approved on the Discord Bot List at [Discord Bot List](https://discordbots.org/bot/585966981576917014)`)
-   .setFooter(`ツ Ticket Bot ツ v1.01`, `http://i.imgur.com/bt9OsRs.jpg`)
+   .setFooter(`ツ Ticket Bot ツ v1.02`, `http://i.imgur.com/bt9OsRs.jpg`)
    .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.delete().catch();
     message.channel.send({ embed: embed });
