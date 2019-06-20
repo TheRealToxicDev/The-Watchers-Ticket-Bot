@@ -92,6 +92,40 @@ client.on("message", (message) => {
     message.delete().catch();
     message.channel.send({ embed: embed });
   }
+	
+   if (message.content.toLowerCase().startsWith(prefix + `kick`)) {
+
+    if (!message.member.roles.find("name", "Administrator"))
+        return;
+    // Easy way to get member object though mentions.
+    var member = message.mentions.members.first();
+    // Kick
+    member.kick().then((member) => {
+        // Successmessage
+        message.channel.send(":wave: " + member.displayName + " has been successfully kicked :point_right: ");
+    }).catch(() => {
+        // Failmessage
+        message.channel.send("Access Denied");
+    });
+}
+});
+client.on("message", (message) => {
+   if (message.content.toLowerCase().startsWith(prefix + `ban`)) {
+
+        if (!message.member.roles.find("name", "Administrator"))
+            return;
+
+        // Easy way to get member object though mentions.
+        var member = message.mentions.members.first();
+        // ban
+        member.ban().then((member) => {
+            // Successmessage
+            message.channel.send(":wave: " + member.displayName + " has been successfully banned https://gfycat.com/playfulfittingcaribou :point_right: ");
+        }).catch(() => {
+            // Failmessage
+            message.channel.send("Access Denied");
+  }
+		 
   if (message.content.toLowerCase().startsWith(prefix + `about`)) {
     const embed = new Discord.RichEmbed()
     .setTitle(`About ツ Ticket Bot ツ`)
