@@ -13,6 +13,25 @@ function clean(text) {
         return text;
 }
 
+client.on("message", async message => {
+  // This event will run on every single message received, from any channel or DM.
+  
+  // It's good practice to ignore other bots. This also makes your bot ignore itself
+  // and not get into a spam loop (we call that "botception").
+  if(message.author.bot) return;
+  
+  // Also good practice to ignore any message that does not start with our prefix, 
+  // which is set in the configuration file.
+  if(message.content.indexOf(config.prefix) !== 0) return;
+  
+  // Here we separate our "command" name, and our "arguments" for the command. 
+  // e.g. if we have the message "+say Is this the real life?" , we'll get the following:
+  // command = say
+  // args = ["Is", "this", "the", "real", "life?"]
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+}	
+	  
 // BELOW THIS LINE ARE THE BOTS "CONFIG VARS/VARIABLES" THEY ARE REQUIRED TO HELP IT RUN CORRECTLY ONLY REPLACE THESE WITH YOUR INFORMATION DO NOT DELETE THEM AS IT MAY CAUSE ISSUES OR BREAK THE BOT 
 // MAKE SURE YOU ENTER THE CORRECT INFORMATION PROVIDING THE WRONG DISCORD ID COULD GIVE SOMEONE ELSE ACCESS TO THE BOTS OWNER ONLY COMMANDS (OWNER ONLY COMMANDS COMING SOON)
 var prefix = process.env.PREFIX; // Replace "process.env.PREFIX" with prefix of your choice if self hosting (Not Auto Deployed) Currrnt Prefix: (`tb/`) make sure you include the "(``)"
