@@ -299,31 +299,8 @@ if (message.content.toLowerCase().startsWith(prefix + `ticket help`)) {
           }, 3000);
         });
     });
-  }
-
-});
-
-// JUST SOME MORE FUNCTIONS DO NOT TOUCH THIS UNLESS YOU KNOW WHAT YOU ARE DOING.... SERIOUSLY!!
-// FUNCTIONS HELP THE BOT EXECUTE ARGS AND STRINGS 
-function response(c) {
-  while (true) {
-    client.on("message", (message) => {
-      if(message.channel == c) {
-        return message.content;
-      }
-function uptime(seconds) {
-         let totalSeconds = (client.uptime / 1000);
-         let days = Math.floor(totalSeconds / 86400);
-         let hours = Math.floor(totalSeconds / 3600);
-         totalSeconds %= 3600;
-         let minutes = Math.floor(totalSeconds / 60);
-         let seconds = totalSeconds % 60;
-         return
-         let uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
-      }
-    });
-  }
-};
+}
+});	  
 // THE CLIENT LOGIN PROCESS (BOT READS THE TOKEN FROM HERE)
 // ADDITIONALLY YOU COULD ADD YOUR OWNERID INSTEAD 
 client.login(process.env.BOT_TOKEN);
