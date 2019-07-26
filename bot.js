@@ -327,7 +327,7 @@ if (message.content.toLowerCase().startsWith(prefix + `version`)) {
           }, 3000);
         });
     });
-  }
+  })
 
 });
 // THE CLIENT LOGIN PROCESS (BOT READS THE TOKEN FROM HERE)
