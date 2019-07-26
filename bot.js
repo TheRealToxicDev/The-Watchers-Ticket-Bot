@@ -336,8 +336,7 @@ if (message.content.toLowerCase().startsWith(prefix + `version`)) {
     message.delete().catch(O_o=>{}); 
     // And we get the bot to say the thing: 
     message.channel.send(sayMessage);
-  })
-}
+  }
 
 });
 // THE CLIENT LOGIN PROCESS (BOT READS THE TOKEN FROM HERE)
