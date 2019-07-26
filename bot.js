@@ -283,7 +283,7 @@ if (message.content.toLowerCase().startsWith(prefix + `version`)) {
 
  let Cembed = new Discord.RichEmbed()
       .setColor("0xff0000")
-      .setTitle("Close A Ticket")
+      .setTitle("Leaving So Soon?")
       .setDescription(`<@${message.author.id}>` + " Are you sure? Once confirmed, you cannot reverse this action! This will time out in 60 seconds and be cancelled.")
       .addField("How To Confirm", "Type ``-confirm``");
      message.delete().catch();
@@ -305,37 +305,6 @@ if (message.content.toLowerCase().startsWith(prefix + `version`)) {
         });
     });
 
-  }
-
-    const embed = new Discord.RichEmbed()
-    .setColor(0x00AE86)
-    .addField(`Leaving So Soon?`, `Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`-confirm\`. This will time out in 10 seconds and be cancelled.`)
-    message.delete().catch();
-    message.channel.send({ embed: embed })
-    .then((m) => {
-      message.channel.awaitMessages(response => response.content === '-confirm', {
-        max: 1,
-        time: 10000,
-        errors: ['time'],
-      })
-      .then((collected) => {
-          message.channel.delete();
-        })
-        .catch(() => {
-          m.edit('Ticket close timed out, the ticket was not closed.').then(m2 => {
-              m2.delete();
-          }, 3000);
-        });
-    });
-  })
-  if (message.content.toLowerCase().startsWith(prefix + `say`)) {
-    // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
-    // To get the "message" itself we join the `args` back into a string with spaces: 
-    const sayMessage = args.join(" ");
-    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
-    message.delete().catch(O_o=>{}); 
-    // And we get the bot to say the thing: 
-    message.channel.send(sayMessage);
   }
 
 });
