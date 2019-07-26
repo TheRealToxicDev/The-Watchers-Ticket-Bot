@@ -115,10 +115,28 @@ client.on("message", (message) => {
 
  if (message.content.toLowerCase().startsWith(prefix + `open`)) {
     message.delete().catch();	 
+    let Tembed2 = new Discord.RichEmbed()
+      .setColor("0xff0000")
+      .setTitle(":no_entry: Error :no_entry:")
+      .setDescription(`<@${message.author.id}>` + " There wasn't a tickets category so i created one! :thumbsup: Please execute the command again to open your ticket");
+      message.delete().catch();
+	  
+ let Tembed3 = new Discord.RichEmbed()
+      .setColor("0xff0000")
+      .setTitle(":no_entry: Error :no_entry:")
+      .setDescription(`<@${message.author.id}>` + " This server doesn't have a ``Support Team`` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets.");
+      message.delete().catch();
+	  
+let Tembed4 = new Discord.RichEmbed()
+      .setColor("0xff0000")
+      .setTitle(":no_entry: Error :no_entry:")
+      .setDescription(`<@${message.author.id}>` + " You already have a ticket open. :shrug:");
+      message.delete().catch();
+	  
     const reason = message.content.split(" ").slice(1).join(" ");
-     if (!message.guild.channels.exists("name", "★★★★★★tickets★★★★★★", "category")) return message.channel.send("There wasn't a tickets category so i created one! Please execute the command again to open your ticket") .then(message.guild.createChannel("★★★★★★tickets★★★★★★", "category"))
-    if (!message.guild.roles.exists("name", "Support Team")) return message.channel.send(`This server doesn't have a \`Support Team\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets.`);
-    if (message.guild.channels.exists("name", "ticket-" + message.author.id)) return message.channel.send(`You already have a ticket open.`);
+     if (!message.guild.channels.exists("name", "★★★★★★tickets★★★★★★", "category")) return message.channel.send(Tembed2) .then(message.guild.createChannel("★★★★★★tickets★★★★★★", "category"))
+    if (!message.guild.roles.exists("name", "Support Team")) return message.channel.send(Tembed3);
+    if (message.guild.channels.exists("name", "ticket-" + message.author.id)) return message.channel.send(Tembed4);
        message.guild.createChannel(`ticket-${message.author.id}`, "text",).then(c => {
         let role = message.guild.roles.find("name", "Support Team");
         let role2 = message.guild.roles.find("name", "@everyone");
@@ -136,10 +154,21 @@ client.on("message", (message) => {
             SEND_MESSAGES: true,
             READ_MESSAGES: true
         });
-        message.channel.send(`:white_check_mark: Your ticket has been created, #${c.name}.`);
+	       
+  let Tembed5 = new Discord.RichEmbed()
+      .setColor(53380)
+      .setTitle(":white_check_mark: Success :white_check_mark:")
+      .setDescription(`<@${message.author.id}>` + "Your ticket has been created")
+      .addField(`Your Ticket Channel`, `#${c.name}.`);  
+      message.delete().catch();
+	       
+        message.channel.send(Tembed5)
+
         const embed = new Discord.RichEmbed()
+	.setTitle("Support Ticket")
         .setColor(0x00AE86)
-        .addField(`Hey ${message.author.username}!`, `Please try explain why you opened this ticket with as much detail as possible. Our **Support Team** will be here soon to help.`)
+	.setDescription(`Hey <@${message.author.id}>`)
+        .addField("Please try to explain why you opened this ticket with as much detail as possible. Our **Support Team** will be here soon to help.")
         .setTimestamp();
         c.send({ embed: embed });
     }).catch(console.error);
@@ -244,15 +273,39 @@ if (message.content.toLowerCase().startsWith(prefix + `version`)) {
   }
 	
   if (message.content.toLowerCase().startsWith(prefix + `close`)) {
-    if (!message.channel.name.startsWith(`ticket-`)) {
-    const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: ツ Ticket Bot ツ Ticket Help`)
-    .setColor(0x00AE86)
-    .addField(`Whoops That's Not Right`, `You can't use this command outside of a ticket channel.`)
-    message.delete().catch();   
-    message.channel.send({ embed: embed });
-    return
-    }   
+    let Tembed = new Discord.RichEmbed()
+      .setColor("0xff0000")
+      .setTitle(":no_entry: Error :no_entry:")
+      .setDescription(`<@${message.author.id}>` + " You can't use this command outside of a ticket channel :shrug: please re-try the command in the ticket you are trying to close");
+      message.delete().catch();
+  
+    if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(Tembed);
+
+ let Cembed = new Discord.RichEmbed()
+      .setColor("0xff0000")
+      .setTitle("Close A Ticket")
+      .setDescription(`<@${message.author.id}>` + " Are you sure? Once confirmed, you cannot reverse this action! This will time out in 60 seconds and be cancelled.")
+      .addField("How To Confirm", "Type ``-confirm``");
+     message.delete().catch();
+	  
+    message.channel.send(Cembed)
+    .then((m) => {
+      message.channel.awaitMessages(response => response.content === '-confirm', {
+        max: 1,
+        time: 60000,
+        errors: ['time'],
+      })
+      .then((collected) => {
+          message.channel.delete();
+        })
+        .catch(() => {
+          m.edit('Ticket close timed out, the ticket was not closed.').then(m2 => {
+              m2.delete();
+          }, 3000);
+        });
+    });
+
+  }
 
     const embed = new Discord.RichEmbed()
     .setColor(0x00AE86)
