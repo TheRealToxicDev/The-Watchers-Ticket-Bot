@@ -1,4 +1,5 @@
 [![Build Passing](https://img.shields.io/badge/Build-Passing%20-brightgreen.svg?style=flat)](https://ticket-bot.webnode.com/) [![Status Online](https://img.shields.io/badge/Status-Online%20-brightgreen.svg?style=flat)](https://thewatchersbots.statuskit.com/) [![Bot Code Library](https://img.shields.io/badge/Library-discord.js-orange.svg)](https://discord.js.org/#/) [![Version](https://img.shields.io/badge/Version-1.00-blue.svg)](https://ticket-bot.webnode.com/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FGrimDesignsFiveM%2FThe-Watchers-Ticket-Bot.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FGrimDesignsFiveM%2FThe-Watchers-Ticket-Bot?ref=badge_shield)
 
 ### ツ Ticket Bot ツ 
 
@@ -79,3 +80,7 @@ and you're ready to Go!**
 | Creators/Developers Website | [ツThe Watchers Bot Devsツ Website](https://the-watchers.webnode.com) |
 | Join My Support Server | [ツThe Watchers Bot Devsツ Discord](https://discord.gg/djpPhcU) |
 | Support The `ツ Ticket Bot ツ` Project | [Donate Now](https://paypal.me/thewatchersbotdevs)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FGrimDesignsFiveM%2FThe-Watchers-Ticket-Bot.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FGrimDesignsFiveM%2FThe-Watchers-Ticket-Bot?ref=badge_large)
