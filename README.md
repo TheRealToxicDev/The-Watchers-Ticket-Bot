@@ -84,4 +84,3 @@ and you're ready to Go!**
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FGrimDesignsFiveM%2FThe-Watchers-Ticket-Bot.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FGrimDesignsFiveM%2FThe-Watchers-Ticket-Bot?ref=badge_large)
-<iframe src="https://discordapp.com/widget?id=585650653301440552&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
