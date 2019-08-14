@@ -1,6 +1,6 @@
 // EVERYTHING BELOW THIS LINE IS REQUIRED DO NOT CHANGE ANY OF THIS UNLESS YOU KNOW WHAT YOU ARE DOING
 // THESE ARE REQUIRED TO HELP THE BOT FUNCTION PROPERLY.
-const Discord = require("discord.js");
+const Discord = require('discord.js');
 const PREFIX = process.env.PREFIX;
 const client = new Discord.Client();
 
