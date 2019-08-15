@@ -8,7 +8,7 @@ const snekfetch = require('snekfetch');
 const talkedRecently = new Set();
 const token = process.env.BOT_TOKEN;
 const client = new Discord.Client();
-const config = require('./Data/config.json');
+const config = require('./data/config.json');
 const PREFIX = process.env.PREFIX;
 client.config = config;
 
