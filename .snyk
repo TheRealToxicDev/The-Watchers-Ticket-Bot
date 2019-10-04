@@ -89,3 +89,8 @@ patch:
         patched: '2019-08-14T05:41:03.782Z'
     - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > google-auth-library > gtoken > request > tunnel-agent:
         patched: '2019-08-14T05:41:03.782Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T00:36:24.101Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T00:36:24.101Z'
