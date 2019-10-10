@@ -53,6 +53,14 @@ let Tembed4 = new Discord.RichEmbed()
             READ_MESSAGES: true
         });
 	       
+	          const embed = new Discord.RichEmbed()
+	.setTitle("Support Ticket")
+        .setColor(0x00AE86)
+	.setDescription(`Hey <@${message.author.id}>`)
+        .addField("Please try to explain why you opened this ticket with as much detail as possible. Our **Support Team** will be here soon to help.")
+        .setTimestamp();
+        c.send({ embed: embed });
+	       
   let Tembed5 = new Discord.RichEmbed()
       .setColor(53380)
       .setTitle(":white_check_mark: Success :white_check_mark:")
@@ -62,12 +70,6 @@ let Tembed4 = new Discord.RichEmbed()
 	       
         message.channel.send(Tembed5)
 
-        const embed = new Discord.RichEmbed()
-	.setTitle("Support Ticket")
-        .setColor(0x00AE86)
-	.setDescription(`Hey <@${message.author.id}>`)
-        .addField("Please try to explain why you opened this ticket with as much detail as possible. Our **Support Team** will be here soon to help.")
-        .setTimestamp();
-        c.send({ embed: embed });
+     
     }).catch(console.error);
 }
