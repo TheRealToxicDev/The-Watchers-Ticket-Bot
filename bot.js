@@ -50,10 +50,12 @@ client.on("message", (message) => {
       .setTitle(":no_entry: Error :no_entry:")
       .setDescription(`<@${message.author.id}>` + " Please open a ticket before running this command");
       message.delete().catch();
- 
 
+let myRole = message.guild.roles.get("648354653091790862");
+ 
 if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(error);
 
+if(!message.member.roles.has(role.id)) {
 
     const embed = new Discord.RichEmbed()
     .setTitle(`Ninja Gen Invite`)
@@ -65,9 +67,13 @@ if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(err
     message.delete().catch();
     message.channel.send({ embed: embed });
     member.addRole("name", "Ninja Gen Supporters")
+    
+  } else { 
+    return message.channel.send("Please wait for a staff member")
+    }
   }
    
-//});
+});
 
 // THE CLIENT LOGIN PROCESS (BOT READS THE TOKEN FROM HERE)
 // ADDITIONALLY YOU COULD ADD YOUR OWNERID INSTEAD 
