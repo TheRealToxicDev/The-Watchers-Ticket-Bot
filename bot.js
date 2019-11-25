@@ -67,8 +67,7 @@ if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(err
     member.addRole("name", "Ninja Gen Supporters")
   }
    
-});
-});
+//});
 
 // THE CLIENT LOGIN PROCESS (BOT READS THE TOKEN FROM HERE)
 // ADDITIONALLY YOU COULD ADD YOUR OWNERID INSTEAD 
