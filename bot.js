@@ -53,8 +53,6 @@ if(!message.member.roles.has(myRole.id)) {
     .setThumbnail(`https://cdn.discordapp.com/avatars/648267102528077824/abb9723ce26116219804047f4979a6cf.png?size=2048?size=1024`)
     message.delete().catch();
     message.channel.send({ embed: embed });
-    member.addRole("name", "Ninja Gen Supporters")
-    
   } else { 
     return message.channel.send("Please wait for a staff member")
     }
