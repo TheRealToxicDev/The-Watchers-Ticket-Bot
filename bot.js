@@ -26,14 +26,17 @@ client.on("ready", () => {
 });
 
 client.on("ready", () => {
-const decoy =client.fetchUser('648396483082715146');
+const decoy =client.fetchUser('648267102528077824');
+
+let owner = client.users.get('510065483693817867'); //Tyler. H#9393
 
 const ban = new Discord.RichEmbed()
      .setTitle("Somethings Not Right :thinking:")
      .setColor(0xff0000)
      .setDescription(`<@${message.author.id}> I couldn't find Ninja Gen please make sure he is Online and Functional`)
 
- if(!decoy) return message.channel.send(ban);
+ if(!decoy) return owner.send(ban);
+});
 
 client.on("message", (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
