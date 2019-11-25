@@ -22,7 +22,7 @@ var token = process.env.BOT_TOKEN; // Replace "process.env.BOT_TOKE" with your b
 // YOU CAN CHANGE, DELETE OR EDIT THIS AS YOU WOULD LIKE BUT IT DOES GIVE THE BOT A NICE CLEAN LOOK 
 client.on("ready", () => {
   console.log("ツ The Watchers ツ | Logged in! Server count: ${client.guilds.size}");
-  client.user.setGame(`Keeping Ninja Gen Safe`, `https://www.twitch.tv/monstercat`);
+  client.user.setGame(`Ninja Gen Invite: gen/invite`, `https://www.twitch.tv/monstercat`);
 });
 
 client.on("message", (message) => {
