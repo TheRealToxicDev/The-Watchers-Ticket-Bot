@@ -5,7 +5,7 @@
   "description": "",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "test": "No No No"
   },
   "engines": {
     "node": "10"
