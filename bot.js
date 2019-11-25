@@ -39,7 +39,7 @@ client.on("message", (message) => {
       message.delete().catch();
  
 
-if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(Tembed);
+if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(error);
 
 
     const embed = new Discord.RichEmbed()
