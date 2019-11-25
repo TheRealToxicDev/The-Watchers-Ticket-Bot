@@ -48,13 +48,21 @@ if(message.member.roles.has(myRole)) {
     .setTitle(`Ninja Gen Invite`)
     .setColor(0x00AE86)
     .setDescription(`Redistributing this link without permission will result in a Blacklist from the bot`)
-     	.addField(`Ninja Gen`, `[Invite Link Here](https://discordapp.com/api/oauth2/authorize?client_id=648267102528077824&permissions=2147483127&scope=bot)`)
+    .addField(`Ninja Gen`, `[Invite Link Here](https://discordapp.com/api/oauth2/authorize?client_id=648267102528077824&permissions=2147483127&scope=bot)`)
     .setFooter(`Ninja Gen Protection`, `https://cdn.discordapp.com/avatars/648267102528077824/abb9723ce26116219804047f4979a6cf.png?size=2048?size=1024`)
     .setThumbnail(`https://cdn.discordapp.com/avatars/648267102528077824/abb9723ce26116219804047f4979a6cf.png?size=2048?size=1024`)
     message.delete().catch();
     message.channel.send({ embed: embed });
   } else { 
-    return message.channel.send("Please wait for a staff member")
+   const embed = new Discord.RichEmbed()
+    .setTitle(`Ninja Gen Invite`)
+    .setColor(0x00AE86)
+    .setDescription(`Redistributing this link without permission will result in a Blacklist from the bot`)
+     	.addField(`Ninja Gen`, `[Invite Link Here](https://discordapp.com/api/oauth2/authorize?client_id=648267102528077824&permissions=2147483127&scope=bot)`)
+    .setFooter(`Ninja Gen Protection`, `https://cdn.discordapp.com/avatars/648267102528077824/abb9723ce26116219804047f4979a6cf.png?size=2048?size=1024`)
+    .setThumbnail(`https://cdn.discordapp.com/avatars/648267102528077824/abb9723ce26116219804047f4979a6cf.png?size=2048?size=1024`)
+    message.delete().catch();
+    message.channel.send({ embed: embed });
     }
   }
    
