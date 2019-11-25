@@ -42,7 +42,7 @@ let myRole = message.guild.roles.get("648354653091790862");
  
 if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(error);
 
-if(!message.member.roles.has(myRole.id)) {
+if(message.member.roles.has(myRole.id)) {
     const embed = new Discord.RichEmbed()
     .setTitle(`Ninja Gen Invite`)
     .setColor(0x00AE86)
