@@ -31,6 +31,17 @@ client.on("message", (message) => {
 // BELOW THIS LINE IS THE BOTS COMMANDS EDIT, REPLACE AND ADD TO THESE AS NEEDED IF YOU ARE WANTING TO EMBED THE COMMAND YOU CAN USE ONE OF THE BOTS PRE EXISTING COMMANDS AS A TEMPLATE
 // MAKE SURE WHEN YOU ARE ADDING COMMANDS YOU FOLLOW THE PATH AND ROUTINE THAT I HAVE LISTED BELOW.
   if (message.content.toLowerCase().startsWith(prefix + `invite`)){
+
+  let error = new Discord.RichEmbed()
+      .setColor("0xff0000")
+      .setTitle(":no_entry: Error :no_entry:")
+      .setDescription(`<@${message.author.id}>` + " Please open a ticket before running this command");
+      message.delete().catch();
+ 
+
+if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(Tembed);
+
+
     const embed = new Discord.RichEmbed()
     .setTitle(`Ninja Gen Invite`)
     .setColor(0x00AE86)
@@ -40,6 +51,7 @@ client.on("message", (message) => {
     .setThumbnail(`https://cdn.discordapp.com/avatars/648267102528077824/abb9723ce26116219804047f4979a6cf.png?size=2048?size=1024`)
     message.delete().catch();
     message.channel.send({ embed: embed });
+    member.addRole("name", "Ninja Gen Supporters")
   }
    
 });
