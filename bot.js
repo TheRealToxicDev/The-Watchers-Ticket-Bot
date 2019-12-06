@@ -25,6 +25,20 @@ client.on("ready", () => {
   client.user.setGame(`Ninja Gen Invite: gen/invite`, `https://www.twitch.tv/monstercat`);
 });
 
+const serverStats = {
+  guildID: '648353322452910080',
+  totalUsersID: '652417178095845376',
+  memberCountID: '652417207577477152',
+  botCountID: '652417305304760330'
+}
+ 
+client.on('guildMemberAdd', member => {
+  if (member.guild.id !== serverStats.guildID) return;
+  client.channels.get(serverStats.totalUsersID).setName(`Total: ${member.guild.memberCount}`);
+  client.channels.get(serverStats.memberCountID).setName(`Users: ${member.guild.members.filter(m => !m.user.bot).size}`);
+  client.channels.get(serverStats.botCountID).setName(`Bots: ${member.guild.members.filter(m => m.user.bot).size}`);
+});
+
 client.on("message", (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
