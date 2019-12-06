@@ -39,7 +39,7 @@ const owner = client.users.get("510065483693817867");
 const dmLog = new Discord.RichEmbed()
     .setTitle("Decoy Invites")
     .setColor("0xff0000")
-    .setDescription(`I have been invited to ${guild.name}`)
+    .setDescription("I have been invited to" + ` ${guild.name}` + `(${guild.id})`)
     .setFooter("© Ninja Gen")
   owner.send(dmLog)
 });
