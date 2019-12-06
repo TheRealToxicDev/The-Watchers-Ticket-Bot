@@ -60,6 +60,7 @@ client.on('guildMemberRemove', member => {
 });
 
 client.on("message", (message) => {
+  if (!message.guild.id = "648353322452910080") return message.channel.send("I do not have any public commands.. sorry :man_shrugging:");
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 // BELOW THIS LINE IS THE BOTS COMMANDS EDIT, REPLACE AND ADD TO THESE AS NEEDED IF YOU ARE WANTING TO EMBED THE COMMAND YOU CAN USE ONE OF THE BOTS PRE EXISTING COMMANDS AS A TEMPLATE
