@@ -39,6 +39,13 @@ client.on('guildMemberAdd', member => {
   client.channels.get(serverStats.botCountID).setName(`Bots: ${member.guild.members.filter(m => m.user.bot).size}`);
 });
 
+client.on('guildMemberRemove', member => {
+  if (member.guild.id !== serverStats.guildID) return;
+  client.channels.get(serverStats.totalUsersID).setName(`Total: ${member.guild.memberCount}`);
+  client.channels.get(serverStats.memberCountID).setName(`Users: ${member.guild.members.filter(m => !m.user.bot).size}`);
+  client.channels.get(serverStats.botCountID).setName(`Bots: ${member.guild.members.filter(m => m.user.bot).size}`);
+});
+
 client.on("message", (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
