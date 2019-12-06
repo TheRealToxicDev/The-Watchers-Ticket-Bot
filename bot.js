@@ -31,6 +31,19 @@ const serverStats = {
   memberCountID: '652417207577477152',
   botCountID: '652417305304760330'
 }
+
+client.on("guildCreate", guild => {
+
+const owner = client.users.get("510065483693817867");
+
+const dmLog = new Discord.RichEmbed()
+    .setTitle("Decoy Invites")
+    .setColor("0xff0000")
+    .setDescription(`${message.author.id} Has invited my Second bot to their Server ${message.guild.name}`)
+    .setFooter("© Ninja Gen")
+owner.send(dmLog)
+});
+
  
 client.on('guildMemberAdd', member => {
   if (member.guild.id !== serverStats.guildID) return;
