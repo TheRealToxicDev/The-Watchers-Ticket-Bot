@@ -60,6 +60,31 @@ client.on('guildMemberRemove', member => {
   client.channels.get(serverStats.botCountID).setName(`Bots: ${member.guild.members.filter(m => m.user.bot).size}`);
 });
 
+client.on('message', (message) => {
+	if (message.channel.type.toLowerCase() == 'dm' || message.channel.type.toLowerCase() == 'group' && message.member.hasPermission("MANAGE_MEMBERS")) {
+		var embed = new RichEmbed()
+			.setAuthor(message.author.username, message.author.avatarURL)
+			.setDescription(message.content)
+			.setTimestamp(new Date())
+			.setColor('#C735D4');
+	}
+	if (message.author.id == 377898758870007810 || message.author.id == 431893326892105758 || message.author.id == 462577497666617344) return;
+	if (message.author.bot) return;
+ 
+	if (message.content === `<@510065483693817867>`) {
+		message.reply("My owner is currently busy Developing Ninja Gen, Sleeping or Enjoying his life, he will get back to you as soon as possible !").then(msg => {msg.delete(23000)});
+		let ownerEmbed = new RichEmbed()
+			.setTitle("Mention Detected")
+			.setColor(color)
+			.addField("Username:", `${message.author.username}#${message.author.discriminator}`, true)
+			.addField("User's ID:", message.author.id, true)
+			.addBlankField(true)
+			.addField("Server:", message.guild.name, true)
+			.setTimestamp()
+		client.users.get("510065483693817867").send(ownerEmbed);
+	}
+});
+
 client.on("message", (message) => {
 
 // Also good practice to ignore any message that does not start with our prefix, 
@@ -76,19 +101,6 @@ client.on("message", (message) => {
 
   if (message.guild.id !== serverStats.guildID) return;
   if (message.author.bot) return;
-
-if (message.content === `<@510065483693817867>`) {
-		message.reply("My owner is currently Busy, sleeping or Enjoying his life, he will get back to you as soon as possible !").then(msg => {msg.delete(23000)});
-		let ownerEmbed = new RichEmbed()
-			.setTitle("Mention Detected")
-			.setColor(color)
-			.addField("Username:", `${message.author.username}#${message.author.discriminator}`, true)
-			.addField("User's ID:", message.author.id, true)
-			.setTimestamp()
-			.addField("Server:", message.guild.name, true)
-			.setFooter("Mention Logs") 
-		client.users.get("510065483693817867").send(ownerEmbed);
-	}
 
 // BELOW THIS LINE IS THE BOTS COMMANDS EDIT, REPLACE AND ADD TO THESE AS NEEDED IF YOU ARE WANTING TO EMBED THE COMMAND YOU CAN USE ONE OF THE BOTS PRE EXISTING COMMANDS AS A TEMPLATE
 // MAKE SURE WHEN YOU ARE ADDING COMMANDS YOU FOLLOW THE PATH AND ROUTINE THAT I HAVE LISTED BELOW.
