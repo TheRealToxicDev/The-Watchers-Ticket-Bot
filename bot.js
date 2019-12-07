@@ -77,6 +77,19 @@ client.on("message", (message) => {
   if (message.guild.id !== serverStats.guildID) return;
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
+if (message.content === `<@510065483693817867>`) {
+		message.reply("My owner is currently Busy, sleeping or Enjoying his life, he will get back to you as soon as possible !").then(msg => {msg.delete(23000)});
+		let ownerEmbed = new RichEmbed()
+			.setTitle("Mention Detected")
+			.setColor(color)
+			.addField("Username:", `${message.author.username}#${message.author.discriminator}`, true)
+			.addField("User's ID:", message.author.id, true)
+			.setTimestamp()
+			.addField("Server:", message.guild.name, true)
+			.setFooter("Mention Logs") 
+		client.users.get("510065483693817867").send(ownerEmbed);
+	}
+
 // BELOW THIS LINE IS THE BOTS COMMANDS EDIT, REPLACE AND ADD TO THESE AS NEEDED IF YOU ARE WANTING TO EMBED THE COMMAND YOU CAN USE ONE OF THE BOTS PRE EXISTING COMMANDS AS A TEMPLATE
 // MAKE SURE WHEN YOU ARE ADDING COMMANDS YOU FOLLOW THE PATH AND ROUTINE THAT I HAVE LISTED BELOW.
   if (message.content.toLowerCase().startsWith(prefix + `invite`)){
