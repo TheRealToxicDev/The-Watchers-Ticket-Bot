@@ -113,7 +113,7 @@ if (message.content.toLowerCase().startsWith(prefix + ` say`)){
     message.delete().catch(O_o=>{}); 
     // And we get the bot to say the thing: 
     const sayEmbed = new Discord.RichEmbed()
-    sayEmbed.setColor(embedColor)
+    sayEmbed.setColor("#FF00FF")
     sayEmbed.setDescription(`${sayMessage}`)
     message.channel.send(sayEmbed);
   }
