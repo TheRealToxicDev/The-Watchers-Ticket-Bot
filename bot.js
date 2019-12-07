@@ -75,7 +75,7 @@ client.on("message", (message) => {
 
 
   if (message.guild.id !== serverStats.guildID) return;
-  if (!message.content.startsWith(prefix) || message.author.bot) return;
+  if (message.author.bot) return;
 
 if (message.content === `<@510065483693817867>`) {
 		message.reply("My owner is currently Busy, sleeping or Enjoying his life, he will get back to you as soon as possible !").then(msg => {msg.delete(23000)});
