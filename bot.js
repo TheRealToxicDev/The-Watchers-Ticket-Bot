@@ -106,7 +106,7 @@ if(message.member.roles.has(myRole.id)) {
     }
   }
 
-if (message.content.toLowerCase().startsWith(prefix + `say`)){
+if (command === "say") {
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
     // To get the "message" itself we join the `args` back into a string with spaces: 
     const sayMessage = args.join(" ");
