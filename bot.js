@@ -75,7 +75,7 @@ client.on('message', (message) => {
 		message.reply("My owner is currently busy Developing Ninja Gen, Sleeping or Enjoying his life, he will get back to you as soon as possible !").then(msg => {msg.delete(23000)});
 		let ownerEmbed = new Discord.RichEmbed()
 			.setTitle("Mention Detected")
-			.setColor(color)
+			.setColor("#FF00FF")
 			.addField("Username:", `${message.author.username}#${message.author.discriminator}`, true)
 			.addField("User's ID:", message.author.id, true)
 			.addBlankField(true)
