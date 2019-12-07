@@ -71,6 +71,7 @@ client.on("message", (message) => {
   // command = say
   // args = ["Is", "this", "the", "real", "life?"]
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
 
 
   if (message.guild.id !== serverStats.guildID) return;
