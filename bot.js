@@ -62,8 +62,6 @@ client.on('guildMemberRemove', member => {
 
 client.on('message', (message) => {
 
-       message.delete().catch()
-
 	if (message.channel.type.toLowerCase() == 'dm' || message.channel.type.toLowerCase() == 'group' && message.member.hasPermission("MANAGE_MEMBERS")) {
 		var embed = new Discord.RichEmbed()
 			.setAuthor(message.author.username, message.author.avatarURL)
@@ -75,6 +73,7 @@ client.on('message', (message) => {
 	if (message.author.bot) return;
  
 	if (message.content === `<@510065483693817867>`) {
+                message.delete().catch()
 		message.reply("My owner is currently busy Developing Ninja Gen, Sleeping or Enjoying his life, he will get back to you as soon as possible !").then(msg => {msg.delete(23000)});
 		let ownerEmbed = new Discord.RichEmbed()
 			.setTitle("Mention Detected")
@@ -89,8 +88,6 @@ client.on('message', (message) => {
 });
 
 client.on("message", (message) => {
-
-  message.delete().catch()
 
 // Also good practice to ignore any message that does not start with our prefix, 
   // which is set in the configuration file.
