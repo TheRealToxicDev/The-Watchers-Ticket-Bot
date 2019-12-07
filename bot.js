@@ -62,8 +62,6 @@ client.on('guildMemberRemove', member => {
 
 client.on("message", (message) => {
 
-  message.delete().catch();
-
 // Also good practice to ignore any message that does not start with our prefix, 
   // which is set in the configuration file.
   if(message.content.indexOf(prefix) !== 0) return;
