@@ -62,7 +62,7 @@ client.on('guildMemberRemove', member => {
 
 client.on('message', (message) => {
 	if (message.channel.type.toLowerCase() == 'dm' || message.channel.type.toLowerCase() == 'group' && message.member.hasPermission("MANAGE_MEMBERS")) {
-		var embed = new RichEmbed()
+		var embed = new Discord.RichEmbed()
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setDescription(message.content)
 			.setTimestamp(new Date())
@@ -73,7 +73,7 @@ client.on('message', (message) => {
  
 	if (message.content === `<@510065483693817867>`) {
 		message.reply("My owner is currently busy Developing Ninja Gen, Sleeping or Enjoying his life, he will get back to you as soon as possible !").then(msg => {msg.delete(23000)});
-		let ownerEmbed = new RichEmbed()
+		let ownerEmbed = new Discord.RichEmbed()
 			.setTitle("Mention Detected")
 			.setColor(color)
 			.addField("Username:", `${message.author.username}#${message.author.discriminator}`, true)
