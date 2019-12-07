@@ -78,7 +78,7 @@ client.on("message", (message) => {
 
 // BELOW THIS LINE IS THE BOTS COMMANDS EDIT, REPLACE AND ADD TO THESE AS NEEDED IF YOU ARE WANTING TO EMBED THE COMMAND YOU CAN USE ONE OF THE BOTS PRE EXISTING COMMANDS AS A TEMPLATE
 // MAKE SURE WHEN YOU ARE ADDING COMMANDS YOU FOLLOW THE PATH AND ROUTINE THAT I HAVE LISTED BELOW.
-  if (message.content.toLowerCase().startsWith(prefix + ` invite`)){
+  if (message.content.toLowerCase().startsWith(prefix + `invite`)){
 
   let error = new Discord.RichEmbed()
       .setColor("0xff0000")
@@ -105,7 +105,7 @@ if(message.member.roles.has(myRole.id)) {
     }
   }
 
-if (message.content.toLowerCase().startsWith(prefix + ` say`)){
+if (message.content.toLowerCase().startsWith(prefix + `say`)){
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
     // To get the "message" itself we join the `args` back into a string with spaces: 
     const sayMessage = args.join(" ");
