@@ -61,6 +61,9 @@ client.on('guildMemberRemove', member => {
 });
 
 client.on('message', (message) => {
+
+       message.delete().catch()
+
 	if (message.channel.type.toLowerCase() == 'dm' || message.channel.type.toLowerCase() == 'group' && message.member.hasPermission("MANAGE_MEMBERS")) {
 		var embed = new Discord.RichEmbed()
 			.setAuthor(message.author.username, message.author.avatarURL)
@@ -86,6 +89,8 @@ client.on('message', (message) => {
 });
 
 client.on("message", (message) => {
+
+  message.delete().catch()
 
 // Also good practice to ignore any message that does not start with our prefix, 
   // which is set in the configuration file.
