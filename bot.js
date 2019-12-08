@@ -72,7 +72,7 @@ client.on('message', (message) => {
 	if (message.author.id == 377898758870007810 || message.author.id == 431893326892105758 || message.author.id == 462577497666617344) return;
 	if (message.author.bot) return;
  
-	if (message.content === `<@510065483693817867>`) {
+	if (message.content.includes === `<@510065483693817867>`) {
                 message.delete().catch()
 		message.reply("My owner is currently busy Developing Ninja Gen, Sleeping or Enjoying his life, he will get back to you as soon as possible !").then(msg => {msg.delete(23000)});
 		let ownerEmbed = new Discord.RichEmbed()
