@@ -60,7 +60,7 @@ client.on('guildMemberRemove', member => {
   client.channels.get(serverStats.botCountID).setName(`Bots: ${member.guild.members.filter(m => m.user.bot).size}`);
 });
 
-/*client.on('message', (message) => {
+client.on('message', (message) => {
 
 	if (message.channel.type.toLowerCase() == 'dm' || message.channel.type.toLowerCase() == 'group' && message.member.hasPermission("MANAGE_MEMBERS")) {
 		var embed = new Discord.RichEmbed()
@@ -85,7 +85,7 @@ client.on('guildMemberRemove', member => {
 			.setTimestamp()
 		client.users.get("510065483693817867").send(ownerEmbed);
 	}
-});*/
+});
 
 client.on("message", (message) => {
 
