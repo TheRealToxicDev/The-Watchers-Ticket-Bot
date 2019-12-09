@@ -76,6 +76,14 @@ client.on('message', (message) => { //whenever a message is sent
   }
 })
 
+client.on('message', (message) => { //whenever a message is sent
+  if (message.content.includes('Nigger'||'Niggar' || 'nigger' || 'niggar')) { //if it contains an invite link
+  if (message.member.hasPermission("ADMINISTRATOR")) return;
+    message.delete() //delete the message
+      .then(message.channel.send('Link Deleted:\n**Invite links are not permitted on this server**'))
+  }
+})
+
 client.on('message', (message) => {
 
 	if (message.channel.type.toLowerCase() == 'dm' || message.channel.type.toLowerCase() == 'group' && message.member.hasPermission("MANAGE_MEMBERS")) {
