@@ -3,8 +3,8 @@
 const Discord = require("discord.js");
 const PREFIX = process.env.PREFIX;
 const client = new Discord.Client();
-const DiscordAntiSpam = require("discord-anti-spam");
-const AntiSpam = new DiscordAntiSpam({
+const antispam = require("discord-anti-spam");
+ANTISPAM(client, {
   warnThreshold: 4, // Amount of messages sent in a row that will cause a warning.
   banThreshold: 7, // Amount of messages sent in a row that will cause a ban
   maxInterval: 5000, // Amount of time (in ms) in which messages are cosidered spam.
@@ -187,16 +187,6 @@ if (command === "say") {
     sayEmbed.setDescription(`${sayMessage}`)
     message.channel.send(sayEmbed);
   }
- 
-AntiSpam.on("warnEmit", (member) => console.log(`Attempt to warn ${member.user.tag}.`));
-AntiSpam.on("warnAdd", (member) => console.log(`${member.user.tag} has been warned.`));
-AntiSpam.on("kickEmit", (member) => console.log(`Attempt to kick ${member.user.tag}.`));
-AntiSpam.on("kickAdd", (member) => console.log(`${member.user.tag} has been kicked.`));
-AntiSpam.on("banEmit", (member) => console.log(`Attempt to ban ${member.user.tag}.`));
-AntiSpam.on("banAdd", (member) => console.log(`${member.user.tag} has been banned.`));
-AntiSpam.on("dataReset", () => console.log("Module cache has been cleared."));
- 
-client.on("ready", () => console.log(`Logged in as ${client.user.tag}.`));
  
 client.on("message", (msg) => {
   AntiSpam.message(msg);
