@@ -90,7 +90,7 @@ client.on('message', (message) => { //whenever a message is sent
   if (message.content.includes('youtu.be'||'youtube.com')) { //if it contains an invite link
   if (message.member.hasPermission("ADMINISTRATOR")) return;
     message.delete() //delete the message
-      .then(message.channel.send('Link Deleted:\n**Invite links are not permitted on this server**'))
+      .then(message.channel.send('Link Deleted:\n**Youtube/Self Advertisement links are not permitted on this server**'))
   }
 })
 
@@ -98,7 +98,7 @@ client.on('message', (message) => { //whenever a message is sent
   if (message.content.includes('Nigger'||'Niggar' || 'nigger' || 'niggar')) { //if it contains an invite link
   if (message.member.hasPermission("ADMINISTRATOR")) return;
     message.delete() //delete the message
-      .then(message.channel.send('Link Deleted:\n**Invite links are not permitted on this server**'))
+      .then(message.channel.send('Message Deleted:\n**Racism is not permitted on this server**'))
   }
 })
 
