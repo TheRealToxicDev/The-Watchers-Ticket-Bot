@@ -188,9 +188,9 @@ if (command === "say") {
     message.channel.send(sayEmbed);
   }
  
-//client.on("message", (msg) => {
- // discordantidpam.message(msg);
-//});
+client.on("message", (msg) => {
+  discordantidpam.message(msg);
+});
    
 });
 
