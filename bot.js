@@ -60,6 +60,13 @@ client.on('guildMemberRemove', member => {
   client.channels.get(serverStats.botCountID).setName(`Bots: ${member.guild.members.filter(m => m.user.bot).size}`);
 });
 
+client.on('message', (message) => { //whenever a message is sent
+  if (message.content.includes('discord.gg/'||'discordapp.com/invite/')) { //if it contains an invite link
+    message.delete() //delete the message
+      .then(message.channel.send('Link Deleted:\n**Invite links are not permitted on this server**'))
+  }
+})
+
 client.on('message', (message) => {
 
 	if (message.channel.type.toLowerCase() == 'dm' || message.channel.type.toLowerCase() == 'group' && message.member.hasPermission("MANAGE_MEMBERS")) {
