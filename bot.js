@@ -169,6 +169,39 @@ if (command === "say") {
     sayEmbed.setDescription(`${sayMessage}`)
     message.channel.send(sayEmbed);
   }
+
+const DiscordAntiSpam = require("discord-anti-spam");
+const AntiSpam = new DiscordAntiSpam({
+  warnThreshold: 4, // Amount of messages sent in a row that will cause a warning.
+  banThreshold: 7, // Amount of messages sent in a row that will cause a ban
+  maxInterval: 2000, // Amount of time (in ms) in which messages are cosidered spam.
+  warnMessage: "{@user}, Keep spamming in this server and I will dead your ass hoe", // Message will be sent in chat upon warning.
+  banMessage: "**{user_tag}** has been banned for spamming.", // Message will be sent in chat upon banning.
+  maxDuplicatesWarning: 7, // Amount of same messages sent that will be considered as duplicates that will cause a warning.
+  maxDuplicatesBan: 15, // Amount of same messages sent that will be considered as duplicates that will cause a ban.
+  deleteMessagesAfterBanForPastDays: 1, // Amount of days in which old messages will be deleted. (1-7)
+  exemptPermissions: ["MANAGE_MESSAGES", "ADMINISTRATOR", "MANAGE_GUILD", "BAN_MEMBERS"], // Bypass users with at least one of these permissions
+  ignoreBots: false, // Ignore bot messages
+  verbose: false, // Extended Logs from module
+  ignoredUsers: [], // Array of string user IDs that are ignored
+  ignoredRoles: [], // Array of string role IDs or role name that are ignored
+  ignoredGuilds: [], // Array of string Guild IDs that are ignored
+  ignoredChannels: [] // Array of string channels IDs that are ignored
+});
+ 
+AntiSpam.on("warnEmit", (member) => console.log(`Attempt to warn ${member.user.tag}.`));
+AntiSpam.on("warnAdd", (member) => console.log(`${member.user.tag} has been warned.`));
+AntiSpam.on("kickEmit", (member) => console.log(`Attempt to kick ${member.user.tag}.`));
+AntiSpam.on("kickAdd", (member) => console.log(`${member.user.tag} has been kicked.`));
+AntiSpam.on("banEmit", (member) => console.log(`Attempt to ban ${member.user.tag}.`));
+AntiSpam.on("banAdd", (member) => console.log(`${member.user.tag} has been banned.`));
+AntiSpam.on("dataReset", () => console.log("Module cache has been cleared."));
+ 
+client.on("ready", () => console.log(`Logged in as ${client.user.tag}.`));
+ 
+client.on("message", (msg) => {
+  AntiSpam.message(msg);
+});
    
 });
 
