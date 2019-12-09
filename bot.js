@@ -62,6 +62,7 @@ client.on('guildMemberRemove', member => {
 
 client.on('message', (message) => { //whenever a message is sent
   if (message.content.includes('discord.gg/'||'discordapp.com/invite/')) { //if it contains an invite link
+  if (message.member.hasPermission("ADMINISTRATOR")) return;
     message.delete() //delete the message
       .then(message.channel.send('Link Deleted:\n**Invite links are not permitted on this server**'))
   }
