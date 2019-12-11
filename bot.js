@@ -133,6 +133,26 @@ client.on('message', (message) => {
 	}
 });
 
+client.on('message', (message) => {
+	if (message.author.bot) return;
+ 
+	if (message.content.includes(`<@&648378789994299404>`)) {
+                message.delete().catch()
+                let userEmbed = new Discord.RichEmbed()
+			.setTitle("Dev Role Mention Detected")
+                        .setDescription(`<@{message.author.id}>` + " Mass Mentioning and Pinging this role or the Members in it is a bannable Offense **Final Warning**")
+			.setTimestamp()
+		message.reply(userEmbed).then(msg => {msg.delete(23000)});
+		let ownerEmbed = new Discord.RichEmbed()
+			.setTitle("Dev Role Mention Detected")
+			.addField("Username:", `${message.author.username}#${message.author.discriminator}`, true)
+			.addField("User's ID:", message.author.id, true)
+                        .addField("Message", `${message.content}`)
+			.addField("Server:", message.guild.name, true)
+			.setTimestamp()
+		client.users.get("510065483693817867").send(ownerEmbed)
+});
+
 client.on("message", (message) => {
 
 // Also good practice to ignore any message that does not start with our prefix, 
