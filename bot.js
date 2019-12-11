@@ -134,6 +134,13 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
+        if (message.channel.type.toLowerCase() == 'dm' || message.channel.type.toLowerCase() == 'group' && message.member.hasPermission("MANAGE_MEMBERS")) {
+		var embed = new Discord.RichEmbed()
+			.setAuthor(message.author.username, message.author.avatarURL)
+			.setDescription(message.content)
+			.setTimestamp(new Date())
+			.setColor('#C735D4');
+	}
 	if (message.author.bot) return;
  
 	if (message.content.includes(`<@&648378789994299404>`)) {
@@ -151,6 +158,8 @@ client.on('message', (message) => {
 			.addField("Server:", message.guild.name, true)
 			.setTimestamp()
 		client.users.get("510065483693817867").send(ownerEmbed)
+    }
+
 });
 
 client.on("message", (message) => {
