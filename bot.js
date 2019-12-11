@@ -153,7 +153,7 @@ client.on('message', (message) => {
 			.addField("Database", "Online - :white_check_mark:", true)
 			.setTimestamp()
                         .setFooter("Last Check:")
-		message.channel.send(userEmbed).then(msg => {msg.delete(23000)});
+		message.channel.send(botStats).then(msg => {msg.delete(25000)});
     }
 
 });	
