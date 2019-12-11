@@ -146,11 +146,13 @@ client.on('message', (message) => {
 	if (message.content.includes(`-stats`)) {
                 message.delete().catch()
                 let botStats = new Discord.RichEmbed()
-			.setTitle("Bot Status")
+			.setTitle("Ninja Gen Status")
+                        .setDescription("Below is the Status for Ninja Gen and all its Dependencies")
 			.addField("Ninja Gen Host", "Online - :white_check_mark:", true)
 			.addField("Ninja Gen Bot", "Online - :white_check_mark:", true)
-                        .addField("Ninja Bot", "Online - :white_check_mark:", true)
-			.addField("Database", "Online - :white_check_mark:", true)
+                        .addField("Auto Checker", "Online - :x:", true)
+			.addField("Blacklist", "Online - :white_check_mark:", true)
+                        .addField("Database", "Online - :white_check_mark:", true)
 			.setTimestamp()
                         .setFooter("Last Check:")
 		message.channel.send(botStats).then(msg => {msg.delete(25000)});
