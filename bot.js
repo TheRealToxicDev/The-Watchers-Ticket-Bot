@@ -146,9 +146,32 @@ client.on('message', (message => {
    }
 
 });
-	
-          
 
+client.on('message', (message) => {
+        if (message.channel.type.toLowerCase() == 'dm' || message.channel.type.toLowerCase() == 'group' && message.member.hasPermission("MANAGE_MEMBERS")) {
+		var embed = new Discord.RichEmbed()
+			.setAuthor(message.author.username, message.author.avatarURL)
+			.setDescription(message.content)
+			.setTimestamp(new Date())
+			.setColor('#C735D4');
+	}
+	if (message.author.bot) return;
+ 
+	if (message.content.includes(`-stats`)) {
+                message.delete().catch()
+                let botStats = new Discord.RichEmbed()
+			.setTitle("Bot Status")
+			.addField("Ninja Gen Host", "Online - :white_check_mark:", true)
+			.addField("Ninja Gen Bot", "Online - :white_check_mark:", true)
+                        .addField("Ninja Bot", "Online - :white_check_mark:", true)
+			.addField("Database", "Online - :white_check_mark:", true)
+			.setTimestamp()
+                        .setFooter("Last Check:")
+		message.channel.send(userEmbed).then(msg => {msg.delete(23000)});
+    }
+
+});	
+          
 client.on('message', (message) => {
         if (message.channel.type.toLowerCase() == 'dm' || message.channel.type.toLowerCase() == 'group' && message.member.hasPermission("MANAGE_MEMBERS")) {
 		var embed = new Discord.RichEmbed()
