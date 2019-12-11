@@ -133,20 +133,6 @@ client.on('message', (message) => {
 	}
 });
 
-client.on('message', (message => {
-        if (message.content.startsWith("-stats")) {
-        let botStats = new Discord.RichEmbed()
-			.setTitle("Bot Status")
-			.addField("Ninja Gen Host", "Online - :white_check_mark:", true)
-			.addField("Ninja Gen Bot", "Online - :white_check_mark:", true)
-                        .addField("Ninja Bot", "Online - :white_check_mark:", true)
-			.addField("Database", "Online - :white_check_mark:", true)
-			.setTimestamp()
-                        .setFooter("Last Check:")
-   }
-
-});
-
 client.on('message', (message) => {
         if (message.channel.type.toLowerCase() == 'dm' || message.channel.type.toLowerCase() == 'group' && message.member.hasPermission("MANAGE_MEMBERS")) {
 		var embed = new Discord.RichEmbed()
