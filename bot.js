@@ -143,6 +143,9 @@ client.on('message', (message => {
 			.addField("Database", "Online - :white_check_mark:", true)
 			.setTimestamp()
                         .setFooter("Last Check:")
+   }
+
+});
 	
           
 
