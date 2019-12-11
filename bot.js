@@ -119,7 +119,7 @@ client.on('message', (message) => {
                 message.delete().catch()
                 let userEmbed = new Discord.RichEmbed()
 			.setTitle("Mention Detected")
-                        .setDescription(`<@{message.author.id}>` + " My Developer **☣ Fҽʂƚιʋҽ Tσxιƈ Dҽʋ ☣** is currently busy Developing Ninja Gen, Sleeping or Enjoying his life, I have let him know you Pinged. He will get back to you as soon as possible!!")
+                        .setDescription(`<@${message.author.id}>` + " My Developer **☣ Fҽʂƚιʋҽ Tσxιƈ Dҽʋ ☣** is currently busy Developing Ninja Gen, Sleeping or Enjoying his life, I have let him know you Pinged. He will get back to you as soon as possible!!")
 			.setTimestamp()
 		message.reply(userEmbed).then(msg => {msg.delete(23000)});
 		let ownerEmbed = new Discord.RichEmbed()
@@ -140,7 +140,7 @@ client.on('message', (message) => {
                 message.delete().catch()
                 let userEmbed = new Discord.RichEmbed()
 			.setTitle("Dev Role Mention Detected")
-                        .setDescription(`<@{message.author.id}>` + " Mass Mentioning and Pinging this role or the Members in it is a bannable Offense **Final Warning**")
+                        .setDescription(`<@${message.author.id}>` + " Mass Mentioning and Pinging this role or the Members in it is a bannable Offense **Final Warning**")
 			.setTimestamp()
 		message.reply(userEmbed).then(msg => {msg.delete(23000)});
 		let ownerEmbed = new Discord.RichEmbed()
