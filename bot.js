@@ -41,7 +41,7 @@ var embedColor = require('./config');
 // YOU CAN CHANGE, DELETE OR EDIT THIS AS YOU WOULD LIKE BUT IT DOES GIVE THE BOT A NICE CLEAN LOOK 
 client.on("ready", () => {
   console.log("ツ The Watchers ツ | Logged in! Server count: ${client.guilds.size}");
-  client.user.setGame(`Ninja Gen`, `https://www.twitch.tv/monstercat`);
+  client.user.setGame(`-stats | Gen Status`, `https://www.twitch.tv/monstercat`);
 });
 
 const serverStats = {
