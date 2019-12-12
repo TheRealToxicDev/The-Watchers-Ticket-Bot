@@ -151,7 +151,7 @@ client.on('message', async (message) => {
                         .addField("Ninja Gen Website", "**Online** - :white_check_mark:", true)
 			.addField("Ninja Gen Host", "**Online** - :white_check_mark:", true)
 			.addField("Ninja Gen Bot", "**Online** - :white_check_mark:", true)
-                        .addField("API Response", "**Online** - ":x:", true)
+                        .addField("API Response", "**Online** - :x: Issues Detected", true)
                         .addField("Auto Checker", "**Online** - :x: (**WIP**)", true)
 			.addField("Blacklist", "**Online** - :white_check_mark:", true)
                         .addField("Database #1 (Ninja Gen)", "**Online** - :white_check_mark:", true)
