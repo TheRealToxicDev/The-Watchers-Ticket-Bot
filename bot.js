@@ -158,6 +158,7 @@ client.on('message', (message) => {
 			.setTimestamp()
                         .setFooter("Last Check:")
 		message.channel.send(botStats).then(msg => {msg.delete(25000)});
+                message.channel.send("**UPDATE:** We are currently experiencing some minor issues with Ninja Gens main Database, we are working on resolving this issue ASAP the bot is still Online but may be slower then usual Respond Times | Sorry For The Inconvenience - Ninja Gen Developers")
     }
 
 });	
