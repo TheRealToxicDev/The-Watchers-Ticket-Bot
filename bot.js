@@ -159,7 +159,7 @@ client.on('message', async (message) => {
 			.setTimestamp()
                         .setFooter("Last Check:")
 		await message.channel.send(botStats).then(msg => {msg.delete(25000)});
-                message.channel.send("** DEV UPDATE |**" + ` <@${message.author.id}>` + " We are currently experiencing some minor issues with Ninja Gens ALI Response Time, We are working on resolving this issue As Soon As Possible.\n\n Sorry For The Inconvenience \n - Ninja Gen Developers ☣️").then(msg => {msg.delete(35000)});
+                message.channel.send("** DEV UPDATE |**" + ` <@${message.author.id}>` + " We are currently experiencing some minor issues with Ninja Gens API Response Time, We are working on resolving this issue As Soon As Possible.\n\n Sorry For The Inconvenience \n - Ninja Gen Developers ☣️").then(msg => {msg.delete(35000)});
     }
 
 });	
