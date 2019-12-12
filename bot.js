@@ -133,7 +133,7 @@ client.on('message', (message) => { //whenever a message is sent
 	}
 });*/
 
-client.on('message', (message) => {
+client.on('message', async (message) => {
         if (message.channel.type.toLowerCase() == 'dm' || message.channel.type.toLowerCase() == 'group' && message.member.hasPermission("MANAGE_MEMBERS")) {
 		var embed = new Discord.RichEmbed()
 			.setAuthor(message.author.username, message.author.avatarURL)
@@ -157,8 +157,8 @@ client.on('message', (message) => {
                         .addField("Database (Alts)", "Online - :white_check_mark:", true)
 			.setTimestamp()
                         .setFooter("Last Check:")
-		message.channel.send(botStats).then(msg => {msg.delete(25000)});
-                message.channel.send("**UPDATE:** We are currently experiencing some minor issues with Ninja Gens main Database, we are working on resolving this issue ASAP the bot is still Online but may be slower then usual Respond Times | Sorry For The Inconvenience - Ninja Gen Developers")
+		await message.channel.send(botStats).then(msg => {msg.delete(25000)});
+                message.channel.send("**UPDATE:** We are currently experiencing some minor issues with Ninja Gens main Database, we are working on resolving this issue ASAP the bot is still Online but may experience slower then usual Responce Times | Sorry For The Inconvenience - Ninja Gen Developers").then(msg => {msg.delete(35000)});
     }
 
 });	
