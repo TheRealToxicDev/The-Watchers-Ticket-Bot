@@ -143,7 +143,7 @@ client.on('message', async (message) => {
 	}
 	if (message.author.bot) return;
  
-	if (message.content.includes(`-stats`)) {
+	if (message.content.startsWith(`-stats`)) {
                 message.delete().catch()
                 let botStats = new Discord.RichEmbed()
 			.setTitle("Ninja Gen Status")
