@@ -147,18 +147,18 @@ client.on('message', async (message) => {
                 message.delete().catch()
                 let botStats = new Discord.RichEmbed()
 			.setTitle("Ninja Gen Status")
-                        .setDescription("Below is the Status for Ninja Gen and all its Dependencies")
+                        .setDescription("Below is the Current Status for Ninja Gen and all its Dependencies")
                         .addField("Ninja Gen Website", "Online - :white_check_mark:", true)
 			.addField("Ninja Gen Host", "Online - :white_check_mark:", true)
 			.addField("Ninja Gen Bot", "Online - :white_check_mark:", true)
                         .addField("Auto Checker", "Online - :x: (**WIP**)", true)
 			.addField("Blacklist", "Online - :white_check_mark:", true)
-                        .addField("Database (Bot)", "Online - :x:", true)
-                        .addField("Database (Alts)", "Online - :white_check_mark:", true)
+                        .addField("Database #1 (Ninja Gen)", "Online - :white_check_mark:", true)
+                        .addField("Database #2 (Accounts)", "Online - :white_check_mark:", true)
 			.setTimestamp()
                         .setFooter("Last Check:")
 		await message.channel.send(botStats).then(msg => {msg.delete(25000)});
-                message.channel.send("**UPDATE:**" + ` <@${message.author.id}>` + " We are currently experiencing some minor issues with Ninja Gens main Database, We are working on resolving this issue As Soon As Possible. the bot is still Online but may experience slower then usual Response Times | \n\n Sorry For The Inconvenience \n - Ninja Gen Developers ☣️").then(msg => {msg.delete(35000)});
+                //message.channel.send("**UPDATE:**" + ` <@${message.author.id}>` + " We are currently experiencing some minor issues with Ninja Gens main Database, We are working on resolving this issue As Soon As Possible. the bot is still Online but may experience slower then usual Response Times | \n\n Sorry For The Inconvenience \n - Ninja Gen Developers ☣️").then(msg => {msg.delete(35000)});
     }
 
 });	
