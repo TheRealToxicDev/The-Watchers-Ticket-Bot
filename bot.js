@@ -151,6 +151,7 @@ client.on('message', async (message) => {
                         .addField("Ninja Gen Website", "**Online** - :white_check_mark:", true)
 			.addField("Ninja Gen Host", "**Online** - :white_check_mark:", true)
 			.addField("Ninja Gen Bot", "**Online** - :white_check_mark:", true)
+                        .addField("API Response", "**Online** - ":x:", true)
                         .addField("Auto Checker", "**Online** - :x: (**WIP**)", true)
 			.addField("Blacklist", "**Online** - :white_check_mark:", true)
                         .addField("Database #1 (Ninja Gen)", "**Online** - :white_check_mark:", true)
@@ -158,7 +159,7 @@ client.on('message', async (message) => {
 			.setTimestamp()
                         .setFooter("Last Check:")
 		await message.channel.send(botStats).then(msg => {msg.delete(25000)});
-                //message.channel.send("**UPDATE:**" + ` <@${message.author.id}>` + " We are currently experiencing some minor issues with Ninja Gens main Database, We are working on resolving this issue As Soon As Possible. the bot is still Online but may experience slower then usual Response Times | \n\n Sorry For The Inconvenience \n - Ninja Gen Developers ☣️").then(msg => {msg.delete(35000)});
+                message.channel.send("** DEV UPDATE |**" + ` <@${message.author.id}>` + " We are currently experiencing some minor issues with Ninja Gens ALI Response Time, We are working on resolving this issue As Soon As Possible.\n\n Sorry For The Inconvenience \n - Ninja Gen Developers ☣️").then(msg => {msg.delete(35000)});
     }
 
 });	
