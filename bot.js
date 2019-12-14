@@ -253,7 +253,7 @@ if (command === "say") {
   }
  
 client.on("message", (msg) => {
-  discordantidpam.message(msg);
+  discordantispam.message(msg);
 });
    
 });
