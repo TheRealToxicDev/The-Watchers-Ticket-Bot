@@ -150,7 +150,7 @@ client.on('message', async (message) => {
                         .setDescription("Below is the Current Status for Ninja Gen and all its Dependencies")
                         .addField("Ninja Gen Website", "**Online** - :white_check_mark:", true)
 			.addField("Ninja Gen Host", "**Online** - :x: MAJOR ISSUES", true)
-			.addField("Ninja Gen Bot", "**Online** - :x:" MAJOR ISSUES, true)
+			.addField("Ninja Gen Bot", "**Online** - :x: MAJOR ISSUES", true)
                         .addField("API Response", "**Online** - white_check_mark", true)
                         .addField("Auto Checker", "**Online** - :x: (**WIP**)", true)
 			.addField("Blacklist", "**Online** - :white_check_mark:", true)
