@@ -150,8 +150,8 @@ client.on('message', async (message) => {
                         .setDescription("Below is the Current Status for Ninja Gen and all its Dependencies")
                         .addField("Ninja Gen Website", "**Online** - :white_check_mark:", true)
 			.addField("Ninja Gen Host", "**Online** - :white_check_mark:", true)
-			.addField("Ninja Gen Bot", "**Online** - :x: __**MAJOR ISSUES**__", true)
-                        .addField("API Response", "**Online** - :x: __**Ninja Gen Down**__", true)
+			.addField("Ninja Gen Bot", "**Online** - :white_check_mark:", true)
+                        .addField("API Response", "**Online** - :white_check_mark:", true)
                         .addField("Auto Checker", "**Online** - :x: (__**WIP**__)", true)
 			.addField("Blacklist", "**Online** - :white_check_mark:", true)
                         .addField("Database #1 (Ninja Gen)", "**Online** - :white_check_mark:", true)
@@ -159,7 +159,7 @@ client.on('message', async (message) => {
 			.setTimestamp()
                         .setFooter("Last Check:")
 		await message.channel.send(botStats).then(msg => {msg.delete(25000)});
-               message.channel.send("** DEV UPDATE |**" + ` <@${message.author.id}>` + " As we continue working round the clock to get Ninja Gens downtime resolved as soon as possible. We would like to update that the downtime is expected to last **UP TO** 48 Hours as the bot gives us extreme grief on attempts to resolve the errors 🤦🏻‍♂️\n\n Sorry For The Inconvenience\n - Ninja Gen Developers ☣️").then(msg => {msg.delete(35000)});
+               //message.channel.send("** DEV UPDATE |**" + ` <@${message.author.id}>` + " As we continue working round the clock to get Ninja Gens downtime resolved as soon as possible. We would like to update that the downtime is expected to last **UP TO** 48 Hours as the bot gives us extreme grief on attempts to resolve the errors 🤦🏻‍♂️\n\n Sorry For The Inconvenience\n - Ninja Gen Developers ☣️").then(msg => {msg.delete(35000)});
     }
 
 });	
