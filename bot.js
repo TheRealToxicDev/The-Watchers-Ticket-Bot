@@ -10,8 +10,8 @@ const discordantispam = new antispam({
   maxInterval: 5000, // Amount of time (in ms) in which messages are cosidered spam.
   warnMessage: "{@user}, Keep spamming in this server and I will dead your ass hoe", // Message will be sent in chat upon warning.
   banMessage: "**{user_tag}** has been banned for spamming.", // Message will be sent in chat upon banning.
-  maxDuplicatesWarning: 7, // Amount of same messages sent that will be considered as duplicates that will cause a warning.
-  maxDuplicatesBan: 15, // Amount of same messages sent that will be considered as duplicates that will cause a ban.
+  maxDuplicatesWarning: 4, // Amount of same messages sent that will be considered as duplicates that will cause a warning.
+  maxDuplicatesBan: 7, // Amount of same messages sent that will be considered as duplicates that will cause a ban.
   deleteMessagesAfterBanForPastDays: 1, // Amount of days in which old messages will be deleted. (1-7)
   exemptPermissions: ["MANAGE_MESSAGES", "ADMINISTRATOR", "MANAGE_GUILD", "BAN_MEMBERS"], // Bypass users with at least one of these permissions
   ignoreBots: false, // Ignore bot messages
