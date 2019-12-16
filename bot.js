@@ -102,6 +102,14 @@ client.on('message', (message) => {
 })
 
 client.on('message', (message) => { //whenever a message is sent
+  if (message.content.includes('@everyone'||'@here')) { //if it contains an invite link
+  if (message.member.hasPermission("ADMINISTRATOR")) return;
+    message.delete() //delete the message
+      .then(message.channel.send('Message Deleted:\n**Sorry I can't let you do that, No Mass Mentions!!**'))
+  }
+})
+
+client.on('message', (message) => { //whenever a message is sent
   if (message.content.includes('Nigger'||'Niggar' || 'nigger' || 'niggar')) { //if it contains an invite link
   if (message.member.hasPermission("ADMINISTRATOR")) return;
     message.delete() //delete the message
