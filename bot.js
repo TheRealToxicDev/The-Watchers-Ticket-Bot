@@ -94,6 +94,13 @@ client.on('message', (message) => { //whenever a message is sent
   }
 })
 
+client.on('message', (message) => {
+  if (message.content.includes('anonfile.com' || 'https://anonfile.com')) {
+    message.delete()
+    .then(message.channel.send('Link Deleted:\n**AnonFile Links are known to contain viruses and RATs for the safety of our members these links have been Blacklisted and CAN NOT be posted by Members or Staff**'))
+   }
+})
+
 client.on('message', (message) => { //whenever a message is sent
   if (message.content.includes('Nigger'||'Niggar' || 'nigger' || 'niggar')) { //if it contains an invite link
   if (message.member.hasPermission("ADMINISTRATOR")) return;
