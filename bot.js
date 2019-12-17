@@ -15,11 +15,11 @@ const discordantispam = new antispam({
   deleteMessagesAfterBanForPastDays: 7, // Amount of days in which old messages will be deleted. (1-7)
   exemptPermissions: ["MANAGE_MESSAGES", "ADMINISTRATOR", "MANAGE_GUILD", "BAN_MEMBERS"], // Bypass users with at least one of these permissions
   ignoreBots: false, // Ignore bot messages
-  verbose: false, // Extended Logs from module
+  verbose: true, // Extended Logs from module
   ignoredUsers: [], // Array of string user IDs that are ignored
-  ignoredRoles: [], // Array of string role IDs or role name that are ignored
+  ignoredRoles: ['Administrator', 'Admin', 'Moderator', 'Mod'], // Array of string role IDs or role name that are ignored
   ignoredGuilds: [], // Array of string Guild IDs that are ignored
-  ignoredChannels: [] // Array of string channels IDs that are ignored
+  ignoredChannels: ['💬generator-chat', 'generator-chat', 'generator', 'premium-members'] // Array of string channels IDs that are ignored
 });
 
 // BELOW THIS LINE IS THE CLEAN FUNCTION DO NOT TOUCH THIS UNLESS YOU KNOW WHAT YOU ARE DOING!!!
