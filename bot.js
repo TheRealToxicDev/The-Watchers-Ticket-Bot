@@ -127,7 +127,6 @@ client.on('message', (message) => {
 			.setTimestamp(new Date())
 			.setColor('#C735D4');
 	}
-	if (message.author.id == 377898758870007810 || message.author.id == 431893326892105758 || message.author.id == 462577497666617344) return;
 	if (message.author.bot) return;
  
 	if (message.content.includes(`<@510065483693817867>`)) {
