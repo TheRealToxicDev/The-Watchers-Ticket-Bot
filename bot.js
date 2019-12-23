@@ -7,7 +7,7 @@ const antispam = require("discord-anti-spam");
 const discordantispam = new antispam({
   warnThreshold: 4, // Amount of messages sent in a row that will cause a warning.
   banThreshold: 7, // Amount of messages sent in a row that will cause a ban
-  maxInterval: 5000, // Amount of time (in ms) in which messages are cosidered spam.
+  maxInterval: 3000, // Amount of time (in ms) in which messages are cosidered spam.
   warnMessage: "{@user}, Keep spamming in this server and I will dead your ass hoe", // Message will be sent in chat upon warning.
   banMessage: "**{user_tag}** has been banned for spamming.", // Message will be sent in chat upon banning.
   maxDuplicatesWarning: 4, // Amount of same messages sent that will be considered as duplicates that will cause a warning.
