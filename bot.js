@@ -171,6 +171,7 @@ client.on('message', async (message) => {
 			.addField("Blacklist", "**Online** - :white_check_mark:", true)
                         .addField("Database #1 (Ninja Gen)", "**Online** - :white_check_mark:", true)
                         .addField("Database #2 (Accounts)", "**Online** - :white_check_mark:", true)
+                        .addField("Status Updates", "N/A | All Systems Operational")
 			.setTimestamp()
                         .setFooter("Last Check:")
 		await message.channel.send(botStats).then(msg => {msg.delete(25000)});
