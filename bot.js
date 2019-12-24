@@ -4,7 +4,7 @@ const Discord = require("discord.js");
 const PREFIX = process.env.PREFIX;
 const client = new Discord.Client();
 const antispam = require("discord-anti-spam");
-const discordantispam = new antispam({
+*/const discordantispam = new antispam({
   warnThreshold: 4, // Amount of messages sent in a row that will cause a warning.
   banThreshold: 7, // Amount of messages sent in a row that will cause a ban
   maxInterval: 3000, // Amount of time (in ms) in which messages are cosidered spam.
@@ -20,7 +20,7 @@ const discordantispam = new antispam({
   ignoredRoles: ['Administrator', 'Admin', 'Moderator', 'Mod'], // Array of string role IDs or role name that are ignored
   ignoredGuilds: [], // Array of string Guild IDs that are ignored
   ignoredChannels: ['💬generator-chat', 'generator-chat', 'generator', 'premium-members'] // Array of string channels IDs that are ignored
-});
+});*/
 
 // BELOW THIS LINE IS THE CLEAN FUNCTION DO NOT TOUCH THIS UNLESS YOU KNOW WHAT YOU ARE DOING!!!
 // FUNCTIONS ARE REQUIRED TO EXECUTE ARGS AND STRINGS 
