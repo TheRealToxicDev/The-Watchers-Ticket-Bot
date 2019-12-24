@@ -4,7 +4,7 @@ const Discord = require("discord.js");
 const PREFIX = process.env.PREFIX;
 const client = new Discord.Client();
 const antispam = require("discord-anti-spam");
-*/const discordantispam = new antispam({
+/*const discordantispam = new antispam({
   warnThreshold: 4, // Amount of messages sent in a row that will cause a warning.
   banThreshold: 7, // Amount of messages sent in a row that will cause a ban
   maxInterval: 3000, // Amount of time (in ms) in which messages are cosidered spam.
