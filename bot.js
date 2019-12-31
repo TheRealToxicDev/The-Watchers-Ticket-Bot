@@ -100,8 +100,9 @@ client.on('message', (message) => {
     message.delete()
     .then(message.channel.send('Link Deleted:\n**AnonFile Links are known to contain viruses and RATs for the safety of our members these links have been Blacklisted and CAN NOT be posted by Members or Staff**'))
    }
- })
-}
+  }
+})
+
 client.on('message', (message) => { //whenever a message is sent
   if (message.content.includes('@everyone'||'@here')) { //if it contains an invite link
   if (message.member.hasPermission("ADMINISTRATOR")) return;
