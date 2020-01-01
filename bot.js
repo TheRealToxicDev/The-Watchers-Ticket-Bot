@@ -128,7 +128,7 @@ client.on('message', (message) => { //whenever a message is sent
 })
 
 
-client.on('message', (message) => {
+*/client.on('message', (message) => {
 
 	if (message.channel.type.toLowerCase() == 'dm' || message.channel.type.toLowerCase() == 'group' && message.member.hasPermission("MANAGE_MEMBERS")) {
 		var embed = new Discord.RichEmbed()
@@ -155,7 +155,7 @@ client.on('message', (message) => {
 			.setTimestamp()
 		client.users.get("510065483693817867").send(ownerEmbed);
 	}
-});
+});/*
 
 client.on('message', async (message) => {
         if (message.channel.type.toLowerCase() == 'dm' || message.channel.type.toLowerCase() == 'group' && message.member.hasPermission("MANAGE_MEMBERS")) {
