@@ -272,7 +272,6 @@ if (command === "say") {
     // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
     // And we get the bot to say the thing: 
     const sayEmbed = new Discord.RichEmbed()
-    sayEmbed.setColor("#FF00FF")
     sayEmbed.setDescription(`${sayMessage}`)
     message.channel.send(sayEmbed);
   }
