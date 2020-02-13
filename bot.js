@@ -276,7 +276,7 @@ if (command === "say") {
     message.channel.send(sayEmbed);
   }
 
-if(command === "say") {
+if(command === "rules") {
     let rEmbed = new Discord.RichEmbed()
    .setTitle("Ninjas HQ Rules")
    .setDescription("Please make sure you follow the rules at **ALL** times, User caught breaking the rules will Be Banned and/or Blacklisted.")
@@ -305,10 +305,6 @@ if(command === "say") {
    .addField("#23 - No Beggin", "Dont beg for shit please, You can ask for accounts and stuff but if somebody says no then drop the conversation dont keep going\n``Please i really need it my whole family just got hit by a train and i need to watch the newest episode of veggietales``\nlike no if the person says no then no means no")
    message.channel.send(rEmbed)
  }
- 
-client.on("message", (msg) => {
-  discordantispam.message(msg);
-});
    
 });
 
