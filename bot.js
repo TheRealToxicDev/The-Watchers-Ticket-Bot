@@ -119,7 +119,7 @@ client.on('message', (message) => { //whenever a message is sent
 
 client.on('message', (message) => { //whenever a message is sent
   if (message.guild.id === serverStats.guildID) {
-  if (message.content.includes('Nigger'||'Niggar' || 'nigger' || 'niggar')) { //if it contains an invite link
+  if (message.content.includes('Nigger'||'Niggar' || 'nigger' || 'niggar' || 'Nigga' || 'nigga')) { //if it contains an invite link
   if (message.member.hasPermission("ADMINISTRATOR")) return;
     message.delete() //delete the message
       .then(message.channel.send('Message Deleted:\n**Racism is not permitted on this server**'))
@@ -175,7 +175,7 @@ client.on('message', async (message) => {
                         .addField("Ninja Gen Website", "**Online** - :white_check_mark:", true)
 			.addField("Ninja Gen Host", "**Online** - :white_check_mark:", true)
 			.addField("Ninja Gen Bot", "**Online** - :white_check_mark:", true)
-                        .addField("API Response", "**Online** - :warning: > May Be Slow", true)
+                        .addField("API Response", "**Online** - :white_check_mark:", true)
                         .addField("Auto Checker", "**Online** - :x: (__**WIP**__)", true)
 			.addField("Blacklist", "**Online** - :white_check_mark:", true)
                         .addField("Database #1 (Ninja Gen)", "**Online** - :white_check_mark:", true)
