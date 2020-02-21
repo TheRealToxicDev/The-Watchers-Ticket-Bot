@@ -173,6 +173,7 @@ client.on('message', async (message) => {
 			.setTitle("Ninja Gen Status")
                         .setDescription("Below is the Current Status for Ninja Gen and all its Dependencies")
                         .addField("Ninja Gen Website", "**Online** - :white_check_mark:", true)
+                        .addField("Ninja Gen Staff Panel", "**Online** - :white_check_mark:", true)
 			.addField("Ninja Gen Host", "**Online** - :white_check_mark:", true)
 			.addField("Ninja Gen Bot", "**Online** - :white_check_mark:", true)
                         .addField("API Response", "**Online** - :white_check_mark:", true)
@@ -180,7 +181,7 @@ client.on('message', async (message) => {
 			.addField("Blacklist", "**Online** - :white_check_mark:", true)
                         .addField("Database #1 (Ninja Gen)", "**Online** - :white_check_mark:", true)
                         .addField("Database #2 (Accounts)", "**Online** - :white_check_mark:", true)
-                        .addField("Status Updates", "API is experiencing some minor issues bot may be slow to gen")
+                        //.addField("Status Updates", "API is experiencing some minor issues bot may be slow to gen")
 			.setTimestamp()
                         .setFooter("Last Check:")
 		await message.channel.send(botStats).then(msg => {msg.delete(25000)});
