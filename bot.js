@@ -181,7 +181,7 @@ client.on('message', async (message) => {
 			.addField("Blacklist", "**Online** - :white_check_mark:", true)
                         .addField("Database #1 (Ninja Gen & Logs)", "**Online** - :white_check_mark:", true)
                         .addField("Database #2 (Account Stock)", "**Online** - :white_check_mark:", true)
-                        .addField("Database #3 (Premium Users), "**Online** - :white_check_mark:", true)
+                        .addField("Database #3 (Premium Users)", "**Online** - :white_check_mark:", true)
                         //.addField("Status Updates", "Ninja Gen and ALL its dependencies are currently experiencing some minor issues and has caused the bot to crash, we will do our best to get it back online ASAP")
 			.setTimestamp()
                         .setFooter("Last Check:")
