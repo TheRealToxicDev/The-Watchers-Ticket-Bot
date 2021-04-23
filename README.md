@@ -1,4 +1,4 @@
-[![Build Passing](https://img.shields.io/badge/Build-Passing%20-brightgreen.svg?style=flat)](https://ticket-bot.webnode.com/) [![Bot Code Library](https://img.shields.io/badge/Library-discord.js-orange.svg)](https://discord.js.org/#/) [![Version](https://img.shields.io/badge/Version-1.00-blue.svg)](https://ticket-bot.webnode.com/)
+[![Build Passing](https://img.shields.io/badge/Build-Passing%20-brightgreen.svg?style=flat)](https://ticket-bot.webnode.com/) [![Bot Code Library](https://img.shields.io/badge/Library-discord.js-orange.svg)](https://discord.js.org/#/) [![Version](https://img.shields.io/badge/Version-1.0.2-blue.svg)](https://ticket-bot.webnode.com/)
 
 ### ツ Ticket Bot ツ 
 
