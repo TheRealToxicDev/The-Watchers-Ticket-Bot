@@ -73,6 +73,7 @@ and you're ready to Go!**
 | ------- |:----------------- |
 | Creator's Personal Discord | [Tyler. H#9393](https://discord.gg/N86xbMR) |
 | Creators/Developers Website | [ツThe Watchers Bot Devsツ Website](https://the-watchers.webnode.com) |
+| My Website | [ツ Ticket Bot ツ Website](https://www.ticket-bot.webnode.com)
 | Join My Support Server | [ツThe Watchers Bot Devsツ Discord](https://discord.gg/djpPhcU) |
 | Support The `ツ Ticket Bot ツ` Project | [Donate Now](https://paypal.me/thewatchersbotdevs)
 

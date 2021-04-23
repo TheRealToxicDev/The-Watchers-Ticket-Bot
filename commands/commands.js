@@ -25,7 +25,7 @@ const embed = new Discord.RichEmbed()
 	.addField(`Add A Member`, `tw/add @User#1234 > Adds the mentioned user to the current Support Ticket\nExample: [${prefix}add @Tyler. H#9393]`)
 	.addField(`Remove A Member`, `tw/remove @User#1234 > Removes the mentioned user from the current Support Ticket\nExample: [${prefix}remove @Tyler. H#9393]`)
 	.addField(`Invite Me`, `tw/invite > Generates an invite link`) 
-        .addField(`Command List Link`, `Link Coming Soon`) 
+        .addField(`Command List Link`, `[My Commands List And Info](https://grimdesignsfivem.github.io/The-Watchers-Ticket-Bot/)`) 
     .setFooter(`ツ Ticket Bot ツ v1.00`, `http://i.imgur.com/bt9OsRs.jpg`)
     .setThumbnail(`http://i.imgur.com/bt9OsRs.jpg`)
     message.channel.send({ embed: embed });
