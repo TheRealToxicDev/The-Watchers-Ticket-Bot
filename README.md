@@ -55,12 +55,12 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 
 > {TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Automatic Deploy`
 
-## Hosting Steps
-**1. Click the `Deploy To Heroku` button above.** **{Coming Soon}**
-> In the meantime for information on how to self host the bot you can join our [support server](https://toxicdev.me/discord) and we will be happy to assist you
+---
 
+# Self Hosting
+## Windows
+**1. Download this project**
 **2. Input your `Bot Token`, and Input your Bot `Prefix`. Get your Bot's Token in your App Settings.**
-
 **3. After Deployed, Go to `Overview Tab >  Configure Dynos > Enable worker Dynos`  Click ``Confirm``
 and you're ready to Go!**
 
