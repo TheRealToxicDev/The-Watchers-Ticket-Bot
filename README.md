@@ -75,7 +75,3 @@ and you're ready to Go!**
 | My Website | [ツ Ticket Bot ツ Website](https://www.ticket-bot.webnode.com)
 | Join My Support Server | [ツThe Watchers Bot Devsツ Discord](https://discord.gg/djpPhcU) |
 | Support The `ツ Ticket Bot ツ` Project | [Donate Now](https://paypal.me/thewatchersbotdevs)
-
-
-## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FGrimDesignsFiveM%2FThe-Watchers-Ticket-Bot.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FGrimDesignsFiveM%2FThe-Watchers-Ticket-Bot?ref=badge_large)
