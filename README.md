@@ -65,14 +65,3 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 and you're ready to Go!**
 
 > **Get Your Bot Token Here** [Discord Developer Portal](https://discordapp.com/developers/applications)
-
-<a name="usefullinks"></a>
-## Useful Links & Info
-
-| Info & About | Links & Redirects |
-| ------- |:----------------- |
-| Creator's Personal Discord | [Tyler. H#9393](https://discord.gg/N86xbMR) |
-| Creators/Developers Website | [ツThe Watchers Bot Devsツ Website](https://the-watchers.webnode.com) |
-| My Website | [ツ Ticket Bot ツ Website](https://www.ticket-bot.webnode.com)
-| Join My Support Server | [ツThe Watchers Bot Devsツ Discord](https://discord.gg/djpPhcU) |
-| Support The `ツ Ticket Bot ツ` Project | [Donate Now](https://paypal.me/thewatchersbotdevs)
