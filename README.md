@@ -59,9 +59,10 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 
 # Self Hosting
 ## Windows
-**1. Download this project**
-**2. Input your `Bot Token`, and Input your Bot `Prefix`. Get your Bot's Token in your App Settings.**
-**3. After Deployed, Go to `Overview Tab >  Configure Dynos > Enable worker Dynos`  Click ``Confirm``
-and you're ready to Go!**
+**1.** Download the Bots Files from this Repository
+**2.** Rename the `.env.example` file to `.env`
+**3.** Configure the .env File with your bots token and prefix
+**3.** Open Command Prompt or Shell in the Projects Directory
+**4.** Run `npm install` once complete run `node index.js`
 
 > **Get Your Bot Token Here** [Discord Developer Portal](https://discordapp.com/developers/applications)
