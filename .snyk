@@ -1,0 +1,91 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > request > extend:
+        patched: '2019-08-14T05:41:03.782Z'
+  'npm:hoek:20180212':
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > gapitoken > request > hawk > sntp > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - google > request > hawk > sntp > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - google > request > hawk > boom > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > hawk > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - google > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > request > hawk > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > hawk > boom > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > request > hawk > boom > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > request > hawk > sntp > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > google-auth-library > request > hawk > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > gapitoken > request > hawk > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > google-auth-library > request > hawk > boom > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > gapitoken > request > hawk > boom > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > google-auth-library > request > hawk > sntp > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - google > request > hawk > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > google-auth-library > gtoken > request > hawk > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > google-auth-library > gtoken > request > hawk > sntp > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > google-auth-library > gtoken > request > hawk > boom > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > google-auth-library > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > gapitoken > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > google-auth-library > gtoken > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-08-14T05:41:03.782Z'
+  'npm:lodash:20180130':
+    - google > cheerio > lodash:
+        patched: '2019-08-14T05:41:03.782Z'
+  'npm:stringstream:20180511':
+    - ffmpeg-binaries > decompress-tarxz > lzma-native > node-pre-gyp > request > stringstream:
+        patched: '2019-08-14T05:41:03.782Z'
+  'npm:tough-cookie:20170905':
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > google-auth-library > gtoken > request > tough-cookie:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > gapitoken > request > tough-cookie:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > request > tough-cookie:
+        patched: '2019-08-14T05:41:03.782Z'
+    - google > request > tough-cookie:
+        patched: '2019-08-14T05:41:03.782Z'
+  'npm:tunnel-agent:20170305':
+    - google > request > tunnel-agent:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > request > tunnel-agent:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > gapitoken > request > tunnel-agent:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > google-auth-library > request > tunnel-agent:
+        patched: '2019-08-14T05:41:03.782Z'
+    - discord.js-musicbot-addon > youtube-playlist-info > youtube-api > googleapis > google-auth-library > gtoken > request > tunnel-agent:
+        patched: '2019-08-14T05:41:03.782Z'

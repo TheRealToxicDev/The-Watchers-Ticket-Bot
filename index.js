@@ -19,7 +19,7 @@ client.on("ready",  async () => {
  client.user.setGame(`tw/help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
 });
 
-lient.on("guildCreate", (guild) => {
+client.on("guildCreate", (guild) => {
  client.user.setGame(`tw/help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
 const embed = new Discord.RichEmbed()
     .setTitle(`ツ Ticket Bot ツ`)

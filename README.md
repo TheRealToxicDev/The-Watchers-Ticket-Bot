@@ -17,7 +17,6 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 
 - [Help Commands](#help)
 - [General Commands](#generalcommands)
-- [Other Commands](#othercommands)
 - [Host Your Own Ticket Bot](#hostyourown)
 - [Useful Links](#usefullinks)
 
@@ -38,15 +37,11 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 | ------- |:----------------- |
 | [tw/new] | Opens up a new ticket and tags the `Support Team` |
 | [tw/close] | Closes a ticket that has been resolved or been opened by accident |
+| [tw/add User#1234] | Adds the mentioned user to the current ticket |
+| [tw/remove User#1234] | Removes the mentioned member from the current ticket |
 
 > `{tip}` The close command `MUST` be used inside the ticket channel
 
-<a name="othercommands"></a>
-## Other Commands
-
-| Command | Short Description |
-| ------- |:----------------- |
-|[tw/ping] | Pings the bot and checks latency and response time |
 
 <a name="hostyourown"></a>
 ## Host Your Own ツ Ticket Bot ツ
@@ -78,6 +73,7 @@ and you're ready to Go!**
 | ------- |:----------------- |
 | Creator's Personal Discord | [Tyler. H#9393](https://discord.gg/N86xbMR) |
 | Creators/Developers Website | [ツThe Watchers Bot Devsツ Website](https://the-watchers.webnode.com) |
+| My Website | [ツ Ticket Bot ツ Website](https://www.ticket-bot.webnode.com)
 | Join My Support Server | [ツThe Watchers Bot Devsツ Discord](https://discord.gg/djpPhcU) |
 | Support The `ツ Ticket Bot ツ` Project | [Donate Now](https://paypal.me/thewatchersbotdevs)
 
