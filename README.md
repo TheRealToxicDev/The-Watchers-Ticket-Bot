@@ -59,10 +59,10 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 
 # Self Hosting
 ## Windows
-**1.** Download the Bots Files from this Repository
-**2.** Rename the `.env.example` file to `.env`
-**3.** Configure the .env File with your bots token and prefix
-**3.** Open Command Prompt or Shell in the Projects Directory
-**4.** Run `npm install` once complete run `node index.js`
+* Download the Bots Files from this Repository
+* Rename the `.env.example` file to `.env`
+* Configure the .env File with your bots token and prefix
+* Open Command Prompt or Shell in the Projects Directory
+* Run `npm install` once complete run `node index.js`
 
 > **Get Your Bot Token Here** [Discord Developer Portal](https://discordapp.com/developers/applications)
