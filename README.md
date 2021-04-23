@@ -1,5 +1,4 @@
 [![Build Passing](https://img.shields.io/badge/Build-Passing%20-brightgreen.svg?style=flat)](https://ticket-bot.webnode.com/) [![Bot Code Library](https://img.shields.io/badge/Library-discord.js-orange.svg)](https://discord.js.org/#/) [![Version](https://img.shields.io/badge/Version-1.00-blue.svg)](https://ticket-bot.webnode.com/)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FGrimDesignsFiveM%2FThe-Watchers-Ticket-Bot.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FGrimDesignsFiveM%2FThe-Watchers-Ticket-Bot?ref=badge_shield)
 
 ### ツ Ticket Bot ツ 
 
