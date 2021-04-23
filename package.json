@@ -7,10 +7,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "TheRealToxicDev",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.2",
