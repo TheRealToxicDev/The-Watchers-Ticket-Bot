@@ -6,6 +6,11 @@
 
 ---
 
+## Dev Note
+* This bot is extremely outdated but should still work, I will release a updated version soon ❤️
+
+---
+
 ### Command List & Info
 
 Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with a short description of what each command does.
