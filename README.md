@@ -53,7 +53,7 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 
 > {TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Deploy to Heroku button`
 
-<a href="https://heroku.com/deploy?template= https://github.com/TheRealToxicDev/The-Watchers-Ticket-Bot">
+<a href="https://heroku.com/deploy?template=https://github.com/TheRealToxicDev/The-Watchers-Ticket-Bot">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
