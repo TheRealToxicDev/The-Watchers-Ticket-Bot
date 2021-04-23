@@ -4,6 +4,8 @@
 
 **Hello! I'm ツ Ticket Bot ツ, the Discord bot for super cool support ticket stuff and more!** 
 
+---
+
 ### Command List & Info
 
 Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with a short description of what each command does.
@@ -12,15 +14,8 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 
 > {TIP} ツ Ticket Bot ツ Will Set-Up a `Tickets` Category for you when a member opens a ticket
 
-## Table of Contents
+---
 
-- [Help Commands](#help)
-- [General Commands](#generalcommands)
-- [Host Your Own Ticket Bot](#hostyourown)
-- [Useful Links](#usefullinks)
-
-
-<a name="help"></a>
 ## Help Command
 
 | Command           | Short Description      |
@@ -28,8 +23,8 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 | [tw/help]  | Shows my help message and command usage |
 | [tw/about] | Tells you all about `ツ Ticket Bot ツ`  |
 
+---
 
-<a name="generalcommands"></a>
 ## General Commands
 
 | Command | Short Description |
@@ -41,8 +36,8 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 
 > `{tip}` The close command `MUST` be used inside the ticket channel
 
+---
 
-<a name="hostyourown"></a>
 ## Host Your Own ツ Ticket Bot ツ
 
 | Host | Method |
