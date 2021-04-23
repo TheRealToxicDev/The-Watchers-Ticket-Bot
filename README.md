@@ -49,11 +49,13 @@ Below you'll find a list of all commands that ツ Ticket Bot ツ has, along with
 | ------- |:----------------- |
 | Heroku | Auto Deploy |
 
-**THE AUTO DEPLOY OPTION IS COMING SOON, PLEASE CHECK BACK LATER.**
+> {TIP} For information on how to self host please read the guide below
 
-> {TIP} For information on how to self host please contact us on our [support server](https://toxicdev.me/discord)
+> {TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Deploy to Heroku button`
 
-> {TIP} You can host your own version of `ツ Ticket Bot ツ` on Heroku, just click this `Automatic Deploy`
+<a href="https://heroku.com/deploy?template= https://github.com/TheRealToxicDev/The-Watchers-Ticket-Bot">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
 
 ---
 
