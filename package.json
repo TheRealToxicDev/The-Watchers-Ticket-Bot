@@ -25,7 +25,7 @@
     "lodash.set": "^4.3.2",
     "lodash.unset": "^4.5.2",
     "moment": "^2.24.0",
-    "node-gyp": "^4.0.0",
+    "node-gyp": "^7.0.0",
     "node-superfetch": "^0.1.9",
     "os-utils": "0.0.14",
     "opusscript": "0.0.6",
